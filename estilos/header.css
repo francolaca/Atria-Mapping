@@ -1,0 +1,164 @@
+/* -----------------------------------Variables de Estilo------------------------------------ */
+
+
+:root {
+    --colorPrincipal: #2F5163;
+    --colorSecundario: #010202;
+    --colorTerciarioOscuro: #1C1C1C;
+    --colorTerciarioClaro: #F2F2F2;
+    --colorDetalles: #2A7F98;
+    
+    --tamañoTexto-XS: 9.89px;
+    --tamañoTexto-S: 16px;
+    --tamañoTexto-M: 25.89px;
+    --tamañoTexto-L: 41.89px;
+    --tamañoTexto-XL: 67.77px;
+    --tamañoTexto-XXL: 109.66px;
+    
+    --alturaLíneaProp: 1.618; /* Proporción line-height / font-size */
+    }
+
+
+    /* -----------------------------------Estilos por Defecto para Todo el Documento------------------------------------ */
+
+
+*{
+    padding: 5PX;
+    margin: 5PX;
+    font-family: 'montserrat', sans-serif;  /* Investigar como poner en negrita, italic, etc (están enlazados todos los espesores, son 9) */
+}
+
+
+/* -----------------------------------Bloque del header------------------------------------ */
+
+
+.b-header {
+    border: 2PX SOLID RED;
+    background-color: var(--colorSecundario);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* -----------------------------------Bloque nav del header------------------------------------ */
+
+
+.b-nav {
+    border: 2PX SOLID RED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.index-logo{
+    border: 2PX SOLID RED;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-outerList{
+    border: 2PX SOLID RED;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.hamburger-menu { 
+    border: 2PX SOLID RED;
+    display: none;
+}
+
+
+@media (max-width: 990px) {     /* Estilos a aplicar cuando el ancho de la barra de navegación sea menor que 990px */
+
+    .nav-outerList {
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
+
+}
+
+
+/* -----------------------------------Contenedores hijos del b-nav------------------------------------ */
+
+
+.index-logo__link{
+text-decoration: none;
+}
+
+
+.index-logo__image{
+    width: 50px;
+    height: 50px;
+}
+
+
+.index-logo__text{
+    color: var(--colorTerciarioClaro);
+    font-size: var(--tamañoTexto-M);
+    line-height: calc(var(--tamañoTexto-S) * var(--alturaLíneaProp) * 0.8);   
+} 
+
+
+.nav-outerList__link{
+text-decoration: none;
+color: var(--colorTerciarioClaro);
+}
+
+
+
+
+
+
+
+
+
+
+
+.index-logo__text span {
+    font-size: var(--tamañoTexto-S);
+    } 
+
+
+    .hamburger-menu__icon{
+        filter: invert(96%) sepia(1%) saturate(28%) hue-rotate(118deg) brightness(116%) contrast(90%); /* Cambia el color de los logos SVG al valor #f2f2f2*/
+        width: 30px;
+        height: 30px;
+    }
+
+
+@media (max-width: 550px) {  
+
+    .index-logo__text{
+        font-size: var(--tamañoTexto-S);
+        line-height: calc(var(--tamañoTexto-XS) * var(--alturaLíneaProp) * 0.8);   
+    } 
+
+    .index-logo__text span {
+        font-size: var(--tamañoTexto-XS);
+    } 
+
+    .index-logo__image{
+        width: 30px;
+        height: 30px;
+    }
+
+    .hamburger-menu__icon{
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+
+
+
+
+
+
