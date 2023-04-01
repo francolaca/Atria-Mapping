@@ -29,7 +29,6 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'montserrat', sans-serif;  /* Investigar como poner en negrita, italic, etc (están enlazados todos los espesores, son 9) */
 }
 
 
@@ -37,11 +36,13 @@
 
 
 .b-footer{
+    font-family: 'montserrat', sans-serif;
     background-color: var(--colorTerciarioOscuro1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: content-box;
 }
 
 
@@ -54,6 +55,7 @@
     flex-wrap: wrap;
     max-width: 1200px;
     padding: 60px 0px 20px 0px;
+    box-sizing: content-box;
 }
 
 
@@ -63,6 +65,7 @@
     width: 23.1%;
     min-width: 200px;
     margin: 10px;
+    box-sizing: content-box;
 }
 
 
@@ -71,12 +74,14 @@
     line-height: calc(var(--tamañoTexto-XS) * var(--alturaLíneaProp)); /* Usar siempre esta metodología para calcular el valor de la propiedad line-height, de este modo nos aseguramos respetar las proporciones preseleccionadas */
     color: var(--colorTerciarioClaro);
     margin-bottom: 0.7em;
+    box-sizing: content-box;
 }
 
 
 .footer-list__item--link{
     color: var(--colorTerciarioClaro);
     text-decoration: none;
+    box-sizing: content-box;
 }
 
 .footer-list__item--link:hover{
@@ -102,6 +107,7 @@
     border-top: 2px solid var(--colorDetalles1);
     width: 70%;
     max-width: 1200px;
+    box-sizing: content-box;
 }
 
 
@@ -109,11 +115,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    box-sizing: content-box;
 }
 
 
 .social-container__link{
     text-decoration: none;
+    box-sizing: content-box;
 }
 
 
@@ -122,6 +130,7 @@
     width: 24px;
     height: 24px;
     padding: 10px;
+    box-sizing: content-box;
 }
 
 
@@ -135,6 +144,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    box-sizing: content-box;
 }
 
 
@@ -143,6 +153,7 @@
     font-size: var(--tamañoTexto-XS);
     line-height: calc(var(--tamañoTexto-XS) * var(--alturaLíneaProp));   
     color: var(--colorTerciarioClaro);
+    box-sizing: content-box;
 }
 
 
@@ -150,6 +161,7 @@
     color: var(--colorDetalles1);
     transform: scale(1.2);
     text-decoration: none;
+    box-sizing: content-box;
 }
 
 
