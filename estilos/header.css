@@ -1,12 +1,14 @@
 /* -----------------------------------Variables de Estilo------------------------------------ */
 
 
-:root {
+:root{
     --colorPrincipal: #2F5163;
     --colorSecundario: #010202;
-    --colorTerciarioOscuro: #1C1C1C;
+    --colorTerciarioOscuro1: #272727;
+    --colorTerciarioOscuro2: #373737;
     --colorTerciarioClaro: #F2F2F2;
-    --colorDetalles: #2A7F98;
+    --colorDetalles1: #2A7F98;
+    --colorDetalles2: #F5B823;
     
     --tamañoTexto-XS: 9.89px;
     --tamañoTexto-S: 16px;
@@ -16,39 +18,54 @@
     --tamañoTexto-XXL: 109.66px;
     
     --alturaLíneaProp: 1.618; /* Proporción line-height / font-size */
-    }
+}
 
 
     /* -----------------------------------Estilos por Defecto para Todo el Documento------------------------------------ */
 
 
 *{
-    padding: 5PX;
-    margin: 5PX;
-    font-family: 'montserrat', sans-serif;  /* Investigar como poner en negrita, italic, etc (están enlazados todos los espesores, son 9) */
+    padding: 0px;
+    margin: 0PX;
+    box-sizing: border-box;
 }
 
 
 /* -----------------------------------Bloque del header------------------------------------ */
 
 
-.b-header {
-    border: 2PX SOLID RED;
+.b-body{
+    font-family: 'montserrat', sans-serif;
+    padding: 120px 20px 0;
+    /* max-width: 1200px;     Esto lo usamos para ajustar el contenido al centro de pantallas muy anchas, es una cuestion de UX */
+}
+
+
+.b-header{
     background-color: var(--colorSecundario);
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 0 40px; 
 }
 
 
 /* -----------------------------------Bloque nav del header------------------------------------ */
 
 
-.b-nav {
+.b-nav{
     border: 2PX SOLID RED;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
+
+
+/* -----------------------------------Bloque index-logo del nav------------------------------------ */
 
 
 .index-logo{
@@ -58,107 +75,256 @@
 }
 
 
-.nav-outerList{
-    border: 2PX SOLID RED;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-.hamburger-menu { 
-    border: 2PX SOLID RED;
-    display: none;
-}
-
-
-@media (max-width: 990px) {     /* Estilos a aplicar cuando el ancho de la barra de navegación sea menor que 990px */
-
-    .nav-outerList {
-        display: none;
-    }
-
-    .hamburger-menu{
-        display: block;
-    }
-
-}
-
-
-/* -----------------------------------Contenedores hijos del b-nav------------------------------------ */
-
-
-.index-logo__link{
-text-decoration: none;
-}
-
-
 .index-logo__image{
     width: 50px;
     height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
 }
 
 
 .index-logo__text{
     color: var(--colorTerciarioClaro);
     font-size: var(--tamañoTexto-M);
-    line-height: calc(var(--tamañoTexto-S) * var(--alturaLíneaProp) * 0.8);   
+    line-height: calc(var(--tamañoTexto-S) * var(--alturaLíneaProp) * 0.8);
+    margin: 0 10px;
+    cursor: pointer;   
 } 
 
 
-.nav-outerList__link{
-text-decoration: none;
-color: var(--colorTerciarioClaro);
+.index-logo__text span{
+    font-size: var(--tamañoTexto-S);
+    cursor: pointer;
+} 
+
+
+/* -----------------------------------Bloque nav-outerList del nav------------------------------------ */
+
+
+.nav-outerList{
+    border: 2PX SOLID RED;
+    list-style: none;
+    display: flex;
+    align-self: flex-end;
 }
 
 
+.nav-outerList__item{
+    border: 2PX SOLID RED;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    
+}
 
 
-
-
-
-
-
-
-
-.index-logo__text span {
+.nav-outerList__link{
+    text-decoration: none;
+    color: var(--colorTerciarioClaro);
     font-size: var(--tamañoTexto-S);
-    } 
+    display: block;
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+} 
 
 
-    .hamburger-menu__icon{
-        filter: invert(96%) sepia(1%) saturate(28%) hue-rotate(118deg) brightness(116%) contrast(90%); /* Cambia el color de los logos SVG al valor #f2f2f2*/
-        width: 30px;
-        height: 30px;
+.nav-outerList__link:hover{
+    color: var(--colorDetalles1);
+    background-color: var(--colorTerciarioOscuro1);
+    transition: 0.3s;
+}
+
+
+/* -----------------------------------Bloque burger-menu del nav------------------------------------ */
+
+
+.burger-menu{ 
+    /* border: 2PX SOLID RED; */
+    display: none;
+    background: none;
+    border: none; 
+    margin: 10px;
+}
+
+
+.burger-menu__icon{
+    filter: invert(96%) sepia(1%) saturate(28%) hue-rotate(118deg) brightness(116%) contrast(90%); /* Cambia el color de los logos SVG al valor #f2f2f2*/
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+/* -----------------------------------Breakpoint 992px - Tablets (valores sugeridos por bootstrap)------------------------------------ */
+
+
+@media (max-width: 992px){ 
+
+    .b-body{
+        padding-top: 100px;   
     }
 
 
-@media (max-width: 550px) {  
+    .b-header{
+        height: 80px;
+        padding: 0 20px;   
+    }
+
+
+    .b-nav{
+        /* --- */
+    }
+
+
+    .index-logo{
+        /* --- */
+    }
+
+
+    .index-logo__image{
+        width: 40px;
+        height: 40px;
+    }
+
 
     .index-logo__text{
-        font-size: var(--tamañoTexto-S);
-        line-height: calc(var(--tamañoTexto-XS) * var(--alturaLíneaProp) * 0.8);   
+        /* --- */
+    }
+
+
+    .index-logo__text span{
+        display: none;
     } 
 
-    .index-logo__text span {
-        font-size: var(--tamañoTexto-XS);
+    
+    .nav-outerList{
+        border: 2PX SOLID RED;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--colorTerciarioOscuro1);
+        position: fixed;
+        right: 0;
+        top: 80px;
+    }
+    
+    
+    .nav-outerList__item{
+        border: 2PX SOLID RED;
+        width: 500px;
+        height: 35px;
+        line-height: 35px;       
+    }
+
+
+    .nav-outerList__link{
+        /* --- */
     } 
+    
+    
+    .nav-outerList__link:hover{
+        background-color: var(--colorTerciarioOscuro2);
+    }
+
+
+    .burger-menu{
+        display: block;
+    }
+
+
+    .burger-menu__icon{
+        /* --- */
+    }
+
+}
+
+
+/* -----------------------------------Breakpoint 576px - Celulares (valores sugeridos por bootstrap)----------------------------------- */
+
+
+@media (max-width: 576px){
+
+    .b-body{
+        padding: 70px 10px;
+    }
+
+
+    .b-header {
+        height: 60px;
+        padding: 10px;   
+    }
+
+
+    .b-nav{
+        /* --- */
+    }
+
+
+    .index-logo{
+        /* --- */
+    }
+
 
     .index-logo__image{
         width: 30px;
         height: 30px;
+        margin: 5px;
     }
 
-    .hamburger-menu__icon{
-        width: 20px;
-        height: 20px;
+
+    .index-logo__text{
+        font-size: var(--tamañoTexto-S);
+        margin: 5px;
+    } 
+    
+
+    .index-logo__text span{
+        /* --- */
+    } 
+
+
+    .nav-outerList{ 
+        top: 60px;
+        width: 100%;
+        /* padding: 10px 0; */
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
     }
 
+
+    .nav-outerList--visible{
+        left: 0;
+    }
+
+
+    .nav-outerList__item{
+        border: 2PX SOLID RED;
+        width: 100%;
+    }
+
+
+    .nav-outerList__link{
+        font-size: var(--tamañoTexto-XS);
+    }
+
+
+    .nav-outerList__link:hover{
+        /* --- */
+    }
+
+
+    .burger-menu { 
+        margin: 0 5px;
+    }
+
+
+    .burger-menu__icon{
+        width: 17px;
+        height: 17px;
+    }
+    
 }
-
-
-
-
-
 
 
