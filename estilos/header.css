@@ -204,11 +204,17 @@
         align-items: center;
         background-color: var(--colorTerciarioOscuro1);
         position: fixed;
-        right: 0;
         top: 80px;
+        left: 100%;
+        transition: left 0.3s;
     }
     
     
+    .nav-outerList--visible{
+        left: calc(100% - 500px);
+    }
+
+
     .nav-outerList__item{
         border: 2PX SOLID RED;
         width: 500px;
@@ -286,11 +292,8 @@
     .nav-outerList{ 
         top: 60px;
         width: 100%;
-        /* padding: 10px 0; */
         height: calc(100% - 60px);
         overflow-y: auto;
-        left: 100%;
-        transition: left 0.3s;
     }
 
 
