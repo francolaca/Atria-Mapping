@@ -1,4 +1,4 @@
-// Evento click del burger-menu 
+// Evento click del burger-menu del header
 
 const btnBurger = document.querySelector(".burger-menu")
 const navOuterMenu = document.querySelector(".nav-outerList")

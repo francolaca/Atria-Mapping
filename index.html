@@ -16,81 +16,76 @@
         <link rel="stylesheet" href="estilos/footer.css">
         <link rel="stylesheet" href="estilos/header.css">
         <link rel="stylesheet" href="estilos/style.css">
-        <title>ATRIA MAPPING - Digitalizamos tu mundo</title>  <!-- Es buena práctica que sea similar al h1 y al url de la página-->
+        <script defer src="app.js"></script>
+        <title>ATRIA MAPPING - Digitalizamos tu mundo</title> <!-- Es buena práctica que sea similar al h1 y al url de la página-->
     
     </head>
 
     <body>
+        
+        <header class="b-header">
 
-    <header>
-            <nav>
-                <ul>
-                    <li>Empresa
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </li>
-                    <li>Productos
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </li>
-                    <li>Servicios
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </li>
-                    <li>Ventas
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </li>
+            <nav class="b-nav">
+
+                <div class="index-logo">
+                    <a class="index-logo__link" href="#">
+                        <img class="index-logo__image" src="multimedia/imagenes/logo empresa/stock-vector-premium-corporate-vector-logo-icon-design-atlas-holding-the-world-435537385.jpg" alt="Imagen del logotipo de la empresa">
+                    </a>
+                    <p class="index-logo__text">
+                        <strong>ATRIA&nbsp;MAPPING</strong><br><span>Digitalizamos&nbsp;tu&nbsp;mundo</span>
+                    </p>
+                </div>
+
+                <button class="burger-menu">
+                    <img class="burger-menu__icon" src="multimedia/imagenes/Otros iconos/icons8-menú.svg" alt="Icono del menú hamburguesa">
+                </button>
+
+                <ul class="nav-outerList">
+                    <li class="nav-outerList__item"><a class="nav-outerList__link" href=""><strong>EMPRESA</strong></a></li>
+                    <li class="nav-outerList__item"><a class="nav-outerList__link" href=""><strong>PRODUCTOS</strong></a></li>
+                    <li class="nav-outerList__item"><a class="nav-outerList__link" href=""><strong>SERVICIOS</strong></a></li>
+                    <li class="nav-outerList__item"><a class="nav-outerList__link" href=""><strong>VENTAS</strong></a></li>
                 </ul>
+
             </nav>
+
         </header>
 
-        <main> <!-- Al igual que el h1, sólo se puede usar una etiqueta main por archivo HTML  -->
+        <main class="b-main"> <!-- Al igual que el h1, sólo se puede usar una etiqueta main por archivo HTML  -->
 
-            <section id = "">
+            <h1></h1>
+
+            <section class = "section-blanca">
+
+                <h2></h2>
+
                 <article> <!-- Se utiliza para agregar contenido autónomo e independiente -->
                     <header>
-                        <h2>Título del artículo</h2>
+                        <h3></h3>
                         <nav>
                             <ul>
+                                <!-- <li></li>
                                 <li></li>
-                                <li></li>
-                                <li></li>
+                                <li></li> -->
                             </ul>
-                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ducimus!</P>
+                            <P></P>
                         </nav>
                     </header>
                     <footer></footer>
                 </article>
             </section>
 
-            <section id = ""> 
+            <section class = "section-azul"> 
 
             </section>
 
-            <section id = "">
+            <section class = "section-gris">
 
             </section>
 
         </main>
 
         <footer class="b-footer">
-
-            <!-- Esta parte del footer, que basicamente contiene cuatro columnas se podría resolver con display: grid. 
-                Sin embargo, como no lo vimos en el curso lo dejo a título informativo para investigar. 
-                Lo resuelvo con display: flex -->
 
             <div class="b-footer__sup">
 
@@ -225,4 +220,3 @@
     </body>
 
 </html>
-

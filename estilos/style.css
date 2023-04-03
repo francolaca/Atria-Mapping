@@ -1,0 +1,45 @@
+
+/* -----------------------------------Variables de Estilo------------------------------------ */
+
+
+:root{
+    --colorPrincipal: #2F5163;
+    --colorSecundario: #010202;
+    --colorTerciarioOscuro1: #272727;
+    --colorTerciarioOscuro2: #373737;
+    --colorTerciarioClaro: #F2F2F2;
+    --colorDetalles1: #2A7F98;
+    --colorDetalles2: #F5B823;
+    --colorDetalles3: #4A9494;
+
+    --tamañoTexto-XS: 9.89px;
+    --tamañoTexto-S: 16px;
+    --tamañoTexto-M: 25.89px;
+    --tamañoTexto-L: 41.89px;
+    --tamañoTexto-XL: 67.77px;
+    --tamañoTexto-XXL: 109.66px;
+
+    --alturaLíneaProp: 1.618; /* Proporción line-height / font-size */
+}
+
+
+
+.section-blanca{
+    background-color: var(--colorTerciarioClaro);
+    width: 100%;
+    height: 500px;
+}
+
+
+.section-azul{
+    background-color: var(--colorPrincipal);
+    width: 100%;
+    height: 500px;
+}
+
+
+.section-gris{
+    background-color: var(--colorTerciarioOscuro1);
+    width: 100%;
+    height: 500px;
+}

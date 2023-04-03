@@ -10,7 +10,7 @@
     --colorTerciarioClaro: #F2F2F2;
     --colorDetalles1: #2A7F98;
     --colorDetalles2: #F5B823;
-
+    --colorDetalles3: #4A9494;
 
     --tamañoTexto-XS: 9.89px;
     --tamañoTexto-S: 16px;
@@ -37,7 +37,7 @@
 
 .b-footer{
     font-family: 'montserrat', sans-serif;
-    background-color: var(--colorTerciarioOscuro1);
+    background-color: var(--colorSecundario);
     display: flex;
     flex-direction: column;
     justify-content: center;

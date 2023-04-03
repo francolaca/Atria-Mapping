@@ -9,6 +9,7 @@
     --colorTerciarioClaro: #F2F2F2;
     --colorDetalles1: #2A7F98;
     --colorDetalles2: #F5B823;
+    --colorDetalles3: #4A9494;
     
     --tamañoTexto-XS: 9.89px;
     --tamañoTexto-S: 16px;
@@ -27,21 +28,20 @@
 *{
     padding: 0px;
     margin: 0PX;
-    box-sizing: border-box;
 }
 
 
 /* -----------------------------------Bloque del header------------------------------------ */
 
 
-.b-body{
-    font-family: 'montserrat', sans-serif;
-    padding: 120px 20px 0;
+.b-main{
+    padding: 100px 0 0;
     /* max-width: 1200px;     Esto lo usamos para ajustar el contenido al centro de pantallas muy anchas, es una cuestion de UX */
 }
 
-
 .b-header{
+    font-family: 'montserrat', sans-serif;
+    box-sizing: border-box;
     background-color: var(--colorSecundario);
     height: 100px;
     position: fixed;
@@ -59,7 +59,6 @@
 
 
 .b-nav{
-    border: 2PX SOLID RED;
     display: flex;
     justify-content: space-between;
 }
@@ -69,7 +68,6 @@
 
 
 .index-logo{
-    border: 2PX SOLID RED;
     display: flex;
     align-items: center;
 }
@@ -102,7 +100,6 @@
 
 
 .nav-outerList{
-    border: 2PX SOLID RED;
     list-style: none;
     display: flex;
     align-self: flex-end;
@@ -110,7 +107,6 @@
 
 
 .nav-outerList__item{
-    border: 2PX SOLID RED;
     width: 140px;
     height: 35px;
     line-height: 35px;
@@ -140,7 +136,6 @@
 
 
 .burger-menu{ 
-    /* border: 2PX SOLID RED; */
     display: none;
     background: none;
     border: none; 
@@ -161,8 +156,8 @@
 
 @media (max-width: 992px){ 
 
-    .b-body{
-        padding-top: 100px;   
+    .b-main{
+        padding-top: 80px;   
     }
 
 
@@ -199,7 +194,6 @@
 
     
     .nav-outerList{
-        border: 2PX SOLID RED;
         flex-direction: column;
         align-items: center;
         background-color: var(--colorTerciarioOscuro1);
@@ -216,7 +210,6 @@
 
 
     .nav-outerList__item{
-        border: 2PX SOLID RED;
         width: 500px;
         height: 35px;
         line-height: 35px;       
@@ -250,8 +243,8 @@
 
 @media (max-width: 576px){
 
-    .b-body{
-        padding: 70px 10px;
+    .b-main{
+        padding-top: 60px;
     }
 
 
@@ -303,7 +296,6 @@
 
 
     .nav-outerList__item{
-        border: 2PX SOLID RED;
         width: 100%;
     }
 
