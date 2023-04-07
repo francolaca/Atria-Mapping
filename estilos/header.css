@@ -22,15 +22,6 @@
 }
 
 
-/* -----------------------------------Estilos por Defecto para Todo el Documento, CUIDADO ESTO AFECTA A TODOS LOS HTML------------------------------------ */
-
-
-*{
-    padding: 0px;
-    margin: 0PX;
-}
-
-
 /* -----------------------------------Bloque del header------------------------------------ */
 
 
@@ -38,6 +29,13 @@
     padding: 100px 0 0;
     /* max-width: 1200px;     Esto lo usamos para ajustar el contenido al centro de pantallas muy anchas, es una cuestion de UX */
 }
+
+
+.b-header *{
+    padding: 0px;
+    margin: 0PX;
+}
+
 
 .b-header{
     font-family: 'montserrat', sans-serif;

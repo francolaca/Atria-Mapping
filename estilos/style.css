@@ -23,23 +23,32 @@
 }
 
 
+.b-main{
+    font-family: 'montserrat', sans-serif;
+    padding: 0px;  
+    margin: 0PX;
+}
 
-.section-blanca{
-    background-color: var(--colorTerciarioClaro);
+
+
+.section1{
+    background-color: var(--colorTerciarioOscuro2);
     width: 100%;
     height: 500px;
 }
 
 
-.section-azul{
+
+.section2{
     background-color: var(--colorPrincipal);
     width: 100%;
     height: 500px;
 }
 
 
-.section-gris{
-    background-color: var(--colorTerciarioOscuro1);
+
+.section3{
+    background-color: var(--colorPrincipal);
     width: 100%;
     height: 500px;
 }
