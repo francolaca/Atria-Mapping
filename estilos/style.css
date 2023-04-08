@@ -30,13 +30,11 @@
 }
 
 
-
 .section1{
     background-color: var(--colorTerciarioOscuro2);
     width: 100%;
     height: 500px;
 }
-
 
 
 .section2{
@@ -46,9 +44,27 @@
 }
 
 
-
-.section3{
-    background-color: var(--colorPrincipal);
-    width: 100%;
-    height: 500px;
+.section-opiniones{
+    background-color: var(--colorTerciarioClaro);
 }
+
+
+.título2-index{
+    color: var(--colorTerciarioOscuro2);
+}
+
+
+.section-opiniones__item-text{
+    color: var(--colorTerciarioOscuro2);
+}
+
+
+.section-opiniones__control-icon{
+    filter: invert(48%) sepia(13%) saturate(2030%) hue-rotate(147deg) brightness(87%) contrast(90%) !important;
+}
+
+
+.section-opiniones__indicator{
+    background-color: var(--colorDetalles1) !important;
+}
+
