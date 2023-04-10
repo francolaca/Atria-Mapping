@@ -3,7 +3,7 @@
 
 
 :root{
-    --colorPrincipal: #2F5163;
+    --colorPrincipal: #2f5163;
     --colorSecundario: #010202;
     --colorTerciarioOscuro1: #272727;
     --colorTerciarioOscuro2: #373737;
@@ -23,39 +23,129 @@
 }
 
 
+/* ----------------------------------------------Estilos generales------------------------------------------------- */
+
+
 .b-main{
     font-family: 'montserrat', sans-serif;
-    padding: 0px;  
-    margin: 0PX;
 }
 
 
-.section1{
-    background-color: var(--colorTerciarioOscuro2);
-    width: 100%;
+.texto-colorTerciarioOscuro2{
+    color: var(--colorTerciarioOscuro2);
+}
+
+
+.texto-colorTerciarioClaro{
+    color: var(--colorTerciarioClaro);
+}
+
+
+.link-button--dark{
+    color: var(--colorDetalles1);
+    background: none;
+    font-size: var(--tamañoTexto-S);
+    padding: 0.75em 1.5em;
+    border-radius: 0.5em;
+    border: 2px solid var(--colorDetalles1);
+}
+
+
+.link-button--dark:hover{
+    color: var(--colorTerciarioClaro);
+    background: var(--colorDetalles1);
+}
+
+
+.link-button--light{
+    color: var(--colorTerciarioClaro);
+    background: none;
+    font-size: var(--tamañoTexto-S);
+    padding: 0.75em 1.5em;
+    border-radius: 0.5em;
+    border: 2px solid var(--colorTerciarioClaro);
+}
+
+
+.link-button--light:hover{
+    color: var(--colorDetalles1);
+    background: var(--colorTerciarioClaro);
+}
+
+
+
+
+/* ----------------------------------------------Section constelación------------------------------------------------- */
+
+
+
+.section-DEM{
+    background-color: var(--colorTerciarioClaro);
     height: 500px;
 }
 
 
-.section2{
-    background-color: var(--colorPrincipal);
-    width: 100%;
-    height: 500px;
+
+
+/* ----------------------------------------------Section constelación------------------------------------------------- */
+
+
+
+.section-constelación{
+    background-color: var(--colorTerciarioOscuro1);
 }
 
 
-.section-opiniones{
+
+/* ----------------------------------------------Section socios------------------------------------------------- */
+
+
+.section-galería{
     background-color: var(--colorTerciarioClaro);
 }
 
 
-.título2-index{
-    color: var(--colorTerciarioOscuro2);
+/* ----------------------------------------------Section productos------------------------------------------------- */
+
+
+.section-productos{
+    background-image: url(../multimedia/imagenes/Imágenes\ Index/tunku_abdul_rahman_national_park_sabah_malaysia_20210427_2264_rgb_6m_geo-1-full.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 
-.section-opiniones__item-text{
-    color: var(--colorTerciarioOscuro2);
+.gradient-trasnsparent{
+    background: radial-gradient(ellipse 50% 50% at center, rgba(1, 2, 2, 1)25%,rgba(1, 2, 2, 0))100%;
+}
+
+
+/* ----------------------------------------------Section galería------------------------------------------------- */
+
+
+.section-galería{
+    background-color: var(--colorTerciarioClaro);
+    padding: 5em 0;
+}
+
+
+/* --------------------------------------------------Section GIS---------------------------------------------------- */
+
+
+.section-GIS{
+    background-color: var(--colorTerciarioOscuro1);
+}
+
+
+
+/* ----------------------------------------------Section opiniones------------------------------------------------- */
+
+
+.section-opiniones{
+    background-color: var(--colorTerciarioClaro);
+    padding: 5em 0;
 }
 
 
