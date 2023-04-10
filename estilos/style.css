@@ -1,0 +1,188 @@
+
+/* -----------------------------------Variables de Estilo------------------------------------ */
+
+
+:root{
+    --colorPrincipal: #2f5163;
+    --colorSecundario: #010202;
+    --colorTerciarioOscuro1: #272727;
+    --colorTerciarioOscuro2: #373737;
+    --colorTerciarioClaro: #F2F2F2;
+    --colorDetalles1: #2A7F98;
+    --colorDetalles2: #F5B823;
+    --colorDetalles3: #4A9494;
+
+    --tamañoTexto-XS: 9.89px;
+    --tamañoTexto-S: 16px;
+    --tamañoTexto-M: 25.89px;
+    --tamañoTexto-L: 41.89px;
+    --tamañoTexto-XL: 67.77px;
+    --tamañoTexto-XXL: 109.66px;
+
+    --alturaLíneaProp: 1.618; /* Proporción line-height / font-size */
+}
+
+
+/* ----------------------------------------------Estilos generales------------------------------------------------- */
+
+
+.b-main{
+    font-family: 'montserrat', sans-serif;
+}
+
+
+.texto-colorTerciarioOscuro2{
+    color: var(--colorTerciarioOscuro2);
+}
+
+
+.texto-colorTerciarioClaro{
+    color: var(--colorTerciarioClaro);
+}
+
+
+.link-button--dark{
+    color: var(--colorDetalles1);
+    background: none;
+    font-size: var(--tamañoTexto-S);
+    padding: 0.75em 1.5em;
+    border-radius: 0.5em;
+    border: 2px solid var(--colorDetalles1);
+}
+
+
+.link-button--dark:hover{
+    color: var(--colorTerciarioClaro);
+    background: var(--colorDetalles1);
+}
+
+
+.link-button--light{
+    color: var(--colorTerciarioClaro);
+    background: none;
+    font-size: var(--tamañoTexto-S);
+    padding: 0.75em 1.5em;
+    border-radius: 0.5em;
+    border: 2px solid var(--colorTerciarioClaro);
+}
+
+
+.link-button--light:hover{
+    color: var(--colorDetalles1);
+    background: var(--colorTerciarioClaro);
+}
+
+
+
+
+/* ----------------------------------------------Section Carrousel_Imagenes------------------------------------------------- */
+.section1{
+    z-index: initial;
+    background-color: var(--colorTerciarioOscuro2);
+    flex-basis: 100%;
+    height: 500px;
+}
+.carousel-caption{
+    text-shadow: 1px 2px 2px #2A7F98;
+    color: #edfefe;
+}
+
+.carousel-caption h5{
+    letter-spacing: 0.2rem;
+    font-size: 40px;
+}
+
+.carousel-inner{
+    opacity: 0.9;
+    width: 100%;
+    max-height: 500px;
+}
+
+.carousel-inner img{
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+}
+
+/* ----------------------------------------------Section constelación------------------------------------------------- */
+
+
+
+.section-DEM{
+    background-color: var(--colorTerciarioClaro);
+    height: 500px;
+}
+
+
+
+
+/* ----------------------------------------------Section constelación------------------------------------------------- */
+
+
+
+.section-constelación{
+    background-color: var(--colorTerciarioOscuro1);
+}
+
+
+
+/* ----------------------------------------------Section socios------------------------------------------------- */
+
+
+.section-galería{
+    background-color: var(--colorTerciarioClaro);
+}
+
+
+/* ----------------------------------------------Section productos------------------------------------------------- */
+
+
+.section-productos{
+    background-image: url(../multimedia/imagenes/Imágenes\ Index/tunku_abdul_rahman_national_park_sabah_malaysia_20210427_2264_rgb_6m_geo-1-full.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.gradient-trasnsparent{
+    background: radial-gradient(ellipse 50% 50% at center, rgba(1, 2, 2, 1)25%,rgba(1, 2, 2, 0))100%;
+}
+
+
+/* ----------------------------------------------Section galería------------------------------------------------- */
+
+
+.section-galería{
+    background-color: var(--colorTerciarioClaro);
+    padding: 5em 0;
+}
+
+
+/* --------------------------------------------------Section GIS---------------------------------------------------- */
+
+
+.section-GIS{
+    background-color: var(--colorTerciarioOscuro1);
+}
+
+
+
+/* ----------------------------------------------Section opiniones------------------------------------------------- */
+
+
+.section-opiniones{
+    background-color: var(--colorTerciarioClaro);
+    padding: 5em 0;
+}
+
+
+.section-opiniones__control-icon{
+    filter: invert(48%) sepia(13%) saturate(2030%) hue-rotate(147deg) brightness(87%) contrast(90%) !important;
+}
+
+
+.section-opiniones__indicator{
+    background-color: var(--colorDetalles1) !important;
+}
