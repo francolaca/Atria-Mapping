@@ -151,3 +151,10 @@ button:active{
         width: 100%;
     }
 }
+
+
+.cover-logo__image img {
+    width: 110px;
+    height: 90px;
+  }
+  
