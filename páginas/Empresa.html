@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="es"> <!-- Se refiere al idioma principal del contenido de la página web. -->
 
     <head>
 
@@ -12,13 +12,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+        
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> <!-- Desarrollar este punto. Agregar una imagen similar al logo de la empresa -->
-       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilos/footer.css">
+        <link rel="stylesheet" href="estilos/header.css">
+        <link rel="stylesheet" href="estilos/style.css">
         <link rel="stylesheet" href="../estilos/style copy.css">
         
         <script defer src="app.js"></script>
-        <title>ATRIA MAPPING - Quienes somos?</title> <!-- Es buena práctica que sea similar al h1 y al url de la página-->
-
+        <title>ATRIA MAPPING - Digitalizamos tu mundo</title> <!-- Es buena práctica que sea similar al h1 y al url de la página-->
+    
     </head>
 
     <body>
@@ -30,84 +36,269 @@
                 <div class="index-logo">
                     <a class="index-logo__link" href="../index.html">
                         <img class="index-logo__image" src="../multimedia/imagenes/logo empresa/atria_2.png" alt="Imagen del logotipo de la empresa">
+                                                           
                     </a>
                     <p class="index-logo__text">
                         <strong>ATRIA&nbsp;MAPPING</strong><br><span>Digitalizamos&nbsp;tu&nbsp;mundo</span>
                     </p>
                 </div>
-                
+
+                <button class="burger-menu">
+                    <img class="burger-menu__icon" src="multimedia/imagenes/Otros iconos/icons8-menú.svg" alt="Icono del menú hamburguesa">
+                </button>
+
                 <ul class="nav-outerList">
-                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="../páginas/Empresa.html"><strong>EMPRESA</strong></a></li>
-                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="../páginas/construccion.html"><strong>PRODUCTOS</strong></a></li>
-                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="../páginas/construccion.html"><strong>SERVICIOS</strong></a></li>
-                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="../páginas/construccion.html"><strong>VENTAS</strong></a></li>
+                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="./páginas/Empresa.html"><strong>EMPRESA</strong></a></li>
+                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="páginas/construccion.html"><strong>PRODUCTOS</strong></a></li>
+                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="páginas/construccion.html"><strong>SERVICIOS</strong></a></li>
+                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="páginas/construccion.html"><strong>VENTAS</strong></a></li>
                 </ul>
+
+
             </nav>
+
 
         </header>
 
-        <div class="caja">
-            <h4>Franco <i class="bi bi-image-fill"></i></i></h4> 
+        <main class="b-main"> <!-- Al igual que el h1, sólo se puede usar una etiqueta main por archivo HTML  -->
 
-            <id="contenedor-imagen"></id>
-            <div id="contenedor-imagen">
-                <img src="../multimedia/imagenes/equipo/franco.jpg" alt="Imagen">
-              </div>
+            <section class = "section1 row align-items-center">         
+                <div class = "container">
 
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde et hic
-                 amet nesciunt recusandae pariatur officia dolores aliquid ipsum
-                </p>
-
-        </div>
-        <div class="caja">
-            <h4>Cristian <i class="bi bi-image-fill"></i></i></h4> 
-
-            <id="contenedor-imagen"></id>
-            <div id="contenedor-imagen">
-                <img src="../multimedia/imagenes/equipo/cristian.jpg" alt="Imagen">
-              </div>
-
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde et hic
-                 amet nesciunt recusandae pariatur officia dolores aliquid ipsum
-                
-                </p>
-
-        </div>
-        <div class="caja"> 
-                <h4>Martin <i class="bi bi-image-fill"></i></i></h4> 
-
-                <id="contenedor-imagen"></id>
-            <div id="contenedor-imagen">
-                <img src="../multimedia/imagenes/equipo/martin.jpg" alt="Imagen">
-              </div>
-              
-
+                    <div class="caja1">
+                        <h1>Quienes Somos? </h1> 
+            
+                        <p>  En Atria Mapping creemos en un principio rector simple pero importante:
+                             el cliente es lo primero. </p>
+                             
+                            <p> Ya sea que seas un académico, un ingeniero, un entusiasta 
+                             de los mapas o un propietario de negocios, creemos que Atria Mapping es la opción 
+                             clara para todas tus necesidades geoespaciales, de teledetección y de mapeo.</p>
+                             
+                            <p> Nos asociamos con proveedores líderes de imágenes y compañías de información de tierras
+                             como DigitalGlobe, Airbus, RapidEye e ImageSat para ofrecerte los datos más precisos
+                             y de alta calidad posible. Para demostrarlo, hemos recibido múltiples premios,
+                             incluyendo el Mejor Nuevo Revendedor de DigitalGlobe para 2012, la Mayor Cantidad de
+                             Pedidos Airbus Geostore para 2013, el Crecimiento en Ventas de DigitalGlobe en 2013 y 2014, 
+                             y las Ventas Regionales Más Altas de Maxar en 2017.</p>
+                             
+                            <p> Nuestra red profesional y experiencia en la industria nos permite obtener los múltiples
+                            conjuntos de datos que necesitas para completar proyectos a tiempo y dentro del presupuesto. 
+                            Y cuando surgen complejidades geoespaciales, incluyendo requisitos de datos topográficos, servicios
+                            de alojamiento y transmisión y tecnologías geoespaciales especializadas, creamos soluciones
+                            geoespaciales personalizadas que abordan los desafíos de tu organización.
+                            Por todo esto somos la mejor opcion para tu negocio, somos Atria Mapping!</p>
+                           
+                           </p>
+                          </div>
+            
+                        
+                        
             
             
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde et hic
-                 amet nesciunt recusandae pariatur officia dolores aliquid ipsum
-                
-                </p>
-
-        </div>
-
-        <div class="caja">
-            <h4>Carlos <i class="bi bi-image-fill"></i></i></h4> 
-
-            <id="contenedor-imagen"></id>
-            <div id="contenedor-imagen">
-                <img src="../multimedia/imagenes/equipo/carlos.png" alt="Imagen">
-              </div>
-
+                    <div class="caja">
+                        <h4>Franco Lacamoire  <i class="bi bi-image-fill"></i></i></h4> 
+                        <H5>Fundador y CEO</H5>
             
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde et hic
-                 amet nesciunt recusandae pariatur officia dolores aliquid ipsum
-                
-                </p>
+                        <id="contenedor-imagen"></id>
+                        <div id="contenedor-imagen">
+                            <img src="../multimedia/imagenes/equipo/franco.jpg" alt="Imagen">
+                          </div>
+            
+                        <p> Franco es el Presidente, Cofundador y CEO de Atria Mapping. 
+                            Es un científico convertido en emprendedor con amplia experiencia
+                             en la construcción y liderazgo de equipos en el espacio tecnológico, 
+                             primero en NASA y ahora en Atria Mapping, habiendo hecho crecer el equipo desde 
+                             un garaje hasta convertirse en una empresa pública de más de 800 personas.
+                              Supervisa la visión, el producto y la estrategia empresarial, 
+                              llevando a cabo la misión de Atria Mapping, tal como se establece en la 
+                              Carta de Corporación de Beneficio Público, para acelerar la humanidad 
+                              hacia un mundo más sostenible y seguro. Franco fue reconocido como Joven Líder Global 
+                              por el Foro Económico Mundial y forma parte del consejo de la Open Lunar Foundation
+                            </p>
+            
+                    </div>
+                    <div class="caja">
+                        <h4>Cristian Manicable<i class="bi bi-image-fill"></i></i></h4> 
+                        <H5>Director de Estrategia</H5>
+            
+                        <id="contenedor-imagen"></id>
+                        <div id="contenedor-imagen">
+                            <img src="../multimedia/imagenes/equipo/cristian.jpg" alt="Imagen">
+                          </div>
+            
+                        <p> Cristian lidera la trayectoria estratégica a largo plazo de la compañía y 
+                            supervisa las funciones de Sistemas Espaciales, Desarrollo Corporativo y Proyectos
+                                Especiales de Atria Mapping. Lideró la adquisición de BlackBridge en 2015, 
+                                Boundless en 2019 y VanderSat en 2021. Antes de unirse a Atria, Crsitian
+                                 pasó 9 años en la NASA, donde ayudó a construir la Oficina de Pequeñas 
+                                 Naves Espaciales en el Centro de Investigación Ames y fue Jefe
+                                  de Personal de la Oficina de Tecnologías Principales en la Sede de la NASA. 
+                                  Obtuvo un MBA de la Universidad de Georgetown, una maestría en Estudios Espaciales
+                                   de la Universidad Espacial Internacional y una licenciatura en Física de Ingeniería
+                                    de la Universidad de Santa Clara
+                            </p>
+            
+                    </div>
+                    <div class="caja"> 
+                            <h4>Martin Estofan<i class="bi bi-image-fill"></i></i></h4> 
+                            <H5>Director de Operaciones</H5>                       
+                            <id="contenedor-imagen"></id>
+                        <div id="contenedor-imagen">
+                            <img src="../multimedia/imagenes/equipo/martin.jpg" alt="Imagen">
+                          </div>
+                          
+            
+                        
+                        
+                        <p> Martin se desempeña como Presidente de Productos y Negocios en Atria Mapping
+                             desde abril de 2021. Anteriormente, fue Vicepresidente de Productos
+                              en Novi (una subsidiaria de Facebook) desde mayo de 2018 hasta abril de 
+                              2021. Antes de eso, fue Vicepresidente de Productos en Instagram desde 
+                              marzo de 2016 hasta mayo de 2018 y ocupó varios cargos en Twitter desde
+                               septiembre de 2009 hasta febrero de 2016, siendo el más reciente 
+                               Vicepresidente Senior de Productos. Martin tiene una licenciatura 
+                               en Física y Matemáticas de Harvard y una maestría en Física de la
+                                Universidad de Stanford.
+                            </p>
+            
+                    </div>
+            
+        </main>
 
-        </div>
-       
-       
+        <footer class="b-footer">
+
+            <div class="b-footer__sup">
+
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <strong>SOBRE NOSOTROS</strong>
+                    </li>
+                    <li class="footer-list__item">
+                        En ATRIA MAPPING sabemos que todo buen proyecto se apoya en cimientos fuertes y bien calculados. Estamos aquí para ayudarte a modelar y planificar tu entorno. Nuestras capas GIS son la elección perfecta para todas tus necesidades geoespaciales y de mapeo. Digitaliza tu mundo con ATRIA MAPPING. 
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <strong>DESTACADOS</strong>
+                    </li> 
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="#">Servicio DSM2DTM</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="#">AtriaScope</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="#">SkySat</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="#">Archivo ATRIA MAPPING</a>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <strong>ENLACES DE INTERÉS</strong>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="https://mapa.ign.gob.ar/" target="_blank">
+                            Mapa oficial de la República Argentina, Argenmap - IGN 
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/ServiciosOGC" target="_blank">
+                            Base de Datos Geoespacial - IGN
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="https://www.censo.gob.ar/index.php/mapa_poblacion1/" target="_blank">
+                            Mapa interactivo del censo 2022 - INDEC
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="https://www.argentina.gob.ar/noticias/provision-de-imagenes-satelitales-de-alta-resolucion" target="_blank">
+                            Provisión de imágenes satelitales de alta resolución - CONAE
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="https://www.argentina.gob.ar/noticias/nuevos-productos-de-la-conae-sobre-precipitaciones" target="_blank">
+                            Nuevos productos sobre precipitaciones - CONAE
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="https://www.argentina.gob.ar/noticias/informacion-satelital-libre-y-gratuita-para-la-produccion-agropecuaria" target="_blank">
+                            Información satelital libre y gratuita para la producción agropecuaria - CONAE
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <strong>CONTÁCTENOS</strong>
+                    </li> 
+                    <li class="footer-list__item">
+                        Balcarce 432 PB, Ciudad Autónoma de Buenos Aires
+                    </li>
+                    <li class="footer-list__item">
+                        Tel:+54 011 4342 9888
+                    </li>
+                    <li class="footer-list__item">
+                        <a  class="footer-list__item--link" href="mailto:ventas@atriamapping.com" target="_blank">ventas@atriamapping.com</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="mailto:soporte@atriamapping.com" target="_blank">soporte@atriamapping.com</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="páginas/contacto.html">Déjanos un mensaje</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="b-footer__inf">   
+
+                <div class="social-container">
+                    <a class="social-container__link" href="https://www.facebook.com/" target="_blank">
+                        <img class="social-container__icon" src="multimedia/imagenes/iconos redes sociales/icons8-facebook-f.svg" alt="ícono de facebook">
+                    </a>
+                    <a class="social-container__link" href="https://twitter.com/" target="_blank">
+                        <img class="social-container__icon" src="multimedia/imagenes/iconos redes sociales/icons8-twitter-24.svg" alt="ícono de twitter">
+                    </a>
+                    <a class="social-container__link" href="https://ar.linkedin.com/" target="_blank">
+                        <img class="social-container__icon" src="multimedia/imagenes/iconos redes sociales/icons8-linkedin-2 (1).svg" alt="ícono de linkedin">
+                    </a>
+                    <a class="social-container__link" href="https://www.instagram.com/" target="_blank">
+                        <img class="social-container__icon" src="multimedia/imagenes/iconos redes sociales/icons8-instagram.svg" alt="ícono de instagram">
+                    </a>
+                    <a class="social-container__link" href="https://www.youtube.com/" target="_blank">
+                        <img class="social-container__icon" src="multimedia/imagenes/iconos redes sociales/icons8-youtube.svg" alt="ícono de youtube">
+                    </a>
+                </div>
+
+                <div class = "legal-bar"> 
+                    <p class = "legal-bar__info">
+                        <small>© 2023 <strong>ATRIA MAPPING.</strong></small>
+                    </p>
+                    <p class = "legal-bar__info">
+                        &nbsp;&nbsp;Todos&nbsp;los&nbsp;derechos&nbsp;reservados
+                    </p>
+                    <p class = "legal-bar__info">
+                        <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>
+                    </p>
+                    <a class = "legal-bar__info legal-bar__info--link" href="páginas/privacidad.html">
+                        <small>Políticas de Privacidad</small>
+                    </a>
+                    <p class = "legal-bar__info">
+                        <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>
+                    </p>                  
+                    <a class = "legal-bar__info legal-bar__info--link" href="páginas/uso.html">
+                        <small>Términos de Uso</small>
+                    </a>
+                </div>
+    
+            </div>    
+
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
     </body>
 
