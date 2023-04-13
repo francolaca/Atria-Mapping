@@ -1,0 +1,78 @@
+:root{
+    --colorPrincipal: #2f5163;
+    --colorSecundario: #010202;
+    --colorTerciarioOscuro1: #272727;
+    --colorTerciarioOscuro2: #373737;
+    --colorTerciarioClaro: #F2F2F2;
+    --colorDetalles1: #2A7F98;
+    --colorDetalles2: #F5B823;
+    --colorDetalles3: #4A9494;
+
+    --tamañoTexto-XS: 9.89px;
+    --tamañoTexto-S: 16px;
+    --tamañoTexto-M: 25.89px;
+    --tamañoTexto-L: 41.89px;
+    --tamañoTexto-XL: 67.77px;
+    --tamañoTexto-XXL: 109.66px;
+
+    --alturaLíneaProp: 1.618; /* Proporción line-height / font-size */
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    background-color: #373737;
+    color: var(--colorTerciarioClaro);
+    font-family: 'montserrat', sans-serif;
+    padding: 1.5rem;
+
+}
+@media only screen and (max-width: 1200px) and (min-width: 760px) {
+
+
+}
+.formulario__contacto{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+.container-logo .imagen__logo img{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-logo .texto2{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    color: #F5B823;
+}
+.container-logo .texto1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container__formulario{
+    position: relative;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 3px -2px 10px var(--colorTerciarioClaro);
+    opacity: 0.9;
+}
+.container__formulario .tarjeta__cuadro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

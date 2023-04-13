@@ -8,17 +8,68 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Enlace al family font Montserrat de Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!--animated Css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> <!-- Desarrollar este punto. Agregar una imagen similar al logo de la empresa -->
         <link rel="stylesheet" href="estilos/footer.css">
         <link rel="stylesheet" href="estilos/header.css">
         <link rel="stylesheet" href="estilos/style.css">
+        <link rel="stylesheet" href="../estilos/contacto.css">
         <script defer src="app.js"></script>
         <title>Contáctanos | ATRIA MAPPING</title>
     </head>
     <body>
-            <section class="container">
+                <div class="container-logo">
+                    <div>
+                <h2>
+                    <span class="texto1"><strong>ATRIA&nbsp;MAPPING</strong></span><span class="texto2">Digitalizamos&nbsp;tu&nbsp;mundo</span>
+                </h2>
+                    </div>
 
-            </section>
+                        <div class="imagen__logo">
+                        <img src="../multimedia/imagenes/logo empresa/atria_2.png" alt="">
+                        </div>
+                </div>
+
+                <section class="container__formulario">
+                    <div class="tarjeta__cuadro">
+                        <form action="">
+                            <p>
+                                <label for="">Nombre Completo</label>
+                                <input type="text" name="name" id="name">
+                            </p><br>
+                            <p>
+                                <label for="">Email@</label>
+                                <input type="email" id="email" name="email">
+                            </p><br>
+                            <p>
+                                <label for="">Telefono Contacto</label>
+                                <input type="tel" name="telefono" id="telefono"><br>
+                                <small>Para celular ingrese código área sin 15 </small>
+                            </p><br>
+                            <p>
+                                <label for="">Dirección</label>
+                                <input type="text" name="direccion" id="direccion">
+                            </p><br>
+                            <p>
+                                <label for="">Deje su Mensaje</label>
+                                <textarea name="mensaje" id="mensaje" rows="5"></textarea>
+                            </p><br>
+                            <p>
+                                <button type="submit">Enviar</button>
+                            </p>
+
+                        </form>
+
+                    </div>
+                    <div class="tarjeta__info">
+                        <p>
+                            info
+                        </p>
+                    </div>
+
+                </section>
+
     </body>
 </html>
