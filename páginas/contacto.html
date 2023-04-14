@@ -10,6 +10,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <!--animated Css-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!--lineAwesome-->
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> <!-- Desarrollar este punto. Agregar una imagen similar al logo de la empresa -->
         <link rel="stylesheet" href="estilos/footer.css">
@@ -34,42 +40,90 @@
 
                 <section class="container__formulario">
                     <div class="tarjeta__cuadro">
-                        <form action="">
+            <form action="">
+                        <div>
                             <p>
-                                <label for="">Nombre Completo</label>
+                                <label for=""> <span> Nombre</span></label>
                                 <input type="text" name="name" id="name">
                             </p><br>
                             <p>
-                                <label for="">Email@</label>
+                                <label for=""> <span>Email@</span> </label>
                                 <input type="email" id="email" name="email">
                             </p><br>
+                        </div>
+
+                        <div>
                             <p>
-                                <label for="">Telefono Contacto</label>
-                                <input type="tel" name="telefono" id="telefono"><br>
-                                <small>Para celular ingrese código área sin 15 </small>
-                            </p><br>
-                            <p>
-                                <label for="">Dirección</label>
+                                <label for=""> <span> Dirección</span></label>
                                 <input type="text" name="direccion" id="direccion">
                             </p><br>
                             <p>
-                                <label for="">Deje su Mensaje</label>
-                                <textarea name="mensaje" id="mensaje" rows="5"></textarea>
+                                <label for=""> <span> Telefono Contacto</span></label>
+                                <input type="tel" name="telefono" id="telefono"><br>
+                                <small>Para celular ingrese código área sin 0 y sin 15 </small>
                             </p><br>
-                            <p>
-                                <button type="submit">Enviar</button>
+                        </div>
+                            <p class="base">
+                                <label for=""> <span> Deje su Mensaje</span></label>
+                                <textarea name="mensaje" id="mensaje" rows="3"></textarea>
+                            </p><br>
+                            <p class="base animate__animated animate__bounce">
+                                <button type="submit"><h6 class="animate__animated animate__bounce">Enviar</h6></button>
                             </p>
 
-                        </form>
+                            <a href="../index.html" type="text" class="animate__animated animate__bounce"><span class="atras"><i class="las la-chevron-left"></i>&nbsp;&nbsp;Atrás</span></a>
+            </form>
 
                     </div>
+
                     <div class="tarjeta__info">
-                        <p>
-                            info
-                        </p>
+                        <hr>
+                        <h4>Mas Información</h4>
+                        <hr>
+                        <ul class="footer-list" type="none">
+                            <li class="footer-list__item">
+                                <strong>CONTÁCTENOS</strong>
+                            </li><br> 
+                            <li>
+                            <i class="las la-map-marker"></i>
+                            Balcarce 432 PB, <br> Ciudad Autónoma de Buenos Aires                                
+                            </li>
+                            <li class="footer-list__item">
+                            <i class="las la-tty"></i>
+                                Tel:+54 011 4342 9888
+                            </li>
+                            <li class="footer-list__item">
+                                <i class="las la-envelope-open-text"></i>
+                                <a  class="footer-list__item--link" href="mailto:ventas@atriamapping.com" target="_blank">ventas@atriamapping.com</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <i class="las la-envelope-open-text"></i>
+                                <a class="footer-list__item--link" href="mailto:soporte@atriamapping.com" target="_blank">soporte@atriamapping.com</a>
+                            </li>
+                        </ul>
+
+                        <div class="social-container animate__animated animate__bounce">
+                            <a class="social-container__link animate__animated animate__bounce" href="https://www.facebook.com/" target="_blank">
+                                <img class="social-container__icon" src="../multimedia/imagenes/iconos redes sociales/icons8-facebook-f.svg" alt="ícono de facebook">
+                            </a>
+                            <a class="social-container__link" href="https://twitter.com/" target="_blank">
+                                <img class="social-container__icon" src="../multimedia/imagenes/iconos redes sociales/icons8-twitter-24.svg" alt="ícono de twitter">
+                            </a>
+                            <a class="social-container__link animate__animated animate__bounce" href="https://ar.linkedin.com/" target="_blank">
+                                <img class="social-container__icon" src="../multimedia/imagenes/iconos redes sociales/icons8-linkedin-2 (1).svg" alt="ícono de linkedin">
+                            </a>
+                            <a class="social-container__link" href="https://www.instagram.com/" target="_blank">
+                                <img class="social-container__icon" src="../multimedia/imagenes/iconos redes sociales/icons8-instagram.svg" alt="ícono de instagram">
+                            </a>
+                            <a class="social-container__link animate__animated animate__bounce" href="https://www.youtube.com/" target="_blank">
+                                <img class="social-container__icon" src="../multimedia/imagenes/iconos redes sociales/icons8-youtube.svg" alt="ícono de youtube">
+                            </a>
+                        </div>
+
                     </div>
 
                 </section>
+            
 
     </body>
 </html>

@@ -30,21 +30,20 @@ body{
     padding: 1.5rem;
 
 }
-@media only screen and (max-width: 1200px) and (min-width: 760px) {
-
-
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
 }
-.formulario__contacto{
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
+@media only screen and (min-width: 770px) {
+
+        .container__formulario{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+        }
+                    
 }
 .container-logo .imagen__logo img{
     display: flex;
-    width: 100px;
+    width: 120px;
     height: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -52,10 +51,11 @@ body{
 .container-logo .texto2{
     display: flex;
     justify-content: center;
-    font-size: medium;
-    color: #F5B823;
+    font-size: small;
+ 
 }
 .container-logo .texto1{
+    color: #F5B823;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,15 +64,142 @@ body{
 
 .container__formulario{
     position: relative;
-    padding: 20px;
     border: none;
     border-radius: 5px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    box-shadow: 3px -2px 10px var(--colorTerciarioClaro);
+/*    display: grid;
+    grid-template-columns: 2fr 1fr;*/
+    /*box-shadow: 3px -2px 8px var(--colorPrincipal);*/
+    box-shadow: 3px 2px 10px var(--colorDetalles3);
     opacity: 0.9;
+    width: 100%;
+    height: auto;
 }
+
 .container__formulario .tarjeta__cuadro{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 10px;
 }
+.tarjeta__cuadro{
+    margin: 0;
+    padding: 1em;
+}
+.tarjeta__cuadro small{
+    font-size: x-small;
+}
+.tarjeta__cuadro p{
+    padding: 5px;
+}
+.tarjeta__cuadro form{
+    display: grid;
+    grid-columns: 1fr 1fr;
+}
+.tarjeta__cuadro form .base{
+    grid-column: 1 / 3;
+}
+.container__formulario .tarjeta__cuadro button, 
+.container__formulario .tarjeta__cuadro textarea,
+.container__formulario .tarjeta__cuadro input {
+    border: none;
+    background: none;
+    outline: 0;
+    border-bottom: 2px solid var(--colorDetalles1);
+}
+.container__formulario .tarjeta__cuadro input {
+    text-transform: uppercase;
+    padding-left: 5px;
+    color: var(--colorTerciarioClaro);
+}
+.container__formulario .tarjeta__cuadro textarea{
+    text-transform: uppercase;
+    padding-left: 5px;
+    color: var(--colorTerciarioClaro);
+}
+.container__formulario .tarjeta__cuadro button{
+    background: var(--colorDetalles1);
+    width: 100%;
+    padding: 4px 50px;
+    border: 0;
+    text-transform: uppercase;
+    color: var(--colorTerciarioClaro);
+    cursor: pointer;
+    transition: 0.3ms;
+}
+.container__formulario .tarjeta__cuadro button:active{
+    animation: fadeOutUp;
+    animation-duration: 2s;
+}
+.tarjeta__cuadro a{
+    align-items: center;
+    text-decoration: none;
+}
+.tarjeta__cuadro i{
+    align-items: center;
+    font-size: 20px;
+}
+
+.tarjeta__cuadro a span{
+    margin-left: 20px;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    background-color: #2A7F98;
+    width: 35px;
+    border: none;
+    padding: 10px;
+    color: var(--colorTerciarioClaro);
+}
+.tarjeta__cuadro a span:hover{
+    box-shadow: 3px 2px 10px var(--colorDetalles3);
+}
+.tarjeta__cuadro a span:active{
+    animation: bounceOutLeft;
+    animation-duration: 3s;
+    transform: scale(0.8);
+}
+
+
+
+.container__formulario .tarjeta__cuadro button:hover{
+        color: var(--colorTerciarioClaro);
+        font-weight: bolder;
+        /*box-shadow: 3px 2px 8px var(--colorDetalles1);*/
+        box-shadow: 3px 2px 10px var(--colorDetalles3);
+        background-color: var(--colorDetalles1);
+        border: none;
+}
+.container__formulario .tarjeta__cuadro button:active{
+    transform: scale(0.9);
+}
+.tarjeta__info h4{
+    padding-left: 20px;
+}
+.tarjeta__info{
+    opacity: 0.9;
+    color: var(--colorTerciarioClaro);
+    padding: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background-color: var(--colorTerciarioOscuro1);
+}
+.tarjeta__info i{
+    font-size: 20px;
+    padding: 5px;
+}
+.social-container {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all;
+    gap: 10px;
+    background-color: #2A7F98;
+}
+hr{
+    color: var(--colorDetalles1);
+}
+.social-container img:hover{
+    background-color: #2A7F98;
+    color: var(--colorPrincipal);
+    transform: scale(1.5);
+    
+}
+

@@ -29,6 +29,9 @@
 .b-main{
     font-family: 'montserrat', sans-serif;
 }
+.index-logo p strong{
+    color: var(--colorDetalles2);
+}
 
 
 .texto-colorTerciarioOscuro2{
