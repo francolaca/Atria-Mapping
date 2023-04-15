@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="../estilos/footer.css">
         <link rel="stylesheet" href="../estilos/header.css">
         <link rel="stylesheet" href="../estilos/style.css">
+        <link rel="stylesheet" href="../estilos/presupuesto.css">
         
         <script defer src="../app.js"></script>
         <title>Presupuesto | ATRIA MAPPING</title> <!-- Es buena práctica que sea similar al h1 y al url de la página-->
@@ -47,7 +48,7 @@
                 <li class="nav-outerList__item"><a class="nav-outerList__link" href="./Empresa.html"><strong>EMPRESA</strong></a></li>
                 <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construccion.html"><strong>PRODUCTOS</strong></a></li>
                 <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construccion.html"><strong>SERVICIOS</strong></a></li>
-                <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construccion.html"><strong>VENTAS</strong></a></li>
+                <li class="nav-outerList__item"><a class="nav-outerList__link" href="#"><strong>VENTAS</strong></a></li>
             </ul>
 
         </nav>
@@ -58,36 +59,147 @@
 
         <main class="b-main">
 
-            <section class = "section-form">         
-                <div class = "container">
+            <section class = "section-formDatosContacto">         
+                <div class = "container" style="border: 1px solid red">
 
-                    <div class="row align-items-center justify-content-center py-5">
+                    <div class="row align-items-strech justify-content-center py-5" style="border: 1px solid red">
 
-                        <form id="form-datosContacto" class="col-sm-10 col-md-10 col-lg-6 text-center" action="" style="border: 1px solid red">
+                        <div class="col-sm-10 col-md-10 col-lg-6 texto-colorTerciarioClaro contenedor-dark" style="border: 1px solid red">
+                            <h1 class="fs-2 lh-sm fw-semibold text-left my-3">Envíenos su Consulta</h1>
+                            <p class = "fs-5 text-left">¿Quiere conocer más? ¿Necesita un presupuesto? ¿Quiere saber lo que tenemos disponible para su zona? Complete el formulario y nos pondremos en contacto con usted lo antes posible.</p>
+                        </div>
+
+                        <form id="formDatosContacto" class="col-sm-10 col-md-10 col-lg-6 text-left texto-colorTerciarioClaro contenedor-dark px-3" action="" style="border: 1px solid red">
+
+                            <h2 class="fs-3 fw-semibold text-left mt-3 mb-5">Datos de Contacto</h2>
+
+                            <label for="inputNombre" class="fs-6 mb-1">Nombre*</label>
+                            <br>
+                            <input type="text" id="inputNombre" name="inputNombre" required class="fs-5 w-100 mb-5 px-2 input-dark">
+                            <br>
+                            <label for="inputEmpresa" class="fs-6 mb-1">Empresa</label>
+                            <br>
+                            <input type="text" id="inputEmpresa" name="inputEmpresa" class="fs-5 w-100 mb-5 px-2 input-dark">
+                            <br>
+                            <label for="inputTeléfono" class="fs-6 mb-1">Teléfono</label>
+                            <br>
+                            <input type="tel" id="inputTeléfono" name="inputTeléfono" class="fs-5 w-100 mb-5 px-2 input-dark">
+                            <br>
+                            <label for="inputEmail" class="fs-6 mb-1">Correo Electónico*</label>
+                            <br>
+                            <input type="email" id="inputEmail" name="inputEmail" required class="fs-5 w-100 mb-5 px-2 input-dark"> 
+                            <br>
+                            <div class="text-end">
+                                <button class="form-button--light my-3 text-end" id="btnSiguiente1"><strong>SIGUIENTE</strong></button>
+                            </div>
+
                         </form>
 
-                        <div class="col-sm-10 col-md-10 col-lg-6" style="border: 1px solid red">
-                            <h2 class="texto-colorTerciarioOscuro2 fs-2  lh-sm fw-semibold text-left my-3">Solicite un presupuesto</h2>
-                            <p class = "texto-colorTerciarioOscuro2 fs-5 text-left">¿Quiere saber más? ¿Necesita un presupuesto de imágenes? ¿Quiere ver lo que está disponible para su zona? Complete este formulario y nos pondremos en contacto con usted lo antes posible.</p>
-                            <button class="link-button--light my-3"><strong>CONOZCA MÁS</strong></button>     
+                        <div class="col-sm-10 col-md-10 col-lg-6 texto-colorTerciarioClaro contenedor-dark" style="border: 1px solid red">
+                            <h1 class="fs-2 lh-sm fw-semibold text-left my-3">Envíenos su Consulta</h1>
+                            <p class = "fs-5 text-left">¿Quiere conocer más? ¿Necesita un presupuesto? ¿Quiere saber lo que tenemos disponible para su zona? Complete el formulario y nos pondremos en contacto con usted lo antes posible.</p>
                         </div>
+
+                        <form id="formAreaInterés" class="col-sm-10 col-md-10 col-lg-6 text-left texto-colorTerciarioClaro contenedor-dark px-3" action="" style="border: 1px solid red">
+
+                            <h2 class="fs-3 fw-semibold text-left mt-3 mb-5">Área de Interés</h2>
+
+                            <label for="selectPaís" class="fs-6 mb-1">País*</label>
+                            <br>
+                            <select id="selectPaís" name="selectPaís" required class="fs-5 w-100 mb-5 px-2 input-dark">
+                                <option value="Argentina" selected >Argentina</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Perú">Perú</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Venezuela">Venezuela</option>
+                            </select>
+                            <br>
+                            <label for="imputTamaño" class="fs-6 mb-1">Tamaño en hectáreas*</label>
+                            <br>
+                            <input type="number" id="inputTamaño" name="inputTamaño" required class="fs-5 w-100 mb-5 px-2 input-dark">
+                            <br>
+                            <label for="inputArchivo" class="fs-6 mb-1">Tiene un archivo? (.pdf / .kml / .shp / .txt / .bmp / .png / .zip)</label>
+                            <br>
+                            <input type="file" id="inputArchivo" name="inputArchivo" accept=".pdf,.kml,.shp,.txt,.bmp,.png,.zip" class="fs-5 w-100 mb-5 px-2 input-dark">
+                            <br>
+
+                            <div class="text-end">
+                                <button class="form-button--light my-3 text-end" id="btnSiguiente2"><strong>SIGUIENTE</strong></button>
+                            </div>
+
+                        </form>
+
+                        <div class="col-sm-10 col-md-10 col-lg-6 texto-colorTerciarioClaro contenedor-dark" style="border: 1px solid red">
+                            <h1 class="fs-2 lh-sm fw-semibold text-left my-3">Envíenos su Consulta</h1>
+                            <p class = "fs-5 text-left">¿Quiere conocer más? ¿Necesita un presupuesto? ¿Quiere saber lo que tenemos disponible para su zona? Complete el formulario y nos pondremos en contacto con usted lo antes posible.</p>
+                        </div>
+
+                        <form id="formTipoDato" class="col-sm-10 col-md-10 col-lg-6 texto-colorTerciarioClaro contenedor-dark px-3" action="" style="border: 1px solid red">
+
+                            <h2 class="fs-3 fw-semibold mt-3 mb-5">Datos a Presupuestar</h2>
+                            
+                            <label class="fs-5 mb-1 px-2">Imagen Satelital</label>
+                            <div class="textarea-dark mb-5">
+                                <div>
+                                    <input type="checkbox" id="checkImagenHD" name="checkImagenHD" class="mx-3">
+                                    <label for="checkImagenHD" class="fs-5 my-2">Resolución 0.30 m/px</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="checkImagenMD" name="checkImagenMD" class="mx-3">
+                                    <label for="checkImagenMD" class="fs-5 mb-2">Resolución 1-5 m/px</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="checkImagenMD" name="checkImagenMD" class="mx-3">
+                                    <label for="checkImagenMD" class="fs-5 mb-2">Resolución > 10 m/px</label>
+                                </div>
+                            </div>
+
+                            <label for="checkDEM" class="fs-5 mb-1 px-2">Modelo Digital de Elevación</label>
+                            <div class="textarea-dark mb-5">
+                                <div>
+                                    <input type="checkbox" id="checkDSM" name="checkDSM" class="mx-3">
+                                    <label for="checkDSM" class="fs-5 my-2">DSM 2-5 m/px</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="checkDTM" name="checkDTM" class="mx-3">
+                                    <label for="checkDTM" class="fs-5 mb-2">DTM 2-5 m/px</label>
+                                </div>
+                            </div>
+
+                            <label for="checkGIS" class="fs-5 mb-1 px-2">Capas GIS</label>                               
+                            <div class="textarea-dark mb-5">
+                                <div>
+                                    <input type="checkbox" id="checkGISPunto" name="checkGISPunto" class="mx-3">
+                                    <label for="checkGISPunto" class="fs-5 my-2">Puntos</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="checkGISLinea" name="checkGISLinea" class="mx-3">
+                                    <label for="checkGISLinea" class="fs-5 mb-2">Líneas</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="checkGISPolígono" name="checkGISPolígono" class="mx-3">
+                                    <label for="checkGISPolígono" class="fs-5 mb-2">Polígonos</label>
+                                </div>
+                            </div>
+
+                            <label for="textarea" class="fs-5 mb-1 px-2">Algun pedido especial, o consulta?</label>
+                            <textarea class="w-100 bg-transparent textarea-dark fs-5" id="textarea" name="textarea" rows="10" >Ingrese su texto aquí...</textarea>
+
+                            <div class="text-end">
+                                <button class="form-button--light my-3 text-center" id="btnEnviar"><strong>ENVIAR</strong></button>
+                            </div>
+
+                        </form>
 
                     </div>
 
                 </div>
             </section>
-
-            <form id="form-areaInterés" action="">
-            </form>
-
-            <form id="form-tipoDato" action="">
-            </form>
-
-
-
-
-
-
 
         </main>
     
