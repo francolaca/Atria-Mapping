@@ -8,11 +8,9 @@ btnBurger.addEventListener("click", function(){
 })
 
 
-
 // Evento click del botón Solicitar Presupuesto de la página index.html
 
 const btnPresupuesto = document.querySelector("#btnPresupuesto");
-
 
 btnPresupuesto.addEventListener("click", function() {
     window.location.href = "páginas/presupuesto.html";
