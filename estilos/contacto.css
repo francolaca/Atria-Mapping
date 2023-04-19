@@ -152,7 +152,7 @@ body{
 }
 .tarjeta__cuadro a span:active{
     animation: bounceOutLeft;
-    animation-duration: 3s;
+    animation-duration: 1s;
     transform: scale(0.8);
 }
 
@@ -202,4 +202,5 @@ hr{
     transform: scale(1.5);
     
 }
+
 
