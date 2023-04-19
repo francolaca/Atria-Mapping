@@ -637,6 +637,22 @@ color: aliceblue;
 
 
 
+  .index-logo{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.index-logo__image{
+    width: 110px;
+    height: 90px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
 
 
   
