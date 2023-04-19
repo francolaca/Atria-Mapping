@@ -113,7 +113,7 @@ formVerificación.addEventListener('submit', function(event) {
 
     event.preventDefault();
 
-    alert("Su solicitud ha sido envida. A la brevedad nos pondremos en contacto con usted.")
+    alert("Su solicitud ha sido envida. Se guardó copia como 'Solicitud Presupuesto ATRIA MAPPING.pdf' en la carpeta 'descargas'. A la brevedad nos pondremos en contacto con usted.")
     window.location.href = "../index.html";
 
 })

@@ -25,6 +25,11 @@
 /* ----------------------------------------------Section form------------------------------------------------- */
 
 
+section {
+    min-height: 1000px;
+}
+
+
 .section-formDatosContacto{
     background-color: var(--colorTerciarioOscuro2);
 }
