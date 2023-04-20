@@ -1,0 +1,183 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contenedor-imagen {
+    width: 120px;
+    height: 120px;
+    background-color:black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32%;
+    margin-top: 0%;
+  }
+  
+  #contenedor-imagen img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+  }
+  
+  
+  nav {
+    display: flex;
+    gap: 50px;
+    }
+
+    @keyframes desplazamiento{
+       0%{ 
+           transform: translateX(-500px);
+           opacity:0;
+       }
+       100%{
+            transform: translateX(0px);
+            opacity:1;
+           }
+}
+
+
+.caja {
+   width: 60%; 
+   height: 200px;
+   background-image:url(../multimedia/imagenes/otras/fondo\ 2.jpg) ;
+   
+   border: 2px black solid;
+   border-radius: 5px;
+   margin-top: 250px;
+   margin-left: 60px; 
+   padding: 20px 10px;
+   text-align: center;
+   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.521);
+   animation-name: desplazamiento;
+   animation-duration: 3s;
+   float: left; 
+   box-sizing: border-box; 
+   height: 200px; 
+   font-family: 'montserrat', sans-serif;
+   
+}       
+
+.caja:hover {
+           transition: 0.5s ease-in;
+           background-color: royalblue;
+
+}
+nav a:hover {
+   transition: 0.2s ease-in;
+   color: rgb(53, 2, 95);
+
+}
+p {
+color: aliceblue;
+
+}
+
+h4 {
+color: aliceblue;
+}
+h1{
+   color: aliceblue;
+}
+
+
+
+.caja {
+   width: 27%;
+   height: 750px;
+   background-color: #f2f2f2;
+   border: 1px solid #ddd;
+   padding: 20px;
+   margin-bottom: 40px;
+   margin-top: 40px;
+   margin-left: 62px;
+   line-height: 1.5;
+   font-family: 'montserrat', sans-serif;
+   padding: 1.5%;
+  
+ }
+ 
+ .caja h4 {
+   margin-top: 0;
+ }
+ 
+ .caja p {
+   margin-bottom: 0;
+ }
+ 
+ 
+
+  .caja1 {
+    display: inline-block;
+    background-color:#2A7F98;
+    border: 2px black solid;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 60px; 
+    margin-right: 60px;
+    text-align: justify;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.521);
+    animation-name: desplazamiento;
+    animation-duration: 3s;
+    box-sizing: border-box;
+    border: 1px solid black;
+    line-height: 1.5;
+    font-family: 'montserrat', sans-serif;
+    padding: 3%;
+    
+
+  }
+  
+h5{
+    color: aliceblue;
+}     
+
+.caja p {
+    margin-top: 20px; 
+  }
+  .caja h5 {
+    margin-bottom: 20px;
+  }
+
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    

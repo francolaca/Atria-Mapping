@@ -9,7 +9,7 @@
     --colorTerciarioOscuro2: #373737;
     --colorTerciarioClaro: #F2F2F2;
     --colorDetalles1: #2A7F98;
-    --colorDetalles2: #F5B823;
+    --colorDetalles2: #f5b823;
     --colorDetalles3: #4A9494;
 
     --tamañoTexto-XS: 9.89px;
@@ -38,6 +38,16 @@
 
 .texto-colorTerciarioClaro{
     color: var(--colorTerciarioClaro);
+}
+
+
+.texto-colorDetalles1{
+    color: var(--colorDetalles1);
+}
+
+
+.texto-colorDetalles2{
+    color: var(--colorDetalles2);
 }
 
 
@@ -73,15 +83,58 @@
 }
 
 
+/* ----------------------------------------------Section Carrousel_Imagenes------------------------------------------------- */
 
 
+.section1{
+    background-color: var(--colorTerciarioOscuro2);
+}
 
 
+.c-item{
+    height: 700px;
+}
 
 
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter:brightness(0.8);
+}
 
 
+.c-caption{
+    width: fit-content;
+    padding: 0.5em 1em 0 1em;
+    background-color: rgba(1, 2, 2, 0.5);
+    border-radius: 10px;
+}
 
+
+.contenedor-h1{
+    position: relative;
+}
+
+
+.h1-index {
+    color: var(--colorTerciarioClaro);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 16%;
+    z-index: 500;
+    text-shadow: 5px 5px 10PX black;
+}
+
+
+@media (max-width: 576px){
+    .h1-index {
+        text-align: center;
+        margin-left: 0;
+    }
+}
 
 
 /* ----------------------------------------------Section constelación------------------------------------------------- */
@@ -159,4 +212,3 @@
 .section-opiniones__indicator{
     background-color: var(--colorDetalles1) !important;
 }
-
