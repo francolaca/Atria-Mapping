@@ -29,6 +29,9 @@
 .b-main{
     font-family: 'montserrat', sans-serif;
 }
+.index-logo p strong{
+    color: var(--colorDetalles2);
+}
 
 
 .texto-colorTerciarioOscuro2{
@@ -134,7 +137,21 @@
         text-align: center;
         margin-left: 0;
     }
+    .carousel-caption h2 span{
+        font-size: smaller;
+        color: var(--colorTerciarioClaro);
+        text-shadow: 1px 2px 2px var(--colorDetalles1);
+        z-index: 1000;
+
+    }
+    .carousel-caption p span{
+        color: var(--colorTerciarioClaro);
+        text-shadow: 1px 2px 2px var(--colorDetalles1);
+        font-size: smaller;
+        text-transform: uppercase;
+    }
 }
+
 
 
 /* ----------------------------------------------Section constelación------------------------------------------------- */

@@ -145,7 +145,16 @@
     height: 25px;
     cursor: pointer;
 }
-
+.nav-outerList__item .menu__productos{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #2A7F98;
+}
+.nav-outerList__link:active{
+    transform: scale(0.9);
+    transition: 2ms;
+}
 
 /* -----------------------------------Breakpoint 992px - Tablets (valores sugeridos por bootstrap)------------------------------------ */
 
