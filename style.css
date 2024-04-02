@@ -1,0 +1,154 @@
+
+/* -----------------------------------Variables de Estilo------------------------------------ */
+
+
+:root{
+    --colorPrincipal: #2f5163;
+    --colorSecundario: #010202;
+    --colorTerciarioOscuro1: #272727;
+    --colorTerciarioOscuro2: #373737;
+    --colorTerciarioClaro: #F2F2F2;
+    --colorDetalles1: #2A7F98;
+    --colorDetalles2: #f5b823;
+    --colorDetalles3: #4A9494;
+
+    --tamañoTexto-XS: 9.89px;
+    --tamañoTexto-S: 16px;
+    --tamañoTexto-M: 25.89px;
+    --tamañoTexto-L: 41.89px;
+    --tamañoTexto-XL: 67.77px;
+    --tamañoTexto-XXL: 109.66px;
+
+    --alturaLíneaProp: 1.618; /* Proporción line-height / font-size */
+}
+
+
+/* ----------------------------------------------Section Destacados------------------------------------------------- */
+
+
+.sectionDestacados{
+    background-color: var(--colorTerciarioOscuro2);
+}
+
+
+.c-item{
+    height: 700px;
+}
+
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter:brightness(0.8);
+}
+
+
+.c-caption{
+    width: fit-content;
+    padding: 0.5em 1em 0 1em;
+    background-color: rgba(1, 2, 2, 0.5);
+    border-radius: 10px;
+}
+
+
+.contenedor-h1{
+    position: relative;
+}
+
+
+.h1-index {
+    color: var(--colorTerciarioClaro);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 16%;
+    z-index: 500;
+    text-shadow: 5px 5px 10PX black;
+}
+
+
+@media (max-width: 576px){
+    .h1-index {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+
+/* ----------------------------------------------Section DEM------------------------------------------------- */
+
+
+.section-DEM{
+    background-color: var(--colorTerciarioClaro);
+}
+
+
+/* ----------------------------------------------Section constelación------------------------------------------------- */
+
+
+.section-constelación{
+    background-color: var(--colorTerciarioOscuro1);
+}
+
+
+/* ----------------------------------------------Section socios------------------------------------------------- */
+
+
+.section-galería{
+    background-color: var(--colorTerciarioClaro);
+}
+
+
+/* ----------------------------------------------Section productos------------------------------------------------- */
+
+
+.section-productos{
+    background-image: url(../multimedia/imagenes/Imágenes\ Index/tunku_abdul_rahman_national_park_sabah_malaysia_20210427_2264_rgb_6m_geo-1-full.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.gradient-trasnsparent{
+    background: radial-gradient(ellipse 50% 50% at center, rgba(1, 2, 2, 1)25%,rgba(1, 2, 2, 0))100%;
+}
+
+
+/* ----------------------------------------------Section galería------------------------------------------------- */
+
+
+.section-galería{
+    background-color: var(--colorTerciarioClaro);
+    padding: 5em 0;
+}
+
+
+/* --------------------------------------------------Section GIS---------------------------------------------------- */
+
+
+.section-GIS{
+    background-color: var(--colorTerciarioOscuro1);
+}
+
+
+/* ----------------------------------------------Section opiniones------------------------------------------------- */
+
+
+.section-opiniones{
+    background-color: var(--colorTerciarioClaro);
+    padding: 5em 0;
+}
+
+
+.section-opiniones__control-icon{
+    filter: invert(48%) sepia(13%) saturate(2030%) hue-rotate(147deg) brightness(87%) contrast(90%) !important;
+}
+
+
+.section-opiniones__indicator{
+    background-color: var(--colorDetalles1) !important;
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="../estilos/header.css">
+        <link rel="stylesheet" href="../estilos/footer.css">
+        <link rel="stylesheet" href="../estilos/general.css">
+        <link rel="stylesheet" href="../estilos/presupuesto.css">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>  <!-- Cargamos la librería jsPDF. Esta librería permite crear documentos PDF desde JavaScript. -->
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script defer src="../scripts/header.js"></script>
+        <script defer src="../scripts/footer.js"></script>
+        <script defer src="../scripts/presupuesto.js"></script>
+
+        <title>Presupuesto | ATRIA MAPPING</title>
+    
+    </head>
+
+    <body>
+
+        <header class="b-header">
+
+            <nav class="b-nav">
+
+                <div class="b-navLeft">
+                    <a class="b-navLeft__logoLink" href="../index.html">
+                        <img class="b-navLeft__logoImage" src="../multimedia/imagenes/logo empresa/atria.png" alt="Imagen del logotipo de la empresa">
+                    </a>
+                    <p class="b-navLeft__logoText">
+                        <strong>ATRIA&nbsp;MAPPING</strong><br><span>Digitalizamos&nbsp;tu&nbsp;mundo</span>
+                    </p>
+                </div>
+
+                <div class="b-navRight">
+
+                    <button class="burger-menu">
+                        <img class="burger-menu__icon" src="../multimedia/imagenes/Otros iconos/icons8-menú.svg" alt="Icono del menú hamburguesa">
+                    </button>
+
+                    <div class="nav-buttons">
+                        <button class="smallButton--light"> LOGIN </button>
+                        <button class="smallButton--light"> CARRITO </button>
+                    </div>
+                    
+                    <ul class="nav-outerList">
+                        <li> <br> <br> </li>
+                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="./Empresa.html"><strong>EMPRESA</strong></a></li>
+                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construccion.html"><strong>PRODUCTOS</strong></a></li>
+                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construccion.html"><strong>SERVICIOS</strong></a></li>
+                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="#"><strong>VENTAS</strong></a></li>
+                </ul>
+
+            </nav>
+
+        </header>  
+
+        <main class="b-main">
+
+            <section class = "container section-form">         
+
+                <div class="row justify-content-center py-5">
+
+                    <div class="col-sm-10 col-md-10 col-lg-6 texto-colorTerciarioClaro contenedor-dark">
+                        <h1 class="fs-2 lh-sm fw-semibold text-left my-3">Envíenos su Consulta</h1>
+                        <p class = "fs-5 text-left">¿Quiere conocer más? ¿Necesita un presupuesto? ¿Quiere saber lo que tenemos disponible para su zona? Complete el formulario y nos pondremos en contacto con usted lo antes posible.</p>
+                    </div>
+
+                    <!-- El atributo action especifica la URL del script que procesará los datos del formulario cuando el usuario lo envíe. 
+                        Si action="pepito.html" el formulario se envía a la página pepito.html para ser procesado por el script que se encuentra allí. 
+                        Si action ="" o action ="#" el formulario se envía a la página actual (se prefiere el uso de ""). -->
+                    <!-- Además de enviarse el formulario, por defecto se recarga la página donde éste se envía. 
+                        Si action="pepito.html" se recarga la página pepito.html. Si action = "" se recarga la página actual. -->
+                    <!-- Si en el url donde se envía el formulario no hay ningún script, antes que nada se realizará una validación de datos por defecto, 
+                        y si todo está correcto se recargará esa página pero los datos del formulario se perderán. Caso contrario el script existente procesará los datos del formulario. -->                      
+                    <!-- El formulario se envia cuando el usuario hace click en algún botón o input con el atributo tipe="submit" o cuando oprime la tecla enter. 
+                        En ese momento se ejecuta por defecto el evento submit del formulario.-->
+                    <!-- En JavaScript, podemos interceptar el envío del formulario, y realizar acciones antes de enviarlo al servidor. 
+                        Para ello utilizamos el evento submit del formulario, por ejemplo para validar los datos antes de enviarlos al servidor. -->
+
+                    <!-- NOTA IMPORTANTE: Si no se especifica el atributo type en un elemento button, su valor por defecto es "submit". 
+                        Esto significa que al hacer clic en el botón, se enviará el formulario al servidor, lo cual podría no ser deseado en algunos casos.
+                        Es por eso que se recomienda especificar siempre el atributo type en los elementos button y asignarle el valor que corresponda ("button", "reset" o "submit"). -->
+
+                    <!-- Si se especifica el atributo type="button" en un elemento button, se indica que es un botón de acción y no tiene ningún comportamiento predeterminado.
+                        En otras palabras, el botón no realizará ninguna acción predefinida, como enviar un formulario o recargar una página, 
+                        a menos que se agregue un código de JavaScript para controlar su comportamiento mediante un evento. -->
+
+                    <!-- Es importante destacar que si no se especifica el atributo type en un elemento button, algunos navegadores pueden establecer 
+                        su valor predeterminado en type="submit", lo que puede tener un comportamiento no deseado si se espera que el botón no realice 
+                        una acción de envío de formulario. Por lo tanto, es una buena práctica especificar siempre el atributo type en los elementos button. -->
+
+                    <form id="formDatosContacto" class="col-sm-10 col-md-10 col-lg-6 text-left texto-colorTerciarioClaro contenedor-dark px-3" action="">  
+
+                        <h2 class="fs-3 fw-semibold text-left mt-3 mb-5">Datos de Contacto</h2>
+
+                        <label for="inputNombre" class="fs-6 mb-1">Nombre*</label>
+                        <br>
+                        <input type="text" id="inputNombre" name="inputNombre" class="fs-5 w-100 mb-5 px-2 input-dark">
+                        <br>
+                        <label for="inputEmpresa" class="fs-6 mb-1">Empresa</label>
+                        <br>
+                        <input type="text" id="inputEmpresa" name="inputEmpresa" class="fs-5 w-100 mb-5 px-2 input-dark">
+                        <br>
+                        <label for="inputTeléfono" class="fs-6 mb-1">Teléfono</label>
+                        <br>
+                        <input type="tel" id="inputTeléfono" name="inputTeléfono" class="fs-5 w-100 mb-5 px-2 input-dark">
+                        <br>
+                        <label for="inputEmail" class="fs-6 mb-1">Correo Electónico*</label>
+                        <br>
+                        <input type="email" id="inputEmail" name="inputEmail" class="fs-5 w-100 mb-5 px-2 input-dark"> 
+                        <br>
+                        <div class="text-end">
+                            <button type="button" class="button--light my-3" id="btnSiguiente1"><strong>SIGUIENTE</strong></button>
+                        </div>
+
+                    </form>
+
+                    <form id="formAreaInterés" class="col-sm-10 col-md-10 col-lg-6 text-left texto-colorTerciarioClaro contenedor-dark px-3" action="">
+
+                        <h2 class="fs-3 fw-semibold text-left mt-3 mb-5">Área de Interés</h2>
+
+                        <label for="selectPaís" class="fs-6 mb-1">País*</label>
+                        <br>
+                        <select id="selectPaís" name="selectPaís" class="fs-5 w-100 mb-5 px-2 input-dark">
+                            <option value="Argentina" selected >Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Perú">Perú</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Venezuela">Venezuela</option>
+                        </select>
+                        <br>
+                        <label for="imputTamaño" class="fs-6 mb-1">Tamaño en hectáreas*</label>
+                        <br>
+                        <input type="number" id="inputTamaño" name="inputTamaño" class="fs-5 w-100 mb-5 px-2 input-dark">
+                        <br>
+                        <label for="inputArchivo" class="fs-6 mb-1">Tiene un archivo? (.pdf / .kml / .shp / .txt / .bmp / .png / .zip)</label>
+                        <br>
+                        <input type="file" id="inputArchivo" name="inputArchivo" accept=".pdf,.kml,.shp,.txt,.bmp,.png,.zip" class="fs-5 w-100 mb-5 px-2 input-dark">
+                        <br>
+                        <div class="text-end">
+                            <button type="button" class="button--light my-3" id="btnVolver1"><strong>VOLVER</strong></button>
+                            <button type="button" class="button--light my-3" id="btnSiguiente2"><strong>SIGUIENTE</strong></button>
+                        </div>
+
+                    </form>
+
+                    <form id="formTipoDato" class="col-sm-10 col-md-10 col-lg-6 texto-colorTerciarioClaro contenedor-dark px-3" action="">
+
+                        <h2 class="fs-3 fw-semibold mt-3 mb-5">Datos a Presupuestar</h2>
+                        
+                        <label class="fs-5 mb-1 px-2">Imagen Satelital</label>
+                        <div class="textarea-dark mb-5">
+                            <div>
+                                <input type="checkbox" id="checkImagenHD" name="Imagen HD (0.30 m/px)" class="mx-3">
+                                <label for="checkImagenHD" class="fs-5 my-2">Resolución 0.30 m/px</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkImagenMD" name="Imagen MD (1-5 m/px)" class="mx-3">
+                                <label for="checkImagenMD" class="fs-5 mb-2">Resolución 1-5 m/px</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkImagenST" name="Imagen ST (15 m/px)" class="mx-3">
+                                <label for="checkImagenST" class="fs-5 mb-2">Resolución 15 m/px</label>
+                            </div>
+                        </div>
+
+                        <label for="checkDEM" class="fs-5 mb-1 px-2">Modelo Digital de Elevación</label>
+                        <div class="textarea-dark mb-5">
+                            <div>
+                                <input type="checkbox" id="checkDSM" name="DSM 2-5 m/px" class="mx-3">
+                                <label for="checkDSM" class="fs-5 my-2">DSM 2-5 m/px</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkDTM" name="DTM 2-5 m/px" class="mx-3">
+                                <label for="checkDTM" class="fs-5 mb-2">DTM 2-5 m/px</label>
+                            </div>
+                        </div>
+
+                        <label for="checkGIS" class="fs-5 mb-1 px-2">Capas GIS</label>                               
+                        <div class="textarea-dark mb-5">
+                            <div>
+                                <input type="checkbox" id="checkGISPunto" name="Capa GIS de puntos" class="mx-3">
+                                <label for="checkGISPunto" class="fs-5 my-2">Puntos</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkGISLinea" name="Capa GIS de líneas" class="mx-3">
+                                <label for="checkGISLinea" class="fs-5 mb-2">Líneas</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkGISPolígono" name="Capa Gis de polígono" class="mx-3">
+                                <label for="checkGISPolígono" class="fs-5 mb-2">Polígonos</label>
+                            </div>
+                        </div>
+
+                        <label for="textarea" class="fs-5 mb-1 px-2">Algun pedido especial, o consulta?</label>
+                        <textarea class="w-100 bg-transparent textarea-dark fs-5" id="textarea" name="textarea" rows="10"></textarea>
+
+                        <div class="text-end">
+                            <button type="button" class="button--light my-3" id="btnVolver2"><strong>VOLVER</strong></button>
+                            <button type="submit" class="button--light my-3" id="btnSiguiente3"><strong>SIGUIENTE</strong></button>
+                        </div>
+
+                    </form>
+
+                    <form id="formVerificación" class="col-sm-10 col-md-10 col-lg-6 texto-colorTerciarioClaro contenedor-dark px-3" action="">
+
+                        <h2 class="fs-3 fw-semibold mt-3 mb-5">Verificar Datos Ingresados</h2>
+
+                        <div id="datosRecopilados"></div>
+
+                        <div class="text-end">
+                            <button type="button" class="button--light my-3" id="btnVolver3"><strong>VOLVER</strong></button>
+                            <button type="submit" class="button--light my-3" id="btnEnviar"><strong>ENVIAR</strong></button>
+                        </div>
+
+                    </form>
+
+                    <!-- NOTA: se utilizaron 4 formularios, una alternativa es usar un único formulario con 4 contenedores div en su interior. -->
+
+                </div>
+
+            </section>
+
+        </main>
+    
+        <footer class="b-footer">
+
+            <div class="b-footer__sup">
+
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <strong>SOBRE NOSOTROS</strong>
+                    </li>
+                    <li class="footer-list__item">
+                        En ATRIA MAPPING sabemos que todo buen proyecto se apoya en cimientos fuertes y bien calculados. Estamos aquí para ayudarte a modelar y planificar tu entorno. Nuestras capas GIS son la elección perfecta para todas tus necesidades geoespaciales y de mapeo. Digitaliza tu mundo con ATRIA MAPPING. 
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <strong>DESTACADOS</strong>
+                    </li> 
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="./construccion.html">Servicio DSM2DTM</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="./construccion.html">AtriaScope</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="./construccion.html">SkySat</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="./construccion.html">Archivo ATRIA MAPPING</a>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <strong>ENLACES DE INTERÉS</strong>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="https://mapa.ign.gob.ar/" target="_blank">
+                            Mapa oficial de la República Argentina, Argenmap - IGN 
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/ServiciosOGC" target="_blank">
+                            Base de Datos Geoespacial - IGN
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="https://www.censo.gob.ar/index.php/mapa_poblacion1/" target="_blank">
+                            Mapa interactivo del censo 2022 - INDEC
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="https://www.argentina.gob.ar/noticias/provision-de-imagenes-satelitales-de-alta-resolucion" target="_blank">
+                            Provisión de imágenes satelitales de alta resolución - CONAE
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="https://www.argentina.gob.ar/noticias/nuevos-productos-de-la-conae-sobre-precipitaciones" target="_blank">
+                            Nuevos productos sobre precipitaciones - CONAE
+                        </a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="https://www.argentina.gob.ar/noticias/informacion-satelital-libre-y-gratuita-para-la-produccion-agropecuaria" target="_blank">
+                            Información satelital libre y gratuita para la producción agropecuaria - CONAE
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <strong>CONTÁCTENOS</strong>
+                    </li> 
+                    <li class="footer-list__item">
+                        Balcarce 432 PB, Ciudad Autónoma de Buenos Aires
+                    </li>
+                    <li class="footer-list__item">
+                        Tel:+54 011 4342 9888
+                    </li>
+                    <li class="footer-list__item">
+                        <a  class="footer-list__item--link" href="mailto:ventas@atriamapping.com" target="_blank">ventas@atriamapping.com</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="mailto:soporte@atriamapping.com" target="_blank">soporte@atriamapping.com</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <a class="footer-list__item--link" href="./construccion.html">Déjanos un mensaje</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="b-footer__inf">   
+
+                <div class="social-container">
+                    <a class="social-container__link" href="https://www.facebook.com/profile.php?id=100090327235887" target="_blank">
+                        <img class="social-container__icon" src="../multimedia/imagenes/iconos redes sociales/icons8-facebook-f.svg" alt="ícono de facebook">
+                    </a>
+                    <a class="social-container__link" href="https://twitter.com/AtriaMapping?t=ymzIdlCBT3L_pFWXpDvB2A&s=08" target="_blank">
+                        <img class="social-container__icon" src="../multimedia/imagenes/iconos redes sociales/icons8-twitter-24.svg" alt="ícono de twitter">
+                    </a>
+                    <a class="social-container__link" href="https://ar.linkedin.com/" target="_blank">
+                        <img class="social-container__icon" src="../multimedia/imagenes/iconos redes sociales/icons8-linkedin-2 (1).svg" alt="ícono de linkedin">
+                    </a>
+                    <a class="social-container__link" href="https://www.instagram.com/atria_mapping/" target="_blank">
+                        <img class="social-container__icon" src="../multimedia/imagenes/iconos redes sociales/icons8-instagram.svg" alt="ícono de instagram">
+                    </a>
+                    <a class="social-container__link" href="https://www.youtube.com/" target="_blank">
+                        <img class="social-container__icon" src="../multimedia/imagenes/iconos redes sociales/icons8-youtube.svg" alt="ícono de youtube">
+                    </a>
+                </div>
+
+                <div class = "legal-bar"> 
+                    <p class = "legal-bar__info">
+                        <small>© 2023 <strong>ATRIA MAPPING.</strong></small>
+                    </p>
+                    <p class = "legal-bar__info">
+                        &nbsp;&nbsp;Todos&nbsp;los&nbsp;derechos&nbsp;reservados
+                    </p>
+                    <p class = "legal-bar__info">
+                        <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>
+                    </p>
+                    <a class = "legal-bar__info legal-bar__info--link" href="./construccion.html">
+                        <small>Políticas de Privacidad</small>
+                    </a>
+                    <p class = "legal-bar__info">
+                        <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>
+                    </p>                  
+                    <a class = "legal-bar__info legal-bar__info--link" href="./construccion.html">
+                        <small>Términos de Uso</small>
+                    </a>
+                </div>
+    
+            </div>    
+
+        </footer>
+
+    </body>
+
+</html>

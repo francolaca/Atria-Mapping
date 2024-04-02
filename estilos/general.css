@@ -1,0 +1,188 @@
+/* -----------------------------------Variables de Estilo------------------------------------ */
+
+
+:root{
+    --colorPrincipal: #2f5163;
+    --colorSecundario: #010202;
+    --colorTerciarioOscuro1: #272727;
+    --colorTerciarioOscuro2: #373737;
+    --colorTerciarioClaro: #F2F2F2;
+    --colorDetalles1: #2A7F98;
+    --colorDetalles2: #f5b823;
+    --colorDetalles3: #4A9494;
+
+    --tamañoTexto-XS: 9.89px;
+    --tamañoTexto-S: 16px;
+    --tamañoTexto-M: 25.89px;
+    --tamañoTexto-L: 41.89px;
+    --tamañoTexto-XL: 67.77px;
+    --tamañoTexto-XXL: 109.66px;
+
+    --alturaLíneaProp: 1.618; /* Proporción line-height / font-size */
+}
+
+
+/* -----------------------------------Estilos generales del main (para alojar correctamente a la cabecera flotante)--------------------------- */
+
+
+.b-main{
+    padding: 100px 0 0;
+    font-family: 'montserrat', sans-serif;
+}
+
+
+/* ----------------------------------------------Estilos generales------------------------------------------------- */
+
+
+.texto-colorTerciarioOscuro2{
+    color: var(--colorTerciarioOscuro2);
+}
+
+
+.texto-colorTerciarioClaro{
+    color: var(--colorTerciarioClaro);
+}
+
+
+.texto-colorDetalles1{
+    color: var(--colorDetalles1);
+}
+
+
+.texto-colorDetalles2{
+    color: var(--colorDetalles2);
+}
+
+
+.contenedor-dark{
+    background-color: var(--colorTerciarioOscuro1);
+}
+
+
+.contenedor-light{
+    background-color: var(--colorTerciarioClaro);
+}
+
+
+.button--dark{
+    color: var(--colorDetalles1);
+    background: none;
+    font-size: var(--tamañoTexto-S);
+    padding: 0.75em 1.5em;
+    border-radius: 0.5em;
+    border: 2px solid var(--colorDetalles1);
+}
+
+
+.smallButton--dark{
+    color: var(--colorDetalles1);
+    background: none;
+    font-size: var(--tamañoTexto-S);
+    padding: 0.25em 0.5em;
+    border-radius: 0.4em;
+    border: 1px solid var(--colorDetalles1);
+}
+
+
+.button--dark:hover, .smallButton--dark:hover{
+    color: var(--colorTerciarioClaro);
+    background: var(--colorDetalles1);
+}
+
+
+.selected-button--dark{
+    color: var(--colorTerciarioClaro);
+    background: var(--colorDetalles1);
+    font-size: var(--tamañoTexto-S);
+    padding: 0.75em 1.5em;
+    border-radius: 0.5em;
+    border: 2px solid var(--colorDetalles1);
+}
+
+
+.button--light{
+    color: var(--colorTerciarioClaro);
+    background: none;
+    font-size: var(--tamañoTexto-S);
+    padding: 0.75em 1.5em;
+    border-radius: 0.5em;
+    border: 2px solid var(--colorDetalles1);
+}
+
+
+.smallButton--light{
+    color: var(--colorTerciarioClaro);
+    background: none;
+    font-size: var(--tamañoTexto-S);
+    padding: 0.25em 0.5em;
+    border-radius: 0.4em;
+    border: 1px solid var(--colorDetalles1);
+}
+
+
+.button--light:hover, .smallButton--light:hover{
+    color: var(--colorTerciarioClaro);
+    background: var(--colorDetalles1);
+}
+
+
+.selected-button--light{
+    color: var(--colorDetalles1);
+    background: var(--colorTerciarioClaro);
+    font-size: var(--tamañoTexto-S);
+    padding: 0.75em 1.5em;
+    border-radius: 0.5em;
+    border: 2px solid var(--colorTerciarioClaro);
+}
+
+
+.input-dark{
+    background-color: var(--colorTerciarioOscuro1);
+    border:none;
+    border-bottom: 2px solid var(--colorDetalles1);
+    color: var(--colorTerciarioClaro);
+}
+
+
+.input-light{
+    background-color: var(--colorTerciarioClaro);
+    border:none;
+    border-bottom: 2px solid var(--colorDetalles1);
+    color: var(--colorTerciarioOscuro2);
+}
+
+
+.textarea-dark{
+    background-color: var(--colorTerciarioOscuro1);
+    border: 2px solid var(--colorDetalles1);
+    color: var(--colorTerciarioClaro);
+}
+
+
+/* -----------------------------------Breakpoint 992px - Tablets (valores sugeridos por bootstrap)------------------------------------ */
+
+
+@media (max-width: 992px){   /*Breakpoint 992px - Tablets (valores sugeridos por bootstrap)*/
+
+    .b-main{
+        padding-top: 80px;   
+    }
+
+}
+
+
+/* -----------------------------------Breakpoint 576px - Celulares (valores sugeridos por bootstrap)----------------------------------- */
+
+
+@media (max-width: 576px){
+
+    .b-main{
+        padding-top: 60px; /*Breakpoint 576px - Celulares (valores sugeridos por bootstrap)*/
+    }
+
+
+    .smallButton--light{
+        font-size: var(--tamañoTexto-XS);
+    }
+
+}

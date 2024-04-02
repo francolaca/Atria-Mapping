@@ -1,0 +1,294 @@
+/* -----------------------------------Variables de Estilo------------------------------------ */
+
+
+:root{
+    --colorPrincipal: #2F5163;
+    --colorSecundario: #010202;
+    --colorTerciarioOscuro1: #272727;
+    --colorTerciarioOscuro2: #373737;
+    --colorTerciarioClaro: #F2F2F2;
+    --colorDetalles1: #2A7F98;
+    --colorDetalles2: #F5B823;
+    --colorDetalles3: #4A9494;
+    
+    --tamañoTexto-XS: 9.89px;
+    --tamañoTexto-S: 16px;
+    --tamañoTexto-M: 25.89px;
+    --tamañoTexto-L: 41.89px;
+    --tamañoTexto-XL: 67.77px;
+    --tamañoTexto-XXL: 109.66px;
+    
+    --alturaLíneaProp: 1.618; /* Proporción line-height / font-size */
+}
+
+
+/* -----------------------------------Bloque del header------------------------------------ */
+
+
+.b-header *{
+    padding: 0px;
+    margin: 0PX;
+}
+
+
+.b-header{
+    font-family: 'montserrat', sans-serif;
+    box-sizing: border-box;
+    background-color: var(--colorSecundario);
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px; 
+}
+
+
+/* -----------------------------------Bloque nav del header------------------------------------ */
+
+
+.b-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* -----------------------------------Bloque navLeft del nav------------------------------------ */
+
+
+.b-navLeft{
+    display: flex;
+    align-items: center;
+}
+
+
+.b-navLeft__logoImage{
+    width: 70px;
+    height: 70px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+.b-navLeft__logoText{
+    color: var(--colorDetalles2);
+    font-size: var(--tamañoTexto-M);
+    line-height: calc(var(--tamañoTexto-S) * var(--alturaLíneaProp) * 0.8);
+    margin: 0 10px;;   
+} 
+
+
+.b-navLeft__logoText span{
+    font-size: var(--tamañoTexto-S);
+    color: var(--colorTerciarioClaro);
+} 
+
+
+/* -----------------------------------Bloque navRight del nav------------------------------------ */
+
+
+.b-navRight{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+/* -----------------------------------Bloque nav-outerList del navRight------------------------------------ */
+
+
+.nav-outerList{
+    list-style: none;
+    display: flex;
+}
+
+
+.nav-outerList__item{
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    align-self: flex-end;
+    
+}
+
+
+.nav-outerList__link{
+    text-decoration: none;
+    color: var(--colorTerciarioClaro);
+    font-size: var(--tamañoTexto-S);
+    display: block;
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+} 
+
+
+.nav-outerList__link:hover{
+    color: var(--colorDetalles1);
+    background-color: var(--colorTerciarioOscuro1);
+    transition: 0.3s;
+}
+
+
+.nav-outerList__link:active strong{
+    font-size: 0.9em;
+    transition: 2ms;
+}
+
+
+/* -----------------------------------Bloque burger-menu del navRight------------------------------------ */
+
+
+.burger-menu{ 
+    display: none;
+    background: none;
+    border: none; 
+    margin: 10px;
+}
+
+
+.burger-menu__icon{
+    filter: invert(96%) sepia(1%) saturate(28%) hue-rotate(118deg) brightness(116%) contrast(90%); /* Cambia el color de los logos SVG al valor #f2f2f2*/
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+/* -----------------------------------Breakpoint 992px - Tablets (valores sugeridos por bootstrap)------------------------------------ */
+
+
+@media (max-width: 992px){ 
+
+    .b-header{
+        height: 80px;
+        padding: 0 20px;   
+    }
+
+
+    .b-navLeft__logoImage{
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .b-navLeft__logoText span{
+        display: none;
+    } 
+
+
+    .b-navRight{
+        justify-content: center;
+    }    
+
+
+    .nav-buttons{
+        position: fixed;
+        top: 80px;
+        left: 100%;
+        width: 100%;
+        transition: left 0.3s;
+    }
+
+
+    .nav-buttons--visible{
+        left: 0;
+        text-align:right;
+        margin: 5px -10px;
+        z-index: 2000;
+    }
+
+
+    .nav-outerList{
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--colorTerciarioOscuro1);
+        position: fixed;
+        top: 80px;
+        left: 100%;
+        width: 100%;
+        height: calc(100% - 80px);
+        overflow-y: auto;
+        transition: left 0.3s;
+        z-index: 1000;
+    }
+    
+    
+    .nav-outerList--visible{
+        left: 0;
+    }
+
+
+    .nav-outerList__item{
+        width:100%;
+    }
+
+    
+    .nav-outerList__link:hover{
+        background-color: var(--colorTerciarioOscuro2);
+    }
+
+
+    .burger-menu{
+        display: block;
+    }
+    
+}
+
+
+/* -----------------------------------Breakpoint 576px - Celulares (valores sugeridos por bootstrap)----------------------------------- */
+
+
+@media (max-width: 576px){
+
+    .b-header {
+        height: 60px;
+        padding: 10px;   
+    }
+
+
+    .b-navLeft__logoImage{
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+
+    .b-navLeft__logoText{
+        font-size: var(--tamañoTexto-S);
+        margin: 5px;
+    } 
+    
+    .nav-buttons{
+        top: 60px;
+    }
+
+
+    .nav-outerList{ 
+        top: 60px;
+        height: calc(100% - 60px);
+    }
+
+
+    .nav-outerList__link{
+        font-size: var(--tamañoTexto-XS);
+    }
+
+
+    .burger-menu { 
+        margin: 0 5px;
+    }
+
+
+    .burger-menu__icon{
+        width: 17px;
+        height: 17px;
+    }
+    
+}
+

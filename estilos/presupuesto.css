@@ -1,0 +1,34 @@
+/* -----------------------------------Variables de Estilo------------------------------------ */
+
+
+:root{
+    --colorPrincipal: #2f5163;
+    --colorSecundario: #010202;
+    --colorTerciarioOscuro1: #272727;
+    --colorTerciarioOscuro2: #373737;
+    --colorTerciarioClaro: #F2F2F2;
+    --colorDetalles1: #2A7F98;
+    --colorDetalles2: #F5B823;
+    --colorDetalles3: #4A9494;
+
+    --tamañoTexto-XS: 9.89px;
+    --tamañoTexto-S: 16px;
+    --tamañoTexto-M: 25.89px;
+    --tamañoTexto-L: 41.89px;
+    --tamañoTexto-XL: 67.77px;
+    --tamañoTexto-XXL: 109.66px;
+
+    --alturaLíneaProp: 1.618; /* Proporción line-height / font-size */
+}
+
+
+/* ----------------------------------------------Section form------------------------------------------------- */
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;         /* Para que el alto del body siempre sea igual al alto de la pantalla del dispositivo  */
+    justify-content:space-between;
+    background-color: var(--colorTerciarioOscuro2);
+}
