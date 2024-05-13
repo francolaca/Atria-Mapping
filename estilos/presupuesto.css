@@ -8,21 +8,35 @@
     --colorTerciarioOscuro2: #373737;
     --colorTerciarioClaro: #F2F2F2;
     --colorDetalles1: #2A7F98;
-    --colorDetalles2: #F5B823;
+    --colorDetalles2: #f5b823;
     --colorDetalles3: #4A9494;
 
-    --tamañoTexto-XS: 9.89px;
-    --tamañoTexto-S: 16px;
-    --tamañoTexto-M: 25.89px;
-    --tamañoTexto-L: 41.89px;
-    --tamañoTexto-XL: 67.77px;
-    --tamañoTexto-XXL: 109.66px;
+    --tamañoTexto-XXS: 0.75rem;
+    --tamañoTexto-XS: 1rem;
+    --tamañoTexto-S: 1.25rem;
+    --tamañoTexto-M: calc(1.275rem + .3vw);
+    --tamañoTexto-L: calc(1.3rem + .6vw);
+    --tamañoTexto-XL: calc(1.325rem + .9vw);
+    --tamañoTexto-XXL: calc(1.375rem + 1.5vw);
 
-    --alturaLíneaProp: 1.618; /* Proporción line-height / font-size */
+    /* Proporciónes line-height / font-size */
+    --alturaLíneaProp-S: 1.25;
+    --alturaLíneaProp-M: 1.5; 
+    --alturaLíneaProp-L: 2;
 }
 
 
-/* ----------------------------------------------Section form------------------------------------------------- */
+@media (min-width: 1200px) {
+    :root{
+        --tamañoTexto-M: 1.5rem;
+        --tamañoTexto-L: 1.75rem;
+        --tamañoTexto-XL: 2rem;
+        --tamañoTexto-XXL: 2.5rem;
+    }
+} 
+
+
+/* --------------------------------------------------Body------------------------------------------------- */
 
 
 body{
@@ -31,4 +45,162 @@ body{
     min-height: 100vh;         /* Para que el alto del body siempre sea igual al alto de la pantalla del dispositivo  */
     justify-content:space-between;
     background-color: var(--colorTerciarioOscuro2);
+}
+
+
+/* --------------------------------------------Section form------------------------------------------------- */
+
+
+.container-form{
+    padding: 3rem 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+
+.row1-container-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: var(--colorTerciarioClaro);
+    background-color: var(--colorTerciarioOscuro1);
+}
+
+
+.col1-row1-container-form{
+    width: 50%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-top: 0;
+    flex: 0 0 auto;  /* Esta es una abreviatura de las propiedades flex-grow, flex-shrink y flex-basis */
+}
+
+
+h1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+form {
+    width: 50%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+}
+
+
+h2{
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+
+#formDatosContacto label, #formAreaInterés label{
+    font-size: 1rem;
+    margin-bottom: .25rem;
+}
+
+
+#formDatosContacto input, #formAreaInterés input{
+    font-size: 1.25rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    background-color: var(--colorTerciarioOscuro1);
+    border: none;
+    border-bottom: 2px solid var(--colorDetalles1);
+    color: var(--colorTerciarioClaro);
+}
+
+
+form > div:last-child{
+    text-align: right;
+}
+
+
+main button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+#formAreaInterés select{
+    font-size: 1.25rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    background-color: var(--colorTerciarioOscuro1);
+    border: none;
+    border-bottom: 2px solid var(--colorDetalles1);
+    color: var(--colorTerciarioClaro);
+}
+
+
+#formTipoDato > label{
+    font-size: 1.25rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin-bottom: .25rem;
+}
+
+
+#formTipoDato div div label{
+    font-size: 1.25rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+
+#formTipoDato div div input{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+
+#formTipoDato > div:not(:last-child){                        /* Primeros 3 div hijos directos del form */
+    background-color: var(--colorTerciarioOscuro1);
+    border: 2px solid var(--colorDetalles1);
+    color: var(--colorTerciarioClaro);
+    margin-bottom: 3rem;
+}
+
+
+#formTipoDato textarea{
+    border: 2px solid var(--colorDetalles1);
+    color: var(--colorTerciarioClaro);
+    --bs-bg-opacity: 1;
+    background-color: transparent;
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+
+@media (max-width: 992px){
+
+    .container-form {
+        max-width: 960px;
+    }
+
+    .col1-row1-container-form, form{
+        width: 83.33333333%;
+    }
+
+}
+
+
+@media (max-width: 576px){
+
+    .container-form {
+        max-width: 540px;
+    }
+    
 }

@@ -1,4 +1,3 @@
-
 /* -----------------------------------Variables de Estilo------------------------------------ */
 
 
@@ -12,15 +11,31 @@
     --colorDetalles2: #f5b823;
     --colorDetalles3: #4A9494;
 
-    --tamañoTexto-XS: 9.89px;
-    --tamañoTexto-S: 16px;
-    --tamañoTexto-M: 25.89px;
-    --tamañoTexto-L: 41.89px;
-    --tamañoTexto-XL: 67.77px;
-    --tamañoTexto-XXL: 109.66px;
+    --tamañoTexto-XXS: 0.75rem;
+    --tamañoTexto-XS: 1rem;
+    --tamañoTexto-S: 1.25rem;
+    --tamañoTexto-M: calc(1.275rem + .3vw);
+    --tamañoTexto-L: calc(1.3rem + .6vw);
+    --tamañoTexto-XL: calc(1.325rem + .9vw);
+    --tamañoTexto-XXL: calc(1.375rem + 1.5vw);
 
-    --alturaLíneaProp: 1.618; /* Proporción line-height / font-size */
+    /* Proporciónes line-height / font-size */
+    --alturaLíneaProp-S: 1.25;
+    --alturaLíneaProp-M: 1.5; 
+    --alturaLíneaProp-L: 2;
 }
+
+
+@media (min-width: 1200px){
+
+    :root{
+        --tamañoTexto-M: 1.5rem;
+        --tamañoTexto-L: 1.75rem;
+        --tamañoTexto-XL: 2rem;
+        --tamañoTexto-XXL: 2.5rem;
+    }
+
+} 
 
 
 /* ----------------------------------------------Section Destacados------------------------------------------------- */
@@ -56,7 +71,7 @@
 }
 
 
-.h1-index {
+.contenedor-h1 h1{
     color: var(--colorTerciarioClaro);
     position: absolute;
     top: 0px;
@@ -70,10 +85,12 @@
 
 
 @media (max-width: 576px){
-    .h1-index {
+
+    .contenedor-h1 h1 {
         text-align: center;
         margin-left: 0;
     }
+
 }
 
 
@@ -85,6 +102,115 @@
 }
 
 
+.container-DEM{
+    padding: 3rem 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+
+.row1-container-DEM{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    padding: 3rem 0;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorTerciarioOscuro2);
+}
+
+
+.col1-row1-container-DEM, .col2-row1-container-DEM{
+    width: 50%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-top: 0;
+    flex: 0 0 auto;  /* Esta es una abreviatura de las propiedades flex-grow, flex-shrink y flex-basis */
+}
+
+
+.col1-row1-container-DEM{
+    text-align: center;
+}
+
+
+.col1-row1-container-DEM img{
+    width: 75%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.col2-row1-container-DEM h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.col2-row1-container-DEM div{
+    display: flex;
+    justify-content: end;
+}
+
+
+.col2-row1-container-DEM div button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Cuidado, esta clase es común a los botones de todas las secciones  */
+main .smallButton--dark, main .smallButton--light{
+    display: none;
+}
+
+/* Aqui intentamos pisar una clase de bootstrap que se pisa con nuestras clases. No tuvimos éxito */
+.nav-buttons > button{
+    font-family: 'montserrat', sans-serif !important;
+    line-height: var(--alturaLíneaProp-s) !important;
+}
+
+
+@media (max-width: 992px){
+
+    .container-DEM {
+        max-width: 960px;
+    }
+
+    .col1-row1-container-DEM, .col2-row1-container-DEM{
+        width: 83.33333333%;
+    }
+
+}
+
+
+@media (max-width: 576px){
+
+    .container-DEM {
+        max-width: 540px;
+    }
+
+    .col1-row1-container-DEM, .col2-row1-container-DEM{
+        width: 95%;
+    }
+
+     /* Cuidado, esta clase es común a los botones de todas las secciones  */
+    main .smallButton--dark, main .smallButton--light{
+        display: inline-block;
+    }
+
+     /* Cuidado, esta clase es común a los botones de todas las secciones  */
+    main .button--dark, main .button--light{
+        display: none;
+    }
+
+}
+
+
 /* ----------------------------------------------Section constelación------------------------------------------------- */
 
 
@@ -93,11 +219,204 @@
 }
 
 
+.container-constelación{
+    padding: 3rem 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+
+.row1-container-constelación{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    padding: 3rem 0 1rem 0;
+    align-items: stretch;
+    justify-content: center;
+    color: var(--colorTerciarioClaro);
+    border-bottom: 2px solid #dee2e6;
+}
+
+
+.row2-container-constelación{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    padding: 1rem 0 3rem 0;
+    align-items: stretch;
+    justify-content: center;
+    color: var(--colorTerciarioClaro);
+}
+
+
+.row1-container-constelación h2{
+    margin-bottom: 3rem;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+
+.row1-container-constelación img, .row2-container-constelación img{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 75px;
+}
+
+
+.row1-container-constelación h5, .row2-container-constelación h5{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.row1-container-constelación p, .row2-container-constelación p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: var(--tamañoTexto-XS);
+}
+
+
+.row1-container-constelación button, .row2-container-constelación button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.col1-row1-container-constelación, .col2-row1-container-constelación, .col3-row1-container-constelación, .col1-row2-container-constelación, .col2-row2-container-constelación, .col3-row2-container-constelación{
+    width: 33.33333333%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-top: 0;
+    flex: 0 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.row1-container-constelación > div > div, .row2-container-constelación > div > div{
+    margin-top: auto;
+}
+
+
+@media (max-width: 992px){
+
+    .container-constelación{
+        max-width: 960px;
+    }
+
+    .col1-row1-container-constelación, .col2-row1-container-constelación, .col3-row1-container-constelación, .col1-row2-container-constelación, .col2-row2-container-constelación, .col3-row2-container-constelación{
+        width: 48.5%;
+    }
+
+    .col3-row1-container-constelación, .col3-row2-container-constelación{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 576px){
+
+    .container-constelación{
+        max-width: 540px;
+    }
+
+    .col1-row1-container-constelación, .col2-row1-container-constelación, .col3-row1-container-constelación, .col1-row2-container-constelación, .col2-row2-container-constelación, .col3-row2-container-constelación{
+        font-size: var(--tamañoTexto-XS);
+        width: 95%;
+    }
+
+    .col2-row1-container-constelación, .col2-row2-container-constelación{
+        display: none;
+    }
+
+}
+
+
 /* ----------------------------------------------Section socios------------------------------------------------- */
 
 
-.section-galería{
+.section-socios{
     background-color: var(--colorTerciarioClaro);
+}
+
+
+.container-socios{
+    padding: 3rem 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+
+.row1-container-socios{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    padding: 3rem 0;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorTerciarioOscuro2);
+}
+
+
+.col1-row1-container-socios{
+    width: 66.66666667%;
+    padding: 3rem;
+    margin-top: 0;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+
+.col1-row1-container-socios h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.col1-row1-container-socios button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 992px) {
+
+    .container-socios {
+        max-width: 960px;
+    }
+
+    .col1-row1-container-socios{
+        width: 83.33333333%;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .container-socios {
+        max-width: 540px;
+    }
+
+    .col1-row1-container-socios{
+        padding: .25rem;
+        width: 95%;
+        text-align: center;
+    }
+
 }
 
 
@@ -113,8 +432,75 @@
 }
 
 
-.gradient-trasnsparent{
+.container-productos{
+    padding: 3rem 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+
+.row1-container-productos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    padding: 3rem 0;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorTerciarioClaro);
+}
+
+
+.col1-row1-container-productos{
+    width: 66.66666667%;
+    padding: 3rem;
+    margin-top: 0;
+    flex: 0 0 auto;
+    text-align: center;
     background: radial-gradient(ellipse 50% 50% at center, rgba(1, 2, 2, 1)25%,rgba(1, 2, 2, 0))100%;
+}
+
+
+.col1-row1-container-productos h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.col1-row1-container-productos button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 992px){
+
+    .container-productos{
+        max-width: 960px;
+    }
+
+    .col1-row1-container-productos{
+        width: 83.33333333%;
+    }
+
+}
+
+
+@media (max-width: 576px){
+
+    .container-productos{
+        max-width: 540px;
+    }
+    
+    .col1-row1-container-productos{
+        padding: .25rem;
+        width: 95%;
+        text-align: center;
+    }
+
 }
 
 
@@ -123,7 +509,97 @@
 
 .section-galería{
     background-color: var(--colorTerciarioClaro);
-    padding: 5em 0;
+    padding: 3rem 0;
+}
+
+
+.container-galería{
+    padding: 3rem 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+
+.row1-container-galería{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 0;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    padding: 3rem 0;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorTerciarioOscuro2);
+}
+
+
+.col1-row1-container-galería, .col2-row1-container-galería{
+    width: 50%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-top: 0;
+    flex: 0 0 auto;
+}
+
+
+.col2-row1-container-galería{
+    text-align: center;
+}
+
+
+.col2-row1-container-galería img{
+    width: 50%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.col1-row1-container-galería h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.col1-row1-container-galería div{
+    display: flex;
+}
+
+
+.col1-row1-container-galería div button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 992px){
+
+    .container-galería{
+        max-width: 960px;
+    }
+
+    .col1-row1-container-galería, .col2-row1-container-galería{
+        width: 83.33333333%;
+    }
+
+}
+
+
+@media (max-width: 576px){
+
+    .container-galería{
+        max-width: 540px;
+    }
+
+    .col1-row1-container-galería, .col2-row1-container-galería{
+        width: 95%;
+    }
+
+    .col2-row1-container-galería img{
+        display: none;
+    }
+
 }
 
 
@@ -132,6 +608,86 @@
 
 .section-GIS{
     background-color: var(--colorTerciarioOscuro1);
+}
+
+
+.container-GIS{
+    padding: 3rem 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+
+.row1-container-GIS{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    padding: 3rem 0;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorTerciarioClaro);
+}
+
+
+.col1-row1-container-GIS, .col2-row1-container-GIS{
+    width: 50%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-top: 0;
+    flex: 0 0 auto;
+}
+
+
+.col1-row1-container-GIS img{
+    width: 100%;
+}
+
+
+.col2-row1-container-GIS h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.col2-row1-container-GIS div{
+    display: flex;
+    justify-content: end;
+}
+
+
+.col2-row1-container-GIS div button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 992px){
+
+    .container-GIS {
+        max-width: 960px;
+    }
+
+    .col1-row1-container-GIS, .col2-row1-container-GIS{
+        width: 83.33333333%;
+    }
+
+}
+
+
+@media (max-width: 576px){
+
+    .container-GIS {
+        max-width: 540px;
+    }
+
+    .col1-row1-container-GIS, .col2-row1-container-GIS{
+        width: 95%;
+    }
+
 }
 
 

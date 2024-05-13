@@ -2,7 +2,7 @@
 // ---------------------------------------------------Variables a utilizar----------------------------------------------------------
 
 
-// Array de tarjetas de tamaño pequeño para pc, tablets y cel (las tarjetas se almacenan como objetos dentro de un array, nuestra base de datos).
+// Array de tarjetas de tamaño pequeño para pc, tablets y cel (las tarjetas se almacenan como objetos dentro de un array).
 tarjetas_sm;
 
 // Array que contiene solamente las tarjetas destacadas de tamaño pequeño
@@ -107,6 +107,7 @@ function insertCard(cardsArray, htmlNode){
         template.querySelector("h4").textContent = card.nombre;
         template.querySelector("#p1").textContent = card.fecha + " | " + card.ubicación;
         template.querySelector("#p2").textContent = card.fuente;
+        // Esta es el url de la imagen alternativa que se mostrará cuando el ancho de pantalla sea menor a 992px. Para disminuir tiempos de carga pasar tarjetasDestacadas_sm en lugar de tarjetasDestacadas_md 
         template.querySelector("source").srcset = tarjetasDestacadas_md[index].src;
 
         // Clonamos la plantilla. CloneNode es útil se desea crear copias de nodos existentes en el DOM sin afectar al nodo original
@@ -125,31 +126,26 @@ htmlNode.appendChild(fragment);
 
 };
 
-// Insertamos (pintamos) las tarjetas llamando a la función cardInsert. Le pasamos como argumentos el array de tarjetas y el elemento html contenedor  
+// Insertamos (pintamos) las tarjetas llamando a la función insertCard. Le pasamos como argumentos el array de tarjetas y el elemento html contenedor
+// Para disminuir tiempos de carga pasar tarjetasDestacadas_md o tarjetasDestacadas_sm en lugar de tarjetasDestacadas_lg   
 insertCard(tarjetasDestacadas_lg, contenedorTarjetas);
 
 
 // ------------------------------------------------- Eventos ---------------------------------------------------------------------
 
 
-// Evento click del botón Solicitar Presupuesto de la página index.html
-
 btnPresupuesto.addEventListener("click", function() {
     window.location.href = "páginas/presupuesto.html";
 });
 
-
-// Evento click del botón ir a la galería de la página index.html
 
 btnGalería.addEventListener("click", function() {
     window.location.href = "páginas/galería.html";
 });
 
 
-// Evento click de los demás botones de la página index.html
-
 for (let i = 0; i < botonesPagConst.length; i++) {
     botonesPagConst[i].addEventListener("click", function() {
-        window.location.href = "páginas/construccion.html";
+        window.location.href = "páginas/construcción.html";
     });
 }

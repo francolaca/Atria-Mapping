@@ -57,11 +57,13 @@
                     
                     <ul class="nav-outerList">
                         <li> <br> <br> </li>
-                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="./páginas/Empresa.html"><strong>EMPRESA</strong></a></li>
-                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="../páginas/construccion.html"><strong>PRODUCTOS</strong></a></li>
-                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="páginas/contacto.html"><strong>SERVICIOS</strong></a></li>
-                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="páginas/presupuesto.html"><strong>VENTAS</strong></a></li>
-                </ul>
+                        <li class="nav-outerList__item"><a class="nav-outerList__link" href="./páginas/construcción.html"><strong>EMPRESA</strong></a></li>
+                        <li class="nav-outerList__item"><a class="nav-outerList__link" href="./páginas/construcción.html"><strong>PRODUCTOS</strong></a></li>
+                        <li class="nav-outerList__item"><a class="nav-outerList__link" href="./páginas/construcción.html"><strong>SERVICIOS</strong></a></li>
+                        <li class="nav-outerList__item"><a class="nav-outerList__link" href="./páginas/presupuesto.html"><strong>VENTAS</strong></a></li>
+                    </ul>
+
+                </div>
 
             </nav>
 
@@ -72,7 +74,7 @@
             <section class = "sectionDestacados">
                 
                 <div class="contenedor-h1 text-shadow">
-                    <h1 class="h1-index"><strong>La Fuente de Datos Geoespaciales</strong></h1>
+                    <h1>La Fuente de Datos Geoespaciales</h1>
                 </div>
 
                 <div class="row justify-content-center">
@@ -108,7 +110,8 @@
                             <template id="template-carousel-item">   
 
                                 <div class="carousel-item c-item">
-                                    <picture>
+                                    <!-- La etiqueta picture permite agregar a una etiqueta img una url alternativa, que se "activará" cuando se cumpla el valor de la propiedad media -->
+                                    <picture>  
                                         <source srcset="" media="(max-width: 992px)">
                                         <img src="" class="d-block w-100 p-0 c-img" alt="">
                                     </picture>
@@ -141,19 +144,20 @@
             </section> 
             
             <section class = "section-DEM">         
-                <div class = "container py-5">
+                <div class = "container-DEM">
 
-                    <div class="row align-items-center justify-content-center py-5">
+                    <div class="row1-container-DEM">
                         
-                        <div class="col-sm-10 col-md-10 col-lg-6 text-center">
-                            <img class="w-75 my-4 " src="multimedia/imagenes/Imágenes Index/DSM2DTM-swipe-PC.gif" alt="imagen .gif de DEM en monitor de PC">
+                        <div class="col1-row1-container-DEM">
+                            <img src="multimedia/imagenes/Imágenes Index/DSM2DTM-swipe-PC.gif" alt="imagen .gif de DEM en monitor de PC">
                         </div>
 
-                        <div class="col-sm-10 col-md-10 col-lg-6">
-                            <h2 class="texto-colorTerciarioOscuro2 lh-sm fw-semibold text-left my-3">Proyecte con eficiencia</h2>
-                            <p class = "texto-colorTerciarioOscuro2 fs-5 text-left">Un modelo digital de elevación (DEM) es una representación digital del terreno. Si necesita datos topograficos continuos en áreas de gran tamaño, el trabajo de campo puede ser costoso. Ahorre tiempo y dinero con nuestras alternativas DEM.</p>
-                            <div class="text-end">
-                                <button class="button--dark my-3 paginaConst"><strong>CONOZCA MÁS</strong></button> 
+                        <div class="col2-row1-container-DEM">
+                            <h2>Proyecte con eficiencia</h2>
+                            <p>Un modelo digital de elevación (DEM) es una representación digital del terreno. Si necesita datos topograficos continuos en áreas de gran tamaño, el trabajo de campo puede ser costoso. Ahorre tiempo y dinero con nuestras alternativas DEM.</p>
+                            <div>
+                                <button class="button--dark paginaConst"><strong>CONOZCA MÁS</strong></button>
+                                <button class="smallButton--dark paginaConst"><strong>CONOZCA MÁS</strong></button>
                             </div>
                         </div>
 
@@ -163,56 +167,74 @@
             </section>
 
             <section class = "section-constelación">         
-                <div class = "container">
+                <div class = "container-constelación">
 
-                    <div class="row align-items-center justify-content-center pt-5 pb-3 border-bottom border-2">
+                    <div class="row1-container-constelación">
 
-                        <h2 class="texto-colorTerciarioClaro lh-sm fw-semibold text-center mb-5">Nuestras Plataformas</h2>
+                        <h2>Nuestras Plataformas</h2>
 
-                        <div class="col-sm-12 col-md-6 col-lg-4 text-center">
-                            <img class=" py-3" src="multimedia/imagenes/Imágenes Index/satelites/icon_satellite_worldview3.png" alt="satélite worldview3" height="75">
-                            <h5 class="fw-semibold texto-colorTerciarioClaro my-3">WORLDVIEW-3</h5>
-                            <p class = "fs-6 texto-colorTerciarioClaro my-3">Liderando el grupo con la más alta resolución espacial del mundo, imágenes satelitales de 30 cm</p>
-                            <button class="button--light fw-semibold my-3 paginaConst"><small>LEER MÁS</small></button>
+                        <div class="col1-row1-container-constelación">
+                            <img src="multimedia/imagenes/Imágenes Index/satelites/icon_satellite_worldview3.png" alt="satélite worldview3">
+                            <h5>WORLDVIEW-3</h5>
+                            <p>Liderando el grupo con la más alta resolución espacial del mundo, imágenes satelitales de 30 cm</p>
+                            <div>
+                                <button class="button--light paginaConst"><small>LEER MÁS</small></button>
+                                <button class="smallButton--light paginaConst"><small>LEER MÁS</small></button>
+                            </div>
                         </div>
 
-                        <div class="col-sm-12 col-md-6 col-lg-4 text-center d-none d-sm-block">
-                            <img class=" py-3" src="multimedia/imagenes/Imágenes Index/satelites/icon_satellite_worldview2.png" alt="satélite worldview2" height="75">
-                            <h5 class="fw-semibold texto-colorTerciarioClaro my-3">WORLDVIEW-2</h5>
-                            <p class = "fs-6 texto-colorTerciarioClaro my-3">Más de una década en servicio, calidad certificada en imágenes multiespectrales de 8 bandas</p>
-                            <button class="button--light fw-semibold my-3 paginaConst"><small>LEER MÁS</small></button>
+                        <div class="col2-row1-container-constelación">
+                            <img src="multimedia/imagenes/Imágenes Index/satelites/icon_satellite_worldview2.png" alt="satélite worldview2">
+                            <h5>WORLDVIEW-2</h5>
+                            <p>Más de una década en servicio, calidad certificada en imágenes multiespectrales de 8 bandas</p>
+                            <div>
+                                <button class="button--light fw-semibold my-3 paginaConst"><small>LEER MÁS</small></button>
+                                <button class="smallButton--light fw-semibold my-3 paginaConst"><small>LEER MÁS</small></button>
+                            </div>
                         </div>
 
-                        <div class="col-sm-12 col-md-6 col-lg-4 text-center d-none d-lg-block">
-                            <img class=" py-3" src="multimedia/imagenes/Imágenes Index/satelites/icon_satellite_geoeye1-1.png" alt="satélite GEOEYE-1" height="75">
-                            <h5 class="fw-semibold texto-colorTerciarioClaro my-3">GEOEYE-1</h5>
-                            <p class = "fs-6 texto-colorTerciarioClaro my-3">Insuperable, el archivo histórico de imágenes de 50 cm más extenso del mercado</p>
-                            <button class="button--light fw-semibold my-3 paginaConst"><small>LEER MÁS</small></button>
+                        <div class="col3-row1-container-constelación">
+                            <img src="multimedia/imagenes/Imágenes Index/satelites/icon_satellite_geoeye1-1.png" alt="satélite GEOEYE-1">
+                            <h5>GEOEYE-1</h5>
+                            <p>Insuperable, el archivo histórico de imágenes de 50 cm más extenso del mercado</p>
+                            <div>
+                                <button class="button--light paginaConst"><small>LEER MÁS</small></button>
+                                <button class="smallButton--light paginaConst"><small>LEER MÁS</small></button>
+                            </div>
                         </div>
 
                     </div>
 
-                    <div class="row align-items-center justify-content-center pt-3 pb-5">
+                    <div class="row2-container-constelación">
 
-                        <div class="col-sm-12 col-md-6 col-lg-4 text-center">
-                            <img class=" py-3" src="multimedia/imagenes/Imágenes Index/satelites/icon_satellite_pleiades1-1.png" alt="satélite PLÉIADES 1" height="75">
-                            <h5 class="fw-semibold texto-colorTerciarioClaro my-3">PLÉIADES 1</h5>
-                            <p class = "fs-6 texto-colorTerciarioClaro my-3">Lo mejor para el monitoreo de zonas y proyectos que requieran adquisición rápida de imágenes</p>
-                            <button class="button--light fw-semibold my-3 paginaConst"><small>LEER MÁS</small></button>
+                        <div class="col1-row2-container-constelación">
+                            <img src="multimedia/imagenes/Imágenes Index/satelites/icon_satellite_pleiades1-1.png" alt="satélite PLÉIADES 1">
+                            <h5>PLÉIADES 1</h5>
+                            <p>Lo mejor para el monitoreo de zonas y proyectos que requieran adquisición rápida de imágenes</p>
+                            <div>
+                                <button class="button--light paginaConst"><small>LEER MÁS</small></button>
+                                <button class="smallButton--light paginaConst"><small>LEER MÁS</small></button>
+                            </div>                  
                         </div>
 
-                        <div class="col-sm-12 col-md-6 col-lg-4 text-center d-none d-sm-block">
-                            <img class=" py-3" src="multimedia/imagenes/Imágenes Index/satelites/icon_satellite_planetscope.png" alt="Constelación PLANETSCOPE" height="75">
-                            <h5 class="fw-semibold texto-colorTerciarioClaro my-3">PLANETSCOPE</h5>
-                            <p class = "fs-6 texto-colorTerciarioClaro my-3">Proveedor exclusivo de imágenes diarias de 3 metros de resolución de cualquier parte del mundo</p>
-                            <button class="button--light fw-semibold my-3 paginaConst"><small>LEER MÁS</small></button>
+                        <div class="col2-row2-container-constelación">
+                            <img src="multimedia/imagenes/Imágenes Index/satelites/icon_satellite_planetscope.png" alt="Constelación PLANETSCOPE">
+                            <h5>PLANETSCOPE</h5>
+                            <p>Proveedor exclusivo de imágenes diarias de 3 metros de resolución de cualquier parte del mundo</p>
+                            <div>
+                                <button class="button--light paginaConst"><small>LEER MÁS</small></button>
+                                <button class="smallButton--light paginaConst"><small>LEER MÁS</small></button>
+                            </div>
                         </div>
 
-                        <div class="col-sm-12 col-md-6 col-lg-4 text-center d-none d-lg-block">
-                            <img class=" py-3" src="multimedia/imagenes/Imágenes Index/satelites/plea_neo_2.png" alt="satélite PLÉIADES NEO" height="75">
-                            <h5 class="fw-semibold texto-colorTerciarioClaro my-3">PLÉIADES NEO</h5>
-                            <p class = "fs-6 texto-colorTerciarioClaro my-3">Incomparable capacidad para recolectar imágenes en 6 bandas de 30 cm de resolución</p>
-                            <button class="button--light fw-semibold my-3 paginaConst"><small>LEER MÁS</small></button>
+                        <div class="col3-row2-container-constelación">
+                            <img src="multimedia/imagenes/Imágenes Index/satelites/plea_neo_2.png" alt="satélite PLÉIADES NEO">
+                            <h5>PLÉIADES NEO</h5>
+                            <p>Incomparable capacidad para recolectar imágenes en 6 bandas de 30 cm de resolución</p>
+                            <div>
+                                <button class="button--light paginaConst"><small>LEER MÁS</small></button>
+                                <button class="smallButton--light paginaConst"><small>LEER MÁS</small></button>
+                            </div>
                         </div>
 
                     </div>
@@ -221,13 +243,14 @@
             </section>
 
             <section class = "section-socios">         
-                <div class = "container py-5">
+                <div class = "container-socios">
 
-                    <div class="row align-items-center justify-content-center py-5">
-                        <div class="col-sm-12 col-md-8 col-lg-8 p-sm-1 p-md-5 p-lg-5 text-center">
-                            <h2 class="texto-colorTerciarioOscuro2 lh-sm fw-semibold text-center my-3">Proveedor de imágenes satelitales líder en la industria.</h2>
-                            <p class = "texto-colorTerciarioOscuro2 fs-5">Nos asociamos con las mejores empresas aeroespaciales del mundo, incluyendo Maxar, Airbus, Planet y BlackSky, para brindarle los datos más precisos y de alta calidad posibles.</p>
-                            <button id="btnPresupuesto" class="button--dark my-3"><strong>SOLICITE UN PRESUPUESTO</strong></button>
+                    <div class="row1-container-socios">
+                        <div class="col1-row1-container-socios">
+                            <h2>Proveedor de imágenes satelitales líder en la industria.</h2>
+                            <p>Nos asociamos con las mejores empresas aeroespaciales del mundo, incluyendo Maxar, Airbus, Planet y BlackSky, para brindarle los datos más precisos y de alta calidad posibles.</p>
+                            <button id="btnPresupuesto" class="button--dark"><strong>SOLICITE UN PRESUPUESTO</strong></button>
+                            <button id="btnPresupuestoSmall" class="smallButton--dark"><strong>SOLICITE UN PRESUPUESTO</strong></button>
                         </div>
                     </div>
 
@@ -235,13 +258,14 @@
             </section>
 
             <section class = "section-productos">         
-                <div class = "container py-5">
+                <div class = "container-productos">
 
-                    <div class="row align-items-center justify-content-center py-5">
-                        <div class="col-sm-12 col-md-10 col-lg-10 p-sm-1 p-md-5 p-lg-5 text-center gradient-trasnsparent"> <!-- Le aplicamos un degradado transparente al contenedor de texto para que sea más legible -->
-                            <h2 class="texto-colorTerciarioClaro lh-sm fw-semibold text-center my-3">Productos ATRIA MAPPING</h2>
-                            <p class = "texto-colorTerciarioClaro fs-5">ATRIA ofrece cobertura global de alta frecuencia con entrega de datos eficiente a través de una plataforma abierta y accesible. 56 satélites y más de 117 millones de imágenes. Nuestros mosaicos ortorrectificados permiten análisis impulsado por inteligencia artificial.</p>
-                            <button class="button--light my-3 paginaConst" ><strong>EXPLORE NUESTROS PRODUCTOS</strong></button>
+                    <div class="row1-container-productos">
+                        <div class="col1-row1-container-productos"> 
+                            <h2>Productos ATRIA MAPPING</h2>
+                            <p>ATRIA ofrece cobertura global de alta frecuencia con entrega de datos eficiente a través de una plataforma abierta y accesible. 56 satélites y más de 117 millones de imágenes. Nuestros mosaicos ortorrectificados permiten análisis impulsado por inteligencia artificial.</p>
+                            <button class="button--light paginaConst" ><strong>EXPLORE NUESTROS PRODUCTOS</strong></button>
+                            <button class="smallButton--light paginaConst" ><strong>EXPLORE NUESTROS PRODUCTOS</strong></button>
                         </div>
                     </div>
 
@@ -249,18 +273,21 @@
             </section>
 
             <section class = "section-galería">         
-                <div class = "container">
+                <div class = "container-galería">
 
-                    <div class="row align-items-center justify-content-center py-5">
+                    <div class="row1-container-galería">
 
-                        <div class="col-sm-10 col-md-10 col-lg-6">
-                            <h2 class="texto-colorTerciarioOscuro2 lh-sm fw-semibold text-left my-3">Nuestro Planeta a Diario</h2>
-                            <p class = "texto-colorTerciarioOscuro2 fs-5 text-left">Cada día, personas de todo el mundo utilizan los datos de ATRIA MAPPING, para revelar en tiempo real los cambios que ocurren en las áreas que más les importan.</p>
-                            <button class="button--dark my-3" id="btnGalería"><strong>IR A LA GALERÍA</strong></button>       
+                        <div class="col1-row1-container-galería">
+                            <h2>Nuestro Planeta a Diario</h2>
+                            <p>Cada día, personas de todo el mundo utilizan los datos de ATRIA MAPPING, para revelar en tiempo real los cambios que ocurren en las áreas que más les importan.</p>
+                            <div>
+                                <button class="button--dark" id="btnGalería"><strong>IR A LA GALERÍA</strong></button>
+                                <button class="smallButton--dark" id="btnGaleríaSmall"><strong>IR A LA GALERÍA</strong></button>  
+                            </div>
                         </div>
                             
-                        <div class="col-sm-10 col-md-10 col-lg-6 text-center d-none d-sm-block">
-                            <img class="w-50 my-4" src="multimedia/imagenes/Imágenes Index/planet-archive.webp" alt="galería de imágenes de ejemplo">
+                        <div class="col2-row1-container-galería">
+                            <img src="multimedia/imagenes/Imágenes Index/planet-archive.webp" alt="galería de imágenes de ejemplo">
                         </div>
 
                     </div>
@@ -269,19 +296,20 @@
             </section>
 
             <section class = "section-GIS">         
-                <div class = "container py-5">
+                <div class = "container-GIS">
 
-                    <div class="row align-items-center justify-content-center py-5">
+                    <div class="row1-container-GIS">
 
-                        <div class="col-sm-10 col-md-10 col-lg-6">
-                            <img class="w-100" src="multimedia/imagenes/Imágenes Index/notebookGIS.gif" alt="imagen .gif de capas gis en notebook">
+                        <div class="col1-row1-container-GIS">
+                            <img src="multimedia/imagenes/Imágenes Index/notebookGIS.gif" alt="imagen .gif de capas gis en notebook">
                         </div>
 
-                        <div class="col-sm-10 col-md-10 col-lg-6">
-                            <h2 class="texto-colorTerciarioClaro fs-2 lh-sm fw-semibold text-left my-3">La solución GIS</h2>
-                            <p class = "texto-colorTerciarioClaro fs-5 text-left">Cuando el tiempo y la distancia le impiden proyectar rápidamente, nuestras imágenes son la solución. Proporcione contexto a sus datos geoespaciales o adquiera nuestros servicios GIS. Le ofrecemos productos ortorectificados para usar como base de sus proyectos, o nos encargamos de generar las capas GIS por usted. Ahorre tiempo y dinero con ATRIA MAPPING.</p>
-                            <div class="text-end">
-                                <button class="button--light my-3 paginaConst"><strong>CONOZCA MÁS</strong></button>
+                        <div class="col2-row1-container-GIS">
+                            <h2>La solución GIS</h2>
+                            <p>Cuando el tiempo y la distancia le impiden proyectar rápidamente, nuestras imágenes son la solución. Proporcione contexto a sus datos geoespaciales o adquiera nuestros servicios GIS. Le ofrecemos productos ortorectificados para usar como base de sus proyectos, o nos encargamos de generar las capas GIS por usted. Ahorre tiempo y dinero con ATRIA MAPPING.</p>
+                            <div>
+                                <button class="button--light paginaConst"><strong>CONOZCA MÁS</strong></button>
+                                <button class="smallButton--light paginaConst"><strong>CONOZCA MÁS</strong></button>
                             </div>               
                         </div>
 
@@ -322,7 +350,7 @@
                                     <p class="texto-colorTerciarioOscuro2 fst-italic fs-5 text-center ">"Constantemente nos preguntamos si el ambiente favorece la proliferación de incendios forestales, y si es así ¿cómo intervenir de manera más eficiente? ATRIA nos proporciona los datos de alta resolución necesarios para responder diariamente a esa pregunta".<br><br><br><br><br><br><br><br></p>
                                     <h3>&nbsp;</h3>
                                     <div class="carousel-caption d-md-block">
-                                        <h5 class="texto-colorDetalles1">Cristian Mendoza</h5>
+                                        <h5 class="texto-colorDetalles1">Alberto Mendoza</h5>
                                         <br>
                                         <p class="fs-6 texto-colorTerciarioOscuro2">Jefe del Programa de Meteorología, Dirección Bomberos, Policía de la Provincia de Córdoba</p>
                                         <br>
@@ -334,7 +362,7 @@
                                     <h6>&nbsp;</h6>
                                     <h3>&nbsp;</h3>
                                     <div class="carousel-caption d-md-block">
-                                        <h5 class="texto-colorDetalles1">Franco Lacamoire</h5>
+                                        <h5 class="texto-colorDetalles1">Marta Molina</h5>
                                         <br>
                                         <p class="fs-6 texto-colorTerciarioOscuro2">Gerente de Planificación en LocusLabs</p>
                                         <br>
@@ -377,16 +405,16 @@
                         <strong>DESTACADOS</strong>
                     </li> 
                     <li class="footer-list__item">
-                        <a class="footer-list__item--link" href="páginas/construccion.html">Servicio DSM2DTM</a>
+                        <a class="footer-list__item--link" href="páginas/construcción.html">Servicio DSM2DTM</a>
                     </li>
                     <li class="footer-list__item">
-                        <a class="footer-list__item--link" href="páginas/construccion.html">AtriaScope</a>
+                        <a class="footer-list__item--link" href="páginas/construcción.html">AtriaScope</a>
                     </li>
                     <li class="footer-list__item">
-                        <a class="footer-list__item--link" href="páginas/construccion.html">SkySat</a>
+                        <a class="footer-list__item--link" href="páginas/construcción.html">SkySat</a>
                     </li>
                     <li class="footer-list__item">
-                        <a class="footer-list__item--link" href="páginas/construccion.html">Archivo ATRIA MAPPING</a>
+                        <a class="footer-list__item--link" href="páginas/construcción.html">Archivo ATRIA MAPPING</a>
                     </li>
                 </ul>
                 <ul class="footer-list">
@@ -441,7 +469,7 @@
                         <a class="footer-list__item--link" href="mailto:soporte@atriamapping.com" target="_blank">soporte@atriamapping.com</a>
                     </li>
                     <li class="footer-list__item">
-                        <a class="footer-list__item--link" href="páginas/construccion.html">Déjanos un mensaje</a>
+                        <a class="footer-list__item--link" href="páginas/construcción.html">Déjanos un mensaje</a>
                     </li>
                 </ul>
 
@@ -469,7 +497,7 @@
 
                 <div class = "legal-bar"> 
                     <p class = "legal-bar__info">
-                        <small>© 2023 <strong>ATRIA MAPPING.</strong></small>
+                        <small>© 2024 <strong>ATRIA MAPPING.</strong></small>
                     </p>
                     <p class = "legal-bar__info">
                         &nbsp;&nbsp;Todos&nbsp;los&nbsp;derechos&nbsp;reservados
@@ -477,13 +505,13 @@
                     <p class = "legal-bar__info">
                         <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>
                     </p>
-                    <a class = "legal-bar__info legal-bar__info--link" href="páginas/construccion.html">
+                    <a class = "legal-bar__info legal-bar__info--link" href="páginas/construcción.html">
                         <small>Políticas de Privacidad</small>
                     </a>
                     <p class = "legal-bar__info">
                         <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small>
                     </p>                  
-                    <a class = "legal-bar__info legal-bar__info--link" href="páginas/construccion.html">
+                    <a class = "legal-bar__info legal-bar__info--link" href="páginas/construcción.html">
                         <small>Términos de Uso</small>
                     </a>
                 </div>

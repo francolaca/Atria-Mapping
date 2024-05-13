@@ -86,25 +86,3 @@ formDatos.addEventListener('submit', function(event) {
     datosRecopilados.innerHTML = `${textoVerificación}`;
 
 });
-
-
-// Evento submit del formulario Verificación de Datos Ingresados (cuando se hace click en el botón btnEnviar).
-
-formVerificación.addEventListener('submit', function(event) {
-
-    event.preventDefault();
-
-    // Creamos un objeto jsPDF
-    const pdf = new jsPDF();
-
-    // Agregmos texto al documento
-    pdf.text(datosRecopilados.innerText, 10, 10);
-
-    // Guardamos el documento en la carpeta descargas
-    pdf.save('Solicitud Presupuesto ATRIA MAPPING.pdf');
-
-    alert("Su solicitud ha sido envida. Se guardó copia como 'Solicitud Presupuesto ATRIA MAPPING.pdf' en la carpeta 'descargas'. A la brevedad nos pondremos en contacto con usted.")
-    window.location.href = "../index.html";
-    
-})
-

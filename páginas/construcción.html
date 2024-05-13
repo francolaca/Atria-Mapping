@@ -12,23 +12,21 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-        <link rel="shortcut icon" href="../multimedia/imagenes/Favicons/428958-200.png" type="image/png" />
+        <link rel="shortcut icon" href="multimedia/imagenes/Favicons/428958-200.png" type="image/png" />
         <link rel="stylesheet" href="../estilos/header.css">
         <link rel="stylesheet" href="../estilos/footer.css">
         <link rel="stylesheet" href="../estilos/general.css">
-        <link rel="stylesheet" href="../estilos/galería.css">
+        <link rel="stylesheet" href="../estilos/construcción.css">
 
         <script defer src="../scripts/header.js"></script>
         <script defer src="../scripts/footer.js"></script>
-        <script defer src="../db.js"></script>
-        <script defer src="../scripts/galería.js"></script>
-
-        <title>Galería | ATRIA MAPPING</title>
         
+        <title>ATRIA MAPPING - Digitalizamos tu mundo</title> <!-- Es buena práctica que sea similar al h1 y al url de la página-->
+
     </head>
 
     <body>
-
+        
         <header class="b-header">
 
             <nav class="b-nav">
@@ -52,53 +50,57 @@
                         <button class="smallButton--light"> LOGIN </button>
                         <button class="smallButton--light"> CARRITO </button>
                     </div>
-                    
+
                     <ul class="nav-outerList">
-                    <li> <br> <br> </li>
-                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construcción.html"><strong>EMPRESA</strong></a></li>
-                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construcción.html"><strong>PRODUCTOS</strong></a></li>
-                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construcción.html"><strong>SERVICIOS</strong></a></li>
-                    <li class="nav-outerList__item"><a class="nav-outerList__link" href="./presupuesto.html"><strong>VENTAS</strong></a></li>
-                </ul>
+                        <li> <br> <br> </li>
+                        <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construcción.html"><strong>EMPRESA</strong></a></li>
+                        <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construcción.html"><strong>PRODUCTOS</strong></a></li>
+                        <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construcción.html"><strong>SERVICIOS</strong></a></li>
+                        <li class="nav-outerList__item"><a class="nav-outerList__link" href="./presupuesto.html"><strong>VENTAS</strong></a></li>
+                    </ul>
+
+                </div>
 
             </nav>
 
-        </header>  
+        </header>
 
         <main class="b-main">
+        
+            <section class="section-construcción">
 
-            <section class="section-galería">
+                <div class="container-construcción">
 
-                    <div class = "container-galería">
+                    <div class="row1-container-construcción">
 
-                        <h1>Imágenes de Prueba</h1>
+                        <div class="col1-row1-container-construcción">
 
-                        <div id="contenedorTarjetas" class="row1-container-galería">
+                            <img src="../multimedia/imagenes/imágenes página construcción/cartel.png" alt="imagen grua con satélite en mantenimiento">
+                            <h1>¡Página en construcción!</h1>
+                            <p>Disculpa las molestias. Estamos trabajando para mejorar tu experiencia en nuestro sitio web. Agradecemos tu paciencia y comprensión.</p>
+                            <p>Volveremos pronto con nuevas características&nbsp;!!!</p>
 
-                            <!-- Aqui irán las tarjetas que contendrán las imágenes y sus datos. Este contenido HTML lo generamos dinámicamente con JS. Para ello usamos una lista que se obtiene a partir de datos guardados en una planilla de excel. -->
+                        </div>
 
-                            <!-- El elemento <template> es un mecanismo para mantener el contenido HTML del lado del cliente, sin que se renderize cuando se carga la página, 
-                            pero que posteriormente puede ser instanciado durante el tiempo de ejecución empleando JavaScript. 
-                            A continuación se inserta el template correspondiente a las tarjetas de la galería de imágenes. Ver galería.js para comprender su uso -->
+                        <div class="col2-row1-container-construcción">
 
-                            <template id="template-tarjeta">   
-
-                                <div class="col1-row1-container-galería">
-                                    <img src="" alt="" >
-                                    <h3>card.nombre</h3>
-                                    <p id="p1">card.fecha + " | " + card.ubicación</p>
-                                    <p id="p2">card.fuente</p>
-                                    <div>
-                                        <button type="button" id="btnSeleccionar-${card.id}" class="smallButton--dark"><strong>AGREGAR</strong></button>
-                                        <button type="button" id="btnDescargar-${card.id}" class="smallButton--dark"><strong>DESCARGAR</strong></button>
-                                    </div>
-                                </div>
-
-                            </template>
+                            <img src="../multimedia/imagenes/imágenes página construcción/GruaSateliteChico.png" alt="imagen grua con satélite en mantenimiento">
 
                         </div>
 
                     </div>
+
+                </div>
+
+                <div class="row2-container-construcción">
+
+                    <div class="col1-row2-container-construcción">
+
+                        <img src="../multimedia/imagenes/imágenes página construcción/cintas.png" alt="imagen cintas uner construction">
+
+                    </div>
+
+                </div>
 
             </section>
 

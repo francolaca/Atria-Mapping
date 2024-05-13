@@ -1,4 +1,4 @@
-/* -----------------------------------Variables de Estilo------------------------------------ */
+/* ----------------------------------------------------Variables de Estilo---------------------------------------------- */
 
 
 :root{
@@ -11,27 +11,106 @@
     --colorDetalles2: #f5b823;
     --colorDetalles3: #4A9494;
 
-    --tamañoTexto-XS: 9.89px;
-    --tamañoTexto-S: 16px;
-    --tamañoTexto-M: 25.89px;
-    --tamañoTexto-L: 41.89px;
-    --tamañoTexto-XL: 67.77px;
-    --tamañoTexto-XXL: 109.66px;
+    --tamañoTexto-XXS: 0.75rem;
+    --tamañoTexto-XS: 1rem;
+    --tamañoTexto-S: 1.25rem;
+    --tamañoTexto-M: calc(1.275rem + .3vw);
+    --tamañoTexto-L: calc(1.3rem + .6vw);
+    --tamañoTexto-XL: calc(1.325rem + .9vw);
+    --tamañoTexto-XXL: calc(1.375rem + 1.5vw);
 
-    --alturaLíneaProp: 1.618; /* Proporción line-height / font-size */
+    /* Proporciónes line-height / font-size */
+    --alturaLíneaProp-S: 1.25;
+    --alturaLíneaProp-M: 1.5; 
+    --alturaLíneaProp-L: 2;
 }
 
 
-/* -----------------------------------Estilos generales del main (para alojar correctamente a la cabecera flotante)--------------------------- */
+@media (min-width: 1200px) {
+    :root{
+        --tamañoTexto-M: 1.5rem;
+        --tamañoTexto-L: 1.75rem;
+        --tamañoTexto-XL: 2rem;
+        --tamañoTexto-XXL: 2.5rem;
+    }
+} 
+
+
+/* -----------------------------------------------Todos los elementos del documento-------------------------------------- */
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+/* --------------------------------------------------------body------------------------------------------------------------ */
+
+
+body {
+    margin: 0;
+}
+
+
+/* ------------------------------------------------Estilos por defecto del main--------------------------------------------- */
 
 
 .b-main{
-    padding: 100px 0 0;
+    padding: 100px 0 0; /*para alojar correctamente a la cabecera flotante */
     font-family: 'montserrat', sans-serif;
+    font-size: var(--tamañoTexto-S);
+    font-weight: 400;
+    line-height: var(--alturaLíneaProp-M);
 }
 
 
-/* ----------------------------------------------Estilos generales------------------------------------------------- */
+/* --------------------------------------------Estilos por defecto títulos y parrafos --------------------------------------- */
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+
+h1 {
+    font-size: var(--tamañoTexto-XXL);
+}
+
+
+h2 {
+    font-size: var(--tamañoTexto-XL);
+}
+
+
+h3 {
+    font-size: var(--tamañoTexto-L);
+}
+
+
+h4 {
+    font-size: var(--tamañoTexto-M);
+}
+
+
+h5 {
+    font-size: var(--tamañoTexto-S);
+}
+
+
+h6 {
+    font-size: var(--tamañoTexto-XS);
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+/* -----------------------------------------------Estilos para botones  --------------------------------------- */
 
 
 .texto-colorTerciarioOscuro2{
@@ -54,16 +133,6 @@
 }
 
 
-.contenedor-dark{
-    background-color: var(--colorTerciarioOscuro1);
-}
-
-
-.contenedor-light{
-    background-color: var(--colorTerciarioClaro);
-}
-
-
 .button--dark{
     color: var(--colorDetalles1);
     background: none;
@@ -80,7 +149,7 @@
     font-size: var(--tamañoTexto-S);
     padding: 0.25em 0.5em;
     border-radius: 0.4em;
-    border: 1px solid var(--colorDetalles1);
+    border: 2px solid var(--colorDetalles1);
 }
 
 
@@ -116,7 +185,7 @@
     font-size: var(--tamañoTexto-S);
     padding: 0.25em 0.5em;
     border-radius: 0.4em;
-    border: 1px solid var(--colorDetalles1);
+    border: 2px solid var(--colorDetalles1);
 }
 
 
@@ -136,36 +205,13 @@
 }
 
 
-.input-dark{
-    background-color: var(--colorTerciarioOscuro1);
-    border:none;
-    border-bottom: 2px solid var(--colorDetalles1);
-    color: var(--colorTerciarioClaro);
-}
-
-
-.input-light{
-    background-color: var(--colorTerciarioClaro);
-    border:none;
-    border-bottom: 2px solid var(--colorDetalles1);
-    color: var(--colorTerciarioOscuro2);
-}
-
-
-.textarea-dark{
-    background-color: var(--colorTerciarioOscuro1);
-    border: 2px solid var(--colorDetalles1);
-    color: var(--colorTerciarioClaro);
-}
-
-
 /* -----------------------------------Breakpoint 992px - Tablets (valores sugeridos por bootstrap)------------------------------------ */
 
 
-@media (max-width: 992px){   /*Breakpoint 992px - Tablets (valores sugeridos por bootstrap)*/
+@media (max-width: 992px){
 
     .b-main{
-        padding-top: 80px;   
+        padding-top: 80px;      /*para alojar correctamente a la cabecera flotante */
     }
 
 }
@@ -177,11 +223,12 @@
 @media (max-width: 576px){
 
     .b-main{
-        padding-top: 60px; /*Breakpoint 576px - Celulares (valores sugeridos por bootstrap)*/
+        padding-top: 60px;      /*para alojar correctamente a la cabecera flotante */
+        font-size: var(--tamañoTexto-XS);
     }
 
 
-    .smallButton--light{
+    .smallButton--light, .smallButton--dark{
         font-size: var(--tamañoTexto-XS);
     }
 
