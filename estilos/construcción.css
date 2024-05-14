@@ -246,3 +246,40 @@ h1{
     }
 
 }
+
+/*----------------------------Animación Satélite-------------------------------------------------*/
+  
+  /* Definir la animación de aparecer desde arriba */
+  @keyframes aparecerDesdeArriba {
+    0% {
+      opacity: 0; /* Comienza invisible */
+      transform: translateY(-100%) scale(0.85); /* Empieza arriba de la pantalla */
+    }
+    50% {
+      transform: translateY(18%) scale(0.85); /* Rebote 1: bajar 50% */
+    }
+    70% {
+      transform: translateY(-15%) scale(0.85); /* Rebote 2: subir 30% */
+    }
+    90% {
+      transform: translateY(5%) scale(0.85); /* Rebote 3: bajar 10% */
+    }
+    100% {
+      opacity: 1; /* Termina visible */
+      transform: translateY(0) scale(0.85); /* Termina en su posición final */
+    }
+  }
+  
+  /* Aplicar la animación a la imagen */
+  #contenedorSatelite {
+    position: absolute; /* Posiciona la imagen absolutamente dentro del contenedor */
+    top: 50px; /* Distancia desde la parte superior del contenedor */
+    left: 72%; /* Centra horizontalmente la imagen */
+    transform: translateX(-50%) scale(0.85); /* Ajusta la posición horizontal */
+    animation: aparecerDesdeArriba 1s ease-in-out forwards; /* Duración, timing function, y nombre de la animación */
+    animation-fill-mode: forwards;
+    z-index: -1;
+    margin-top: -100px;
+  }
+  
+  
