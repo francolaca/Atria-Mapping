@@ -1,0 +1,211 @@
+/* -----------------------------------Variables de Estilo------------------------------------ */
+
+
+:root{
+    --colorPrincipal: #2F5163;
+    --colorSecundario: #010202;
+    --colorTerciarioOscuro1: #272727;
+    --colorTerciarioOscuro2: #373737;
+    --colorTerciarioClaro: #F2F2F2;
+    --colorDetalles1: #2A7F98;
+    --colorDetalles2: #F5B823;
+    --colorDetalles3: #4A9494;
+    
+    --tamañoTexto-XXS: 0.75rem;
+    --tamañoTexto-XS: 1rem;
+    --tamañoTexto-S: 1.25rem;
+    --tamañoTexto-M: calc(1.275rem + .3vw);
+    --tamañoTexto-L: calc(1.3rem + .6vw);
+    --tamañoTexto-XL: calc(1.325rem + .9vw);
+    --tamañoTexto-XXL: calc(1.375rem + 1.5vw);
+
+    /* Proporciónes line-height / font-size */
+    --alturaLíneaProp-S: 1.25;
+    --alturaLíneaProp-M: 1.5; 
+    --alturaLíneaProp-L: 2;
+}
+
+
+@media (min-width: 1200px) {
+    :root{
+        --tamañoTexto-M: 1.5rem;
+        --tamañoTexto-L: 1.75rem;
+        --tamañoTexto-XL: 2rem;
+        --tamañoTexto-XXL: 2.5rem;
+    }
+} 
+
+
+/* --------------------------------------------------------body------------------------------------------------------------ */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../multimedia/imagenes/Imágenes-galería/imagenes-lg/lg-imagen-136.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* -----------------------------------Bloque navLeft del div "Header"------------------------------------ */
+
+
+.b-navLeft{
+    background-color: var(--colorSecundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+
+.b-navLeft__logoImage{
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.b-navLeft__logoText{
+    color: var(--colorDetalles2);
+    font-size: var(--tamañoTexto-S);
+    margin: 0 10px;   
+} 
+
+
+/* ------------------------------------------------Section Form------------------------------------------ */
+
+
+.section-form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30rem;
+    transform: translate(-50%, -50%);
+    background-color: var(--colorTerciarioOscuro2);
+    color: var(--colorTerciarioClaro);
+}
+
+
+h2{
+    padding: 2rem 3rem;
+    margin: 0;
+}
+
+
+h2:last-of-type{
+    display: none;
+}
+
+
+form{
+    padding: 0 3rem 2rem 3rem;
+}
+
+
+.form-control label{
+    font-size: var(--tamañoTexto-XXS);
+    margin-bottom: .25rem;
+}
+
+
+.form-control input, .form-control select{
+    font-size: var(--tamañoTexto-S);
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: var(--colorTerciarioOscuro2);
+    border: none;
+    border-bottom: 2px solid var(--colorDetalles1);
+    color: var(--colorTerciarioClaro);
+}
+
+
+.form-checkbox{
+    display: flex;
+    justify-content: start;
+    font-size: var(--tamañoTexto-XXS);
+    margin-bottom: 1rem;
+}
+
+
+form div:nth-last-child(2){
+    text-align: right;
+}
+
+
+#btn_registro{
+    display: none;
+}
+
+
+.form_links{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 4rem;
+    padding: 1rem 0 0 0;
+}
+
+
+a{
+    color: var(--colorTerciarioClaro);
+    font-size: var(--tamañoTexto-XXS);
+    display:block;
+}
+
+
+a:hover{
+    color: var(--colorDetalles1);
+    font-size: var(--tamañoTexto-XS);
+    text-decoration: none;
+}
+
+
+/* -----------------------------------Breakpoint 576px - Celulares (valores sugeridos por bootstrap)----------------------------------- */
+
+
+@media (max-width: 576px) {
+
+    .section-form {
+        width: 100%;
+        height: 100%;
+        justify-content: top;
+    }
+
+    .b-navLeft__logoImage{
+        width: 30px;
+    }
+    
+    .b-navLeft__logoText{
+        font-size: var(--tamañoTexto-XS);
+    } 
+
+    h2{
+        padding: 1.5rem 2rem;
+    }
+
+    form{
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .form-control label{
+        margin-bottom: .25rem;
+    }
+    
+    .form-control input{
+        font-size: var(--tamañoTexto-XS);
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+
+
+
