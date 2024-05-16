@@ -22,7 +22,9 @@ const contenedorTarjetas = document.querySelector("#contenedorTarjetas");
 
 
 const btnPresupuesto = document.querySelector("#btnPresupuesto");
+const btnPresupuestoSmall = document.querySelector("#btnPresupuestoSmall");
 const btnGalería = document.querySelector("#btnGalería");
+const btnGaleríaSmall = document.querySelector("#btnGaleríaSmall");
 const botonesPagConst = document.querySelectorAll(".paginaConst");
 
 
@@ -135,17 +137,27 @@ insertCard(tarjetasDestacadas_lg, contenedorTarjetas);
 
 
 btnPresupuesto.addEventListener("click", function() {
-    window.location.href = "páginas/presupuesto.html";
+    window.location.href = "paginas/presupuesto.html";
+});
+
+
+btnPresupuestoSmall.addEventListener("click", function() {
+    window.location.href = "paginas/presupuesto.html";
 });
 
 
 btnGalería.addEventListener("click", function() {
-    window.location.href = "páginas/galería.html";
+    window.location.href = "paginas/galería.html";
+});
+
+
+btnGaleríaSmall.addEventListener("click", function() {
+    window.location.href = "paginas/galería.html";
 });
 
 
 for (let i = 0; i < botonesPagConst.length; i++) {
     botonesPagConst[i].addEventListener("click", function() {
-        window.location.href = "páginas/construcción.html";
+        window.location.href = "paginas/construcción.html";
     });
 }

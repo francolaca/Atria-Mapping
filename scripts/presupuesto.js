@@ -35,32 +35,7 @@ btnSiguiente2.addEventListener("click", function(){
     formDatos.style.display = "block";
 })
 
-btnVolver1.addEventListener("click", function(){
-    formArea.style.display = "none";
-    formContacto.style.display = "block";
-})
-
-btnVolver2.addEventListener("click", function(){
-    formDatos.style.display = "none";
-    formArea.style.display = "block";
-})
-
-btnVolver3.addEventListener("click", function(){
-    formVerificación.style.display = "none";
-    formDatos.style.display = "block";
-})
-
-
-// Evento submit del formulario Tipo de Datos (cuando se hace click en el botón btnSiguiente3).
-
-formDatos.addEventListener('submit', function(event) {
-
-    event.preventDefault();
-
-    formDatos.style.display = "none";
-    formVerificación.style.display = "block";
-
-  // Agregar aquí la lógica necesaria para validar los datos del formulario
+btnSiguiente3.addEventListener("click", function(){
 
     let nombre = document.querySelector("#inputNombre").value;
     let empresa = document.querySelector("#inputEmpresa").value;
@@ -84,5 +59,34 @@ formDatos.addEventListener('submit', function(event) {
     textoVerificación = textoVerificación + "<br> Pedido especial o consulta: " + textArea + "<br><br><br>";
 
     datosRecopilados.innerHTML = `${textoVerificación}`;
+
+    formDatos.style.display = "none";
+    formVerificación.style.display = "block";
+
+})
+
+btnVolver1.addEventListener("click", function(){
+    formArea.style.display = "none";
+    formContacto.style.display = "block";
+})
+
+btnVolver2.addEventListener("click", function(){
+    formDatos.style.display = "none";
+    formArea.style.display = "block";  
+})
+
+btnVolver3.addEventListener("click", function(){
+    formVerificación.style.display = "none";
+    formDatos.style.display = "block";
+})
+
+
+// Evento submit del formulario formVerificación (cuando se hace click en el botón btnSiguiente3).
+
+formVerificación.addEventListener('submit', function(event) {
+
+    // event.preventDefault();
+
+  // Agregar aquí la lógica necesaria para validar los datos del formulario
 
 });
