@@ -3,7 +3,7 @@
 const tarjetas_sm = [
     {
     id: 1,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-1.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-1.jpg",
     nombre: "Mount Merapi Fumes",
     fecha: "April 24, 2023 ",
     ubicación: "Java, Indonesia",
@@ -13,7 +13,7 @@ const tarjetas_sm = [
     },
     {
     id: 2,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-2.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-2.jpg",
     nombre: "Plateau of Chasms",
     fecha: "November 10, 2022 ",
     ubicación: "Tassili N'ajjer National Park, Algeria",
@@ -23,7 +23,7 @@ const tarjetas_sm = [
     },
     {
     id: 3,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-3.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-3.jpg",
     nombre: "Junma Solar Power Station",
     fecha: "October 28, 2022 ",
     ubicación: "Ordos, Inner Mongolia, China",
@@ -33,7 +33,7 @@ const tarjetas_sm = [
     },
     {
     id: 4,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-4.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-4.jpg",
     nombre: "Penguin Colonies",
     fecha: "October 13, 2022 ",
     ubicación: "Coulman Island, Antarctica",
@@ -43,7 +43,7 @@ const tarjetas_sm = [
     },
     {
     id: 5,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-5.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-5.jpg",
     nombre: "Hurricane Ian’s Aftermath",
     fecha: "October 2, 2022 ",
     ubicación: "Gasparilla Sound, Florida",
@@ -53,7 +53,7 @@ const tarjetas_sm = [
     },
     {
     id: 6,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-6.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-6.jpg",
     nombre: "Ghost Village Under Lindoso Reservoir",
     fecha: "September 28, 2022 ",
     ubicación: "Aceredo, Spain",
@@ -63,7 +63,7 @@ const tarjetas_sm = [
     },
     {
     id: 7,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-7.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-7.jpg",
     nombre: "Tailings Pond Failure",
     fecha: "September 19, 2022 ",
     ubicación: "Jagersfontein, South Africa",
@@ -73,7 +73,7 @@ const tarjetas_sm = [
     },
     {
     id: 8,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-8.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-8.jpg",
     nombre: "Arctic Heat Wave",
     fecha: "September 14, 2022 ",
     ubicación: "Ilulissat, Greenland",
@@ -83,7 +83,7 @@ const tarjetas_sm = [
     },
     {
     id: 9,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-9.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-9.jpg",
     nombre: "Contrasting Landscapes",
     fecha: "August 31, 2022 ",
     ubicación: "Goiás, Brazil",
@@ -93,7 +93,7 @@ const tarjetas_sm = [
     },
     {
     id: 10,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-10.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-10.jpg",
     nombre: "Windmill Assembly",
     fecha: "August 29, 2022 ",
     ubicación: "Oklahoma",
@@ -103,7 +103,7 @@ const tarjetas_sm = [
     },
     {
     id: 11,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-11.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-11.jpg",
     nombre: "Zaporizhzhia Nuclear Power Plant",
     fecha: "August 25, 2022 ",
     ubicación: "Enerhodar, Ukraine",
@@ -113,7 +113,7 @@ const tarjetas_sm = [
     },
     {
     id: 12,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-12.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-12.jpg",
     nombre: "Nabro Volcano",
     fecha: "July 28, 2022 ",
     ubicación: "Danikil Depression, Eritrea",
@@ -123,7 +123,7 @@ const tarjetas_sm = [
     },
     {
     id: 13,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-13.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-13.jpg",
     nombre: "Marmolada Glacier Collapse",
     fecha: "July 12, 2022 ",
     ubicación: "Dolomite Mountains, Italy",
@@ -133,7 +133,7 @@ const tarjetas_sm = [
     },
     {
     id: 14,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-14.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-14.jpg",
     nombre: "Ekuma River",
     fecha: "May 25, 2022 ",
     ubicación: "Etosha National Park, Namibia",
@@ -143,7 +143,7 @@ const tarjetas_sm = [
     },
     {
     id: 15,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-15.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-15.jpg",
     nombre: "Cerberus Volcano Vents Ash",
     fecha: "May 18, 2022 ",
     ubicación: "Semisopochnoi Island, Alaska",
@@ -153,7 +153,7 @@ const tarjetas_sm = [
     },
     {
     id: 16,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-16.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-16.jpg",
     nombre: "Mount Everest",
     fecha: "April 21, 2022 ",
     ubicación: "Nepal & China",
@@ -163,7 +163,7 @@ const tarjetas_sm = [
     },
     {
     id: 17,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-17.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-17.jpg",
     nombre: "Ever Forward",
     fecha: "April 13, 2022 ",
     ubicación: "Chesapeake Bay, Maryland",
@@ -173,7 +173,7 @@ const tarjetas_sm = [
     },
     {
     id: 18,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-18.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-18.jpg",
     nombre: "Sound of Peace",
     fecha: "March 20, 2022 ",
     ubicación: "Berlin, Germany",
@@ -183,7 +183,7 @@ const tarjetas_sm = [
     },
     {
     id: 19,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-19.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-19.jpg",
     nombre: "Blarney Castle",
     fecha: "March 16, 2022 ",
     ubicación: "Cork, Ireland",
@@ -193,7 +193,7 @@ const tarjetas_sm = [
     },
     {
     id: 20,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-20.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-20.jpg",
     nombre: "Machulishchy Air Base",
     fecha: "March 7, 2022 ",
     ubicación: "Minsk Region, Belarus",
@@ -203,7 +203,7 @@ const tarjetas_sm = [
     },
     {
     id: 21,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-21.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-21.jpg",
     nombre: "Superyacht",
     fecha: "March 6, 2022 ",
     ubicación: "Seychelles, Indian Ocean",
@@ -213,7 +213,7 @@ const tarjetas_sm = [
     },
     {
     id: 22,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-22.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-22.jpg",
     nombre: "Rocket Attack",
     fecha: "March 3, 2022 ",
     ubicación: "Belgorod Oblast, Russia",
@@ -223,7 +223,7 @@ const tarjetas_sm = [
     },
     {
     id: 23,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-23.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-23.jpg",
     nombre: "Vilok-Tiszabecs Border Crossing",
     fecha: "February 28, 2022 ",
     ubicación: "Ukraine-Hungary Border",
@@ -233,7 +233,7 @@ const tarjetas_sm = [
     },
     {
     id: 24,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-24.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-24.jpg",
     nombre: "Vasylkiv Fuel Depot",
     fecha: "February 26, 2022 ",
     ubicación: "Kyiv Oblast, Ukraine",
@@ -243,7 +243,7 @@ const tarjetas_sm = [
     },
     {
     id: 25,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-25.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-25.jpg",
     nombre: "Chernobyl Nuclear Power Plant",
     fecha: "February 25, 2022 ",
     ubicación: "Pripyat, Ukraine",
@@ -253,7 +253,7 @@ const tarjetas_sm = [
     },
     {
     id: 26,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-26.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-26.jpg",
     nombre: "Russian Navy in the Mediterranean",
     fecha: "February 23, 2022 ",
     ubicación: "Mediterranean Sea",
@@ -263,7 +263,7 @@ const tarjetas_sm = [
     },
     {
     id: 27,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-27.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-27.jpg",
     nombre: "A Cold Winter Morning in Ottawa",
     fecha: "February 16, 2022 ",
     ubicación: "Ottawa, Canada",
@@ -273,7 +273,7 @@ const tarjetas_sm = [
     },
     {
     id: 28,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-28.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-28.jpg",
     nombre: "Hunga-Tonga Hunga-Ha'apai",
     fecha: "January 11, 2022 ",
     ubicación: "Tonga",
@@ -283,7 +283,7 @@ const tarjetas_sm = [
     },
     {
     id: 29,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-29.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-29.jpg",
     nombre: "Rising Ebro River",
     fecha: "December 15, 2021 ",
     ubicación: "Zaragoza, Spain",
@@ -293,7 +293,7 @@ const tarjetas_sm = [
     },
     {
     id: 30,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-30.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-30.jpg",
     nombre: "Tegel Airport Mural",
     fecha: "November 3, 2021 ",
     ubicación: "Berlin, Germany",
@@ -303,7 +303,7 @@ const tarjetas_sm = [
     },
     {
     id: 31,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-31.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-31.jpg",
     nombre: "Point Lay",
     fecha: "November 2, 2021 ",
     ubicación: "North Slope Borough, Alaska",
@@ -313,7 +313,7 @@ const tarjetas_sm = [
     },
     {
     id: 32,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-32.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-32.jpg",
     nombre: "Pollution on Lake Maracaibo",
     fecha: "October 28, 2021 ",
     ubicación: "Bachaquero, Venezuela",
@@ -323,7 +323,7 @@ const tarjetas_sm = [
     },
     {
     id: 33,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-33.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-33.jpg",
     nombre: "Rainbow Bridge",
     fecha: "October 10, 2021 ",
     ubicación: "Lake Powell National Recreation Area, Utah",
@@ -333,7 +333,7 @@ const tarjetas_sm = [
     },
     {
     id: 34,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-34.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-34.jpg",
     nombre: "Windy Fire",
     fecha: "September 27, 2021 ",
     ubicación: "Tulare County, California",
@@ -343,7 +343,7 @@ const tarjetas_sm = [
     },
     {
     id: 35,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-35.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-35.jpg",
     nombre: "Fires on Evia",
     fecha: "August 8, 2021 ",
     ubicación: "Evia, Greece",
@@ -353,7 +353,7 @@ const tarjetas_sm = [
     },
     {
     id: 36,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-36.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-36.jpg",
     nombre: "Lava Fire Burns Near Mount Shasta",
     fecha: "June 28, 2021 ",
     ubicación: "Shasta County, California",
@@ -363,7 +363,7 @@ const tarjetas_sm = [
     },
     {
     id: 37,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-37.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-37.jpg",
     nombre: "Lava Flows on Nyiragongo",
     fecha: "June 12, 2021 ",
     ubicación: "Goma, Democratic Republic of the Congo",
@@ -373,7 +373,7 @@ const tarjetas_sm = [
     },
     {
     id: 38,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-38.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-38.jpg",
     nombre: "Rajaji National Park",
     fecha: "June 10, 2021 ",
     ubicación: "Uttarakhand, India",
@@ -383,7 +383,7 @@ const tarjetas_sm = [
     },
     {
     id: 39,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-39.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-39.jpg",
     nombre: "Phytoplankton in the Sea of Marmara",
     fecha: "June 9, 2021 ",
     ubicación: "Sea of Marmara, Turkey",
@@ -393,7 +393,7 @@ const tarjetas_sm = [
     },
     {
     id: 40,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-40.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-40.jpg",
     nombre: "Mining Along the Igarapé Pau-branco",
     fecha: "June 7, 2021 ",
     ubicación: "Pará, Brazil",
@@ -403,7 +403,7 @@ const tarjetas_sm = [
     },
     {
     id: 41,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-41.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-41.jpg",
     nombre: "Washington DC Landcover",
     fecha: "May 23, 2021 ",
     ubicación: "Washington, DC",
@@ -413,7 +413,7 @@ const tarjetas_sm = [
     },
     {
     id: 42,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-42.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-42.jpg",
     nombre: "West Coast of Grande Terre",
     fecha: "May 20, 2021 ",
     ubicación: "New Caledonia, France",
@@ -423,7 +423,7 @@ const tarjetas_sm = [
     },
     {
     id: 43,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-43.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-43.jpg",
     nombre: "Pico do Tracoá",
     fecha: "May 13, 2021 ",
     ubicación: "Rondonia, Brazil",
@@ -433,7 +433,7 @@ const tarjetas_sm = [
     },
     {
     id: 44,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-44.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-44.jpg",
     nombre: "Chimanimani National Park",
     fecha: "May 12, 2021 ",
     ubicación: "Manica, Mozambique",
@@ -443,7 +443,7 @@ const tarjetas_sm = [
     },
     {
     id: 45,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-45.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-45.jpg",
     nombre: "Stealth Fighters at Akhtubinsk Air Base",
     fecha: "May 4, 2021 ",
     ubicación: "Astrakhan Oblast, Russia",
@@ -453,7 +453,7 @@ const tarjetas_sm = [
     },
     {
     id: 46,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-46.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-46.jpg",
     nombre: "Muldrow Glacier Surge",
     fecha: "April 30, 2021 ",
     ubicación: "Denali National Park, Alaska",
@@ -463,7 +463,7 @@ const tarjetas_sm = [
     },
     {
     id: 47,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-47.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-47.jpg",
     nombre: "Rush Hour Traffic",
     fecha: "April 26, 2021 ",
     ubicación: "Tel Aviv, Israel",
@@ -473,7 +473,7 @@ const tarjetas_sm = [
     },
     {
     id: 48,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-48.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-48.jpg",
     nombre: "Arches Slickrock",
     fecha: "April 25, 2021 ",
     ubicación: "Grand County, Utah",
@@ -483,7 +483,7 @@ const tarjetas_sm = [
     },
     {
     id: 49,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-49.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-49.jpg",
     nombre: "Lactear Dairy",
     fecha: "April 11, 2021 ",
     ubicación: "Cordoba, Argentina",
@@ -493,7 +493,7 @@ const tarjetas_sm = [
     },
     {
     id: 50,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-50.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-50.jpg",
     nombre: "Northwest Trade",
     fecha: "March 31, 2021 ",
     ubicación: "Surrey, British Columbia, Canada",
@@ -503,7 +503,7 @@ const tarjetas_sm = [
     },
     {
     id: 51,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-51.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-51.jpg",
     nombre: "Ekibastuz GRES-1",
     fecha: "March 17, 2021 ",
     ubicación: "Kazakhstan",
@@ -513,7 +513,7 @@ const tarjetas_sm = [
     },
     {
     id: 52,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-52.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-52.jpg",
     nombre: "NEOM",
     fecha: "March 16, 2021 ",
     ubicación: "Tabuk, Saudi Arabia",
@@ -523,7 +523,7 @@ const tarjetas_sm = [
     },
     {
     id: 53,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-53.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-53.jpg",
     nombre: "After the Flood",
     fecha: "March 10, 2021 ",
     ubicación: "Powell County, Kentucky",
@@ -533,7 +533,7 @@ const tarjetas_sm = [
     },
     {
     id: 54,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-54.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-54.jpg",
     nombre: "Drone Base",
     fecha: "March 8, 2021 ",
     ubicación: "Dirkou, Niger",
@@ -543,7 +543,7 @@ const tarjetas_sm = [
     },
     {
     id: 55,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-55.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-55.jpg",
     nombre: "Jonkershoek Fire",
     fecha: "February 28, 2021 ",
     ubicación: "Western Cap, South Africa",
@@ -553,7 +553,7 @@ const tarjetas_sm = [
     },
     {
     id: 56,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-56.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-56.jpg",
     nombre: "SpaceX SN9 on the Pad",
     fecha: "February 1, 2021 ",
     ubicación: "Boca Chica, Texas",
@@ -563,7 +563,7 @@ const tarjetas_sm = [
     },
     {
     id: 57,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-57.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-57.jpg",
     nombre: "Gjerdrum Landslide",
     fecha: "January 3, 2021 ",
     ubicación: "Ask, Norway",
@@ -573,7 +573,7 @@ const tarjetas_sm = [
     },
     {
     id: 58,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-58.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-58.jpg",
     nombre: "Lava Lake on Kilauea",
     fecha: "December 20, 2020 ",
     ubicación: "Big Island, Hawaii",
@@ -583,7 +583,7 @@ const tarjetas_sm = [
     },
     {
     id: 59,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-59.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-59.jpg",
     nombre: "Lava Flows on Mount Etna",
     fecha: "December 15, 2020 ",
     ubicación: "Sicily, Italy",
@@ -593,7 +593,7 @@ const tarjetas_sm = [
     },
     {
     id: 60,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-60.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-60.jpg",
     nombre: "Gamsberg Mine Landslide",
     fecha: "December 4, 2020 ",
     ubicación: "Northern Cape, South Africa",
@@ -603,7 +603,7 @@ const tarjetas_sm = [
     },
     {
     id: 61,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-61.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-61.jpg",
     nombre: "Sugar Cane Field Burning",
     fecha: "December 3, 2020 ",
     ubicación: "Palm Beach County, Florida",
@@ -613,7 +613,7 @@ const tarjetas_sm = [
     },
     {
     id: 62,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-62.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-62.jpg",
     nombre: "Houziyan Reservoir",
     fecha: "November 29, 2020 ",
     ubicación: "Sichuan, China",
@@ -623,7 +623,7 @@ const tarjetas_sm = [
     },
     {
     id: 63,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-63.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-63.jpg",
     nombre: "Meke Lake",
     fecha: "November 15, 2020 ",
     ubicación: "Konya, Turkey",
@@ -633,7 +633,7 @@ const tarjetas_sm = [
     },
     {
     id: 64,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-64.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-64.jpg",
     nombre: "Tombigbee River",
     fecha: "November 2, 2020 ",
     ubicación: "Monroe County, Mississippi",
@@ -643,7 +643,7 @@ const tarjetas_sm = [
     },
     {
     id: 65,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-65.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-65.jpg",
     nombre: "Outburst Flood, Lituya Glacier",
     fecha: "October 28, 2020 ",
     ubicación: "Desolation Valley, Alaska",
@@ -653,7 +653,7 @@ const tarjetas_sm = [
     },
     {
     id: 66,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-66.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-66.jpg",
     nombre: "Blue Ridge Fire",
     fecha: "October 27, 2020 ",
     ubicación: "Chino Hills, California",
@@ -663,7 +663,7 @@ const tarjetas_sm = [
     },
     {
     id: 67,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-67.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-67.jpg",
     nombre: "Cameron Peak Fire, Colorado",
     fecha: "October 14, 2020 ",
     ubicación: "Signal Mountain, Colorado, USA",
@@ -673,7 +673,7 @@ const tarjetas_sm = [
     },
     {
     id: 68,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-68.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-68.jpg",
     nombre: "Fires on Mount Kilimanjaro",
     fecha: "October 11, 2020 ",
     ubicación: "Kilimanjaro Region, Tanzania",
@@ -683,7 +683,7 @@ const tarjetas_sm = [
     },
     {
     id: 69,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-69.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-69.jpg",
     nombre: "Mugello Circuit",
     fecha: "August 31, 2020 ",
     ubicación: "Tuscany, Italy",
@@ -693,7 +693,7 @@ const tarjetas_sm = [
     },
     {
     id: 70,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-70.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-70.jpg",
     nombre: "CZU Complex Fire",
     fecha: "August 19, 2020 ",
     ubicación: "Santa Cruz, California",
@@ -703,7 +703,7 @@ const tarjetas_sm = [
     },
     {
     id: 71,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-71.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-71.jpg",
     nombre: "Submarine at Yulin Naval Base",
     fecha: "August 17, 2020 ",
     ubicación: "Hainan Island, China",
@@ -713,7 +713,7 @@ const tarjetas_sm = [
     },
     {
     id: 72,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-72.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-72.jpg",
     nombre: "Arecibo Observatory Damage",
     fecha: "August 9, 2020 ",
     ubicación: "Arecibo, Puerto Rico",
@@ -723,7 +723,7 @@ const tarjetas_sm = [
     },
     {
     id: 73,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-73.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-73.jpg",
     nombre: "Madura Strait",
     fecha: "July 30, 2020 ",
     ubicación: "Surabaya, Indonesia",
@@ -733,7 +733,7 @@ const tarjetas_sm = [
     },
     {
     id: 74,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-74.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-74.jpg",
     nombre: "Three Gorges Reservoir",
     fecha: "July 19, 2020 ",
     ubicación: "Hubei, China",
@@ -743,7 +743,7 @@ const tarjetas_sm = [
     },
     {
     id: 75,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-75.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-75.jpg",
     nombre: "Kharg Island Refinery",
     fecha: "July 16, 2020 ",
     ubicación: "Kharg Island, Iran",
@@ -753,7 +753,7 @@ const tarjetas_sm = [
     },
     {
     id: 76,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-76.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-76.jpg",
     nombre: "NAS Sports Complex",
     fecha: "July 15, 2020 ",
     ubicación: "Nad Al Sheba, Dubai",
@@ -763,7 +763,7 @@ const tarjetas_sm = [
     },
     {
     id: 77,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-77.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-77.jpg",
     nombre: "Surf on Garden Island",
     fecha: "July 9, 2020 ",
     ubicación: "Western Australia, Australia",
@@ -773,7 +773,7 @@ const tarjetas_sm = [
     },
     {
     id: 78,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-78.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-78.jpg",
     nombre: "Mysterious Explosion at Iranian Nuclear Complex",
     fecha: "July 2, 2020 ",
     ubicación: "Natanz, Iran",
@@ -783,7 +783,7 @@ const tarjetas_sm = [
     },
     {
     id: 79,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-79.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-79.jpg",
     nombre: "Tropical Forest, Virunga National Park",
     fecha: "June 28, 2020 ",
     ubicación: "Democratic Republic of the Congo",
@@ -793,7 +793,7 @@ const tarjetas_sm = [
     },
     {
     id: 80,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-80.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-80.jpg",
     nombre: "Landslide on the Rio Colca",
     fecha: "June 27, 2020 ",
     ubicación: "Cañon de Colca, Peru",
@@ -803,7 +803,7 @@ const tarjetas_sm = [
     },
     {
     id: 81,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-81.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-81.jpg",
     nombre: "Clash at India China Border",
     fecha: "June 18, 2020 ",
     ubicación: "Line of Actual Control, India-China Border",
@@ -813,7 +813,7 @@ const tarjetas_sm = [
     },
     {
     id: 82,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-82.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-82.jpg",
     nombre: "Swirling Currents Off the Coast of Lebanon",
     fecha: "June 12, 2020 ",
     ubicación: "Beirut, Lebanon",
@@ -823,7 +823,7 @@ const tarjetas_sm = [
     },
     {
     id: 83,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-83.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-83.jpg",
     nombre: "Black Lives Matter Plaza NW",
     fecha: "June 6, 2020 ",
     ubicación: "Washington, DC",
@@ -833,7 +833,7 @@ const tarjetas_sm = [
     },
     {
     id: 84,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-84.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-84.jpg",
     nombre: "SpaceX’s Falcon 9 Rocket Prepares to Take Off",
     fecha: "May 29, 2020 ",
     ubicación: "United States",
@@ -843,7 +843,7 @@ const tarjetas_sm = [
     },
     {
     id: 85,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-85.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-85.jpg",
     nombre: "Bus Operators Form Caravan in Protest",
     fecha: "May 26, 2020 ",
     ubicación: "Berlin, Germany",
@@ -853,7 +853,7 @@ const tarjetas_sm = [
     },
     {
     id: 86,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-86.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-86.jpg",
     nombre: "Incised Valley, Pangong Tso",
     fecha: "May 26, 2020 ",
     ubicación: "Ladakh, India",
@@ -863,7 +863,7 @@ const tarjetas_sm = [
     },
     {
     id: 87,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-87.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-87.jpg",
     nombre: "Cruise Ships Cluster in the Caribbean",
     fecha: "May 7, 2020 ",
     ubicación: "Coco Cay, The Bahamas",
@@ -873,7 +873,7 @@ const tarjetas_sm = [
     },
     {
     id: 88,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-88.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-88.jpg",
     nombre: "Fiery Cross Reef",
     fecha: "May 2, 2020 ",
     ubicación: "Spratly Islands, South China Sea",
@@ -883,7 +883,7 @@ const tarjetas_sm = [
     },
     {
     id: 89,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-89.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-89.jpg",
     nombre: "Morning Fog",
     fecha: "April 27, 2020 ",
     ubicación: "Parque Nacional Bernardo O'Higgins, Chile",
@@ -893,7 +893,7 @@ const tarjetas_sm = [
     },
     {
     id: 90,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-90.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-90.jpg",
     nombre: "Bayano Lake",
     fecha: "April 24, 2020 ",
     ubicación: "Panamá Province, Panama",
@@ -903,7 +903,7 @@ const tarjetas_sm = [
     },
     {
     id: 91,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-91.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-91.jpg",
     nombre: "Rock Avalanche on Salkantay",
     fecha: "April 16, 2020 ",
     ubicación: "Vilcabamba Range, Peru",
@@ -913,7 +913,7 @@ const tarjetas_sm = [
     },
     {
     id: 92,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-92.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-92.jpg",
     nombre: "Icefields on Kilimanjaro",
     fecha: "April 15, 2020 ",
     ubicación: "Mount Kilimanjaro, Tanzania",
@@ -923,7 +923,7 @@ const tarjetas_sm = [
     },
     {
     id: 93,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-93.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-93.jpg",
     nombre: "Santa Elena Canyon, Big Bend National Park",
     fecha: "April 14, 2020 ",
     ubicación: "Texas, United States",
@@ -933,7 +933,7 @@ const tarjetas_sm = [
     },
     {
     id: 94,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-94.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-94.jpg",
     nombre: "Blackheath Burn Scars",
     fecha: "April 13, 2020 ",
     ubicación: "Blackheath, New South Wales, Australia",
@@ -943,7 +943,7 @@ const tarjetas_sm = [
     },
     {
     id: 95,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-95.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-95.jpg",
     nombre: "Forest Fires near Chernobyl",
     fecha: "April 8, 2020 ",
     ubicación: "Pripyat, Ukraine",
@@ -953,7 +953,7 @@ const tarjetas_sm = [
     },
     {
     id: 96,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-96.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-96.jpg",
     nombre: "Southern Museum of Flight",
     fecha: "April 8, 2020 ",
     ubicación: "Birmingham, Alabama, USA",
@@ -963,7 +963,7 @@ const tarjetas_sm = [
     },
     {
     id: 97,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-97.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-97.jpg",
     nombre: "Steel Mills",
     fecha: "April 1, 2020 ",
     ubicación: "Tangshan, China",
@@ -973,7 +973,7 @@ const tarjetas_sm = [
     },
     {
     id: 98,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-98.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-98.jpg",
     nombre: "Gagarin’s Start",
     fecha: "March 21, 2020 ",
     ubicación: "Baikonur Cosmodrome, Kazakhstan",
@@ -983,7 +983,7 @@ const tarjetas_sm = [
     },
     {
     id: 99,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-99.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-99.jpg",
     nombre: "Nyamuragira Volcano",
     fecha: "February 15, 2020 ",
     ubicación: "Nord-Kivu, Democratic Republic of the Congo",
@@ -993,7 +993,7 @@ const tarjetas_sm = [
     },
     {
     id: 100,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-100.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-100.jpg",
     nombre: "Eruption of Taal Volcano",
     fecha: "January 29, 2020 ",
     ubicación: "Luzon, Philippines",
@@ -1003,7 +1003,7 @@ const tarjetas_sm = [
     },
     {
     id: 101,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-101.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-101.jpg",
     nombre: "Desert Fields",
     fecha: "January 24, 2020 ",
     ubicación: "Bard, California, USA",
@@ -1013,7 +1013,7 @@ const tarjetas_sm = [
     },
     {
     id: 102,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-102.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-102.jpg",
     nombre: "Attack on Ain Assad Airbase",
     fecha: "January 7, 2020 ",
     ubicación: "Ain al-Assad, Iraq",
@@ -1023,7 +1023,7 @@ const tarjetas_sm = [
     },
     {
     id: 103,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-103.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-103.jpg",
     nombre: "Mumbai City",
     fecha: "November 6, 2019 ",
     ubicación: "Mumbai, India",
@@ -1033,7 +1033,7 @@ const tarjetas_sm = [
     },
     {
     id: 104,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-104.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-104.jpg",
     nombre: "U.S. Magnesium",
     fecha: "September 25, 2019 ",
     ubicación: "Rowley, Utah, USA",
@@ -1043,7 +1043,7 @@ const tarjetas_sm = [
     },
     {
     id: 105,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-105.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-105.jpg",
     nombre: "Conestoga River",
     fecha: "September 20, 2019 ",
     ubicación: "Lancaster, Pennsylvania, USA",
@@ -1053,7 +1053,7 @@ const tarjetas_sm = [
     },
     {
     id: 106,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-106.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-106.jpg",
     nombre: "Karl the Fog",
     fecha: "September 10, 2019 ",
     ubicación: "California, United States",
@@ -1063,7 +1063,7 @@ const tarjetas_sm = [
     },
     {
     id: 107,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-107.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-107.jpg",
     nombre: "Glaciers on Puncak Jaya",
     fecha: "September 8, 2019 ",
     ubicación: "Papua, Indonesia",
@@ -1073,7 +1073,7 @@ const tarjetas_sm = [
     },
     {
     id: 108,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-108.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-108.jpg",
     nombre: "Guiana Space Centre",
     fecha: "July 29, 2019 ",
     ubicación: "Kourou, French Guiana",
@@ -1083,7 +1083,7 @@ const tarjetas_sm = [
     },
     {
     id: 109,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-109.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-109.jpg",
     nombre: "737 Max Storage, Moses Lake",
     fecha: "July 24, 2019 ",
     ubicación: "Washington, United States",
@@ -1093,7 +1093,7 @@ const tarjetas_sm = [
     },
     {
     id: 110,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-110.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-110.jpg",
     nombre: "Meltwater on Petermann Glacier",
     fecha: "June 25, 2019 ",
     ubicación: "Greenland",
@@ -1103,7 +1103,7 @@ const tarjetas_sm = [
     },
     {
     id: 111,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-111.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-111.jpg",
     nombre: "Forestry in Tasmania",
     fecha: "March 29, 2019 ",
     ubicación: "Tasmania, Australia",
@@ -1113,7 +1113,7 @@ const tarjetas_sm = [
     },
     {
     id: 112,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-112.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-112.jpg",
     nombre: "Chinese Naval Fleet Exercises",
     fecha: "March 25, 2018 ",
     ubicación: "South China Sea",
@@ -1123,7 +1123,7 @@ const tarjetas_sm = [
     },
     {
     id: 113,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-113.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-113.jpg",
     nombre: "Mount Asama",
     fecha: "April 6, 2017 ",
     ubicación: "Japan",
@@ -1133,7 +1133,7 @@ const tarjetas_sm = [
     },
     {
     id: 114,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-114.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-114.jpg",
     nombre: "Timbuktu",
     fecha: "March 12, 2017 ",
     ubicación: "Mali",
@@ -1143,7 +1143,7 @@ const tarjetas_sm = [
     },
     {
     id: 115,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-115.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-115.jpg",
     nombre: "Hangzhou Bay",
     fecha: "February 22, 2017 ",
     ubicación: "China",
@@ -1153,7 +1153,7 @@ const tarjetas_sm = [
     },
     {
     id: 116,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-116.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-116.jpg",
     nombre: "Satish Dhawan Space Centre",
     fecha: "February 13, 2017 ",
     ubicación: "India",
@@ -1163,7 +1163,7 @@ const tarjetas_sm = [
     },
     {
     id: 117,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-117.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-117.jpg",
     nombre: "San Francisco",
     fecha: "February 13, 2017 ",
     ubicación: "California, USA",
@@ -1173,7 +1173,7 @@ const tarjetas_sm = [
     },
     {
     id: 118,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-118.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-118.jpg",
     nombre: "Volcán de Fuego",
     fecha: "January 25, 2017 ",
     ubicación: "Guatemala",
@@ -1183,7 +1183,7 @@ const tarjetas_sm = [
     },
     {
     id: 119,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-119.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-119.jpg",
     nombre: "Jeddah",
     fecha: "January 25, 2017 ",
     ubicación: "Saudi Arabia",
@@ -1193,7 +1193,7 @@ const tarjetas_sm = [
     },
     {
     id: 120,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-120.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-120.jpg",
     nombre: "Diavik",
     fecha: "January 23, 2017 ",
     ubicación: "Canada",
@@ -1203,7 +1203,7 @@ const tarjetas_sm = [
     },
     {
     id: 121,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-121.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-121.jpg",
     nombre: "Brussels",
     fecha: "January 23, 2017 ",
     ubicación: "Belgium",
@@ -1213,7 +1213,7 @@ const tarjetas_sm = [
     },
     {
     id: 122,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-122.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-122.jpg",
     nombre: "Maracaibo",
     fecha: "January 23, 2017 ",
     ubicación: "Venezuela",
@@ -1223,7 +1223,7 @@ const tarjetas_sm = [
     },
     {
     id: 123,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-123.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-123.jpg",
     nombre: "Key West",
     fecha: "January 9, 2017 ",
     ubicación: "Florida, USA",
@@ -1233,7 +1233,7 @@ const tarjetas_sm = [
     },
     {
     id: 124,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-124.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-124.jpg",
     nombre: "Nador",
     fecha: "January 4, 2017 ",
     ubicación: "Morocco",
@@ -1243,7 +1243,7 @@ const tarjetas_sm = [
     },
     {
     id: 125,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-125.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-125.jpg",
     nombre: "Pangane",
     fecha: "January 3, 2017 ",
     ubicación: "Mozambique",
@@ -1253,7 +1253,7 @@ const tarjetas_sm = [
     },
     {
     id: 126,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-126.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-126.jpg",
     nombre: "Piqiang Fault",
     fecha: "September 28, 2019",
     ubicación: "Xinjiang Province, China",
@@ -1263,7 +1263,7 @@ const tarjetas_sm = [
     },
     {
     id: 127,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-127.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-127.jpg",
     nombre: "Colosseum",
     fecha: "April 5, 2020",
     ubicación: "Rome, Italy",
@@ -1273,7 +1273,7 @@ const tarjetas_sm = [
     },
     {
     id: 128,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-128.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-128.jpg",
     nombre: "Precision Agriculture",
     fecha: "April 11, 2020",
     ubicación: "Rio Grande do Sul, Brazil",
@@ -1283,7 +1283,7 @@ const tarjetas_sm = [
     },
     {
     id: 129,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-129.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-129.jpg",
     nombre: "Allegiant Stadium",
     fecha: "April 27, 2020",
     ubicación: "Las Vegas, Nevada, USA",
@@ -1293,7 +1293,7 @@ const tarjetas_sm = [
     },
     {
     id: 130,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-130.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-130.jpg",
     nombre: "Salt Ponds",
     fecha: "October 30, 2020",
     ubicación: "San Francisco Bay, California",
@@ -1303,7 +1303,7 @@ const tarjetas_sm = [
     },
     {
     id: 131,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-131.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-131.jpg",
     nombre: "Drought Impacts the Hoover Dam",
     fecha: "June 23, 2021",
     ubicación: "Nevada, USA",
@@ -1313,7 +1313,7 @@ const tarjetas_sm = [
     },
     {
     id: 132,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-132.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-132.jpg",
     nombre: "Athabasca River Delta",
     fecha: "February 10, 2022",
     ubicación: "Saskatchewan, Canada",
@@ -1323,7 +1323,7 @@ const tarjetas_sm = [
     },
     {
     id: 133,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-133.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-133.jpg",
     nombre: "Hanul Nuclear Power Plant",
     fecha: "March 10, 2022",
     ubicación: "Gyeongsangbuk-do province, South Korea",
@@ -1333,7 +1333,7 @@ const tarjetas_sm = [
     },
     {
     id: 134,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-134.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-134.jpg",
     nombre: "Landslides and Debris Flows",
     fecha: "November 22, 2022",
     ubicación: "Mindanao Island, Philippines",
@@ -1343,7 +1343,7 @@ const tarjetas_sm = [
     },
     {
     id: 135,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-135.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-135.jpg",
     nombre: "Glaciar Perito Moreno",
     fecha: "January 3, 2023",
     ubicación: "El Parque Nacional Los Glaciares, Argentina",
@@ -1353,7 +1353,7 @@ const tarjetas_sm = [
     },
     {
     id: 136,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-136.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-136.jpg",
     nombre: "Greenhouses on the Campo de Dalías",
     fecha: "January 4, 2023",
     ubicación: "Almería, Spain",
@@ -1363,7 +1363,7 @@ const tarjetas_sm = [
     },
     {
     id: 137,
-    src: "../multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-137.jpg",
+    src: "./multimedia/imagenes/Imágenes-galería/imagenes-sm/sm-imagen-137.jpg",
     nombre: "Thwaites Glacier",
     fecha: "February 15, 2023",
     ubicación: "Marie Byrd Land, Antarctica",
