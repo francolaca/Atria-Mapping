@@ -5,6 +5,15 @@
 // Array de tarjetas (las tarjetas se almacenan como objetos dentro de un array, nuestra base de datos)
 const tarjetasGalería = tarjetas_sm;
 
+// Adecuamos las url de las imágenes
+tarjetas_sm.forEach(tarjeta => {
+    tarjeta.src = '.' + tarjeta.src;
+});
+
+console.log(tarjetas_sm);
+
+console.log(tarjetasGalería)
+
 // Contenedor de las tarjetas (las tarjetas se renderizaran dentro del elemento con id="contenedorTarjetas")
 const contenedorTarjetas = document.querySelector("#contenedorTarjetas");
 
