@@ -110,7 +110,7 @@ function insertCard(cardsArray, htmlNode){
         template.querySelector("#p1").textContent = card.fecha + " | " + card.ubicación;
         template.querySelector("#p2").textContent = card.fuente;
         // Esta es el url de la imagen alternativa que se mostrará cuando el ancho de pantalla sea menor a 992px. Para disminuir tiempos de carga pasar tarjetasDestacadas_sm en lugar de tarjetasDestacadas_md 
-        template.querySelector("source").srcset = tarjetasDestacadas_md[index].src;
+        template.querySelector("source").srcset = tarjetasDestacadas_sm[index].src;
 
         // Clonamos la plantilla. CloneNode es útil se desea crear copias de nodos existentes en el DOM sin afectar al nodo original
         const clone = template.cloneNode(true);
@@ -130,7 +130,7 @@ htmlNode.appendChild(fragment);
 
 // Insertamos (pintamos) las tarjetas llamando a la función insertCard. Le pasamos como argumentos el array de tarjetas y el elemento html contenedor
 // Para disminuir tiempos de carga pasar tarjetasDestacadas_md o tarjetasDestacadas_sm en lugar de tarjetasDestacadas_lg   
-insertCard(tarjetasDestacadas_lg, contenedorTarjetas);
+insertCard(tarjetasDestacadas_md, contenedorTarjetas);
 
 
 // ------------------------------------------------- Eventos ---------------------------------------------------------------------

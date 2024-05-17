@@ -42,7 +42,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url(../multimedia/imagenes/Imágenes-galería/imagenes-lg/lg-imagen-136.jpg);
+    background-image: url(../multimedia/imagenes/Imágenes-galería/imagenes-md/md-imagen-136.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
