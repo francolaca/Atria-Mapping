@@ -246,3 +246,42 @@ h1{
     }
 
 }
+
+
+/*----------------------------Animación Satélite-------------------------------------------------*/
+
+
+/* Agregar animación a la imagen */
+.col2-row1-container-construcción img {
+    /* Aplicar una transformación para hacer que la imagen comience arriba */
+    transform: translateY(-100%);
+    /* Añadir la animación */
+    animation: aparecerDesdeArriba 1s ease-in-out forwards; /* Duración, timing function, y nombre de la animación */
+    animation-fill-mode: forwards;
+}
+
+
+/* Definir la animación de aparecer desde arriba */
+@keyframes aparecerDesdeArriba {
+    /* Definir el estado inicial */
+    0% {
+        opacity: 0; /* Comienza invisible */
+        transform: translateY(-100%) ; /* Empieza arriba de la pantalla */
+    }
+    50% {
+        transform: translateY(-20%) ; /* Algunos rebotes */
+    }
+    70% {
+        transform: translateY(-40%) ; 
+    }
+    85% {
+        transform: translateY(-20%) ; 
+    }
+    95% {
+        transform: translateY(-25%) ;
+    }
+    100% {
+      opacity: 1; /* Termina visible */
+      transform: translateY(-20%) ; /* Termina en su posición final */
+    }
+}

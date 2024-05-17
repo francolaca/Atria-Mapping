@@ -93,6 +93,7 @@ const validarFormulario = (evento) => {
 
         if(válido){
             formIngresoRegistro.submit();
+            window.location.href = "../index.html";
         }
 
     }
@@ -140,6 +141,7 @@ const validarFormulario = (evento) => {
 
         if(válido){
             formIngresoRegistro.submit();
+            window.location.href = "../index.html";
         }
 
     }
