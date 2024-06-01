@@ -146,7 +146,7 @@ form > div:nth-last-child(2){
 }
 
 
-a{
+form a{
     color: var(--colorTerciarioClaro);
     font-size: var(--tamañoTexto-XXS);
     display:block;
@@ -165,7 +165,7 @@ a{
 }
 
 
-a:hover, #btn_siguiente:hover{
+form a:hover, #btn_siguiente:hover{
     color: var(--colorDetalles1);
     font-size: var(--tamañoTexto-XS) !important;
     text-decoration: none;

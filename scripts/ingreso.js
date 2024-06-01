@@ -7,7 +7,7 @@ const btnAnterior = document.querySelector("#btn_anterior");
 const btnRegistro = document.querySelector("#btn_registro");
 const btnSiguiente = document.querySelector("#btn_siguiente"); 
 
-const hiddenElements = document.querySelectorAll(".control_hidden, .form_links, #btn_inicioSesión, #btn_anterior, #btn_registro, a, h2");
+const hiddenElements = document.querySelectorAll(".control_hidden, .form_links, #btn_inicioSesión, #btn_anterior, #btn_registro, form a, h2");
 
 
 const inputNombre = document.querySelector("#inputNombre");
