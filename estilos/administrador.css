@@ -1,0 +1,330 @@
+/* -----------------------------------Variables de Estilo------------------------------------ */
+
+
+:root{
+    --colorPrincipal: #2f5163;
+    --colorSecundario: #010202;
+    --colorTerciarioOscuro1: #272727;
+    --colorTerciarioOscuro2: #373737;
+    --colorTerciarioClaro: #f2f2f2;
+    --colorDetalles1: #2A7F98;
+    --colorDetalles2: #f5b823;
+    --colorDetalles3: #4A9494;
+
+    --tamañoTexto-XXS: 0.75rem;
+    --tamañoTexto-XS: 1rem;
+    --tamañoTexto-S: 1.25rem;
+    --tamañoTexto-M: calc(1.275rem + .3vw);
+    --tamañoTexto-L: calc(1.3rem + .6vw);
+    --tamañoTexto-XL: calc(1.325rem + .9vw);
+    --tamañoTexto-XXL: calc(1.375rem + 1.5vw);
+
+    /* Proporciónes line-height / font-size */
+    --alturaLíneaProp-S: 1.25;
+    --alturaLíneaProp-M: 1.5; 
+    --alturaLíneaProp-L: 2;
+}
+
+
+@media (min-width: 1200px) {
+    :root{
+        --tamañoTexto-M: 1.5rem;
+        --tamañoTexto-L: 1.75rem;
+        --tamañoTexto-XL: 2rem;
+        --tamañoTexto-XXL: 2.5rem;
+    }
+} 
+
+
+/* --------------------------------------------------Body------------------------------------------------- */
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;         /* Para que el alto del body siempre sea igual al alto de la pantalla del dispositivo  */
+    justify-content:space-between;
+    background-color: var(--colorTerciarioOscuro2);
+}
+
+
+/* --------------------------------------------Section form------------------------------------------------- */
+
+
+.container-form{
+    padding: 3rem 0.75rem 0 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1140px;
+    color: var(--colorTerciarioClaro);
+}
+
+
+.row1-container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--colorTerciarioOscuro1);
+    text-align: center;
+}
+
+
+.row2-container-form{
+    margin-top: 0;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--colorTerciarioOscuro1);
+}
+
+
+form{
+    padding: 0 3rem;
+}
+
+
+label{
+    font-size: var(--tamañoTexto-XXS);
+    margin-bottom: .25rem;
+}
+
+
+.form-checkbox label{
+    font-size: var(--tamañoTexto-S);
+}
+
+
+.form-control input, .form-control select, .form-checkbox{
+    font-size: var(--tamañoTexto-S);
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin-bottom: 1rem;
+    height: 2rem;
+    background-color: var(--colorTerciarioOscuro2);
+    border: none;
+    border-bottom: 2px solid var(--colorDetalles1);
+    color: var(--colorTerciarioClaro);
+}
+
+
+.form-checkbox{
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.d-flex{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+form button{
+    width: 10rem;
+}
+
+
+/* --------------------------------------------Section CRUD------------------------------------------------- */
+
+
+.container-CRUD{
+    padding: 3rem 0.75rem 0 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+
+.row1-container-CRUD{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--colorTerciarioClaro);
+    background-color: var(--colorTerciarioOscuro1);
+}
+
+
+.col1-row1-container-CRUD{
+    width: 83.33333333%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-top: 0;
+    flex: 0 0 auto;  /* Esta es una abreviatura de las propiedades flex-grow, flex-shrink y flex-basis */
+}
+
+
+h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+.table {
+    margin: 30px 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: var(--colorTerciarioClaro);
+    vertical-align:center;
+}
+
+
+.table tr th, .table tr td {
+    padding: 8px;
+    line-height: 100%; 
+    text-align: center !important;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    max-width: 10rem;
+}
+
+
+.table tr th{
+    border-bottom: 2px solid var(--colorDetalles1);
+    font-size: var(--tamañoTexto-S);
+}
+
+
+.table tr th:last-child, .table tr td:last-child{
+    border-bottom:none;
+}
+
+
+.table tr td{
+    border-bottom: 1px solid var(--colorDetalles1);
+    font-size: var(--tamañoTexto-XS)
+}
+
+
+.th_sm{
+    display:none !important;
+}
+
+
+.smallButton--light_table{
+    color: var(--colorTerciarioClaro);
+    background: none;
+    font-size: var(--tamañoTexto-S);
+    padding: 0.25em 0.5em;
+    border:none;
+}
+
+.smallButton--light_table:hover{
+    transform: scale(1.3);
+    color:var(--colorDetalles1);
+}
+
+
+
+/* TRABAJAR LA VISUALIZACION DE LOS TEXTOS EN PANTALLAS PEQUENAS */
+
+/* .table th:hover, .table td:hover {
+    overflow: visible; */
+ /* Permite que el texto se divida en varias líneas */
+    /* white-space: normal; */
+    /* Asegura que el contenido completo esté por encima de otros elementos */
+    /* z-index: 1;  */
+    /* Opcional: Añadir un fondo para mayor legibilidad */
+    /* background-color: rgba(0, 0, 0, 0.8); 
+} */
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px){
+
+    .container-CRUD, .container-form{
+        max-width: 960px;
+    }
+
+    .col1-row1-container-CRUD{
+        width: 100%;
+    }
+
+    .th_lg{
+        display: none;
+    }
+
+    .th_sm{
+        display: table-cell !important;
+    }
+
+    .table {
+        margin: 20px auto;
+        width: auto;
+    }
+
+    td img {
+        height: 70px;
+    }
+
+}
+
+
+@media (max-width: 576px){
+
+    .container-CRUD, .container-form{
+        max-width: 540px;
+    }
+
+    .form-checkbox label{
+        font-size: var(--tamañoTexto-XS);
+    }
+    
+    .form-control input, .form-control select, .form-checkbox{
+        font-size: var(--tamañoTexto-XS);
+    }
+
+    .table tr th{
+        font-size: var(--tamañoTexto-XXS);
+    }
+    
+    .table tr td{
+        font-size: var(--tamañoTexto-XXS);
+    }
+
+    .table th img{
+        width: 14px;
+        height: "auto";
+    }
+
+    .smallButton--light_table{
+        font-size: var(--tamañoTexto-XXS);
+    }
+
+    td img {
+        height: 35px;
+    }
+    
+    .table tr th, .table tr td {
+        max-width: 7rem;
+    }
+
+}

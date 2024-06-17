@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 
 <html lang="es">
-
     <head>
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Enlace al family font Montserrat de Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
@@ -16,18 +15,20 @@
         <link rel="stylesheet" href="../estilos/header.css">
         <link rel="stylesheet" href="../estilos/footer.css">
         <link rel="stylesheet" href="../estilos/general.css">
-        <link rel="stylesheet" href="../estilos/construcción.css">
+        <link rel="stylesheet" href="../estilos/administrador.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+        
         <script defer src="../scripts/header.js"></script>
         <script defer src="../scripts/footer.js"></script>
-        
-        <title>ATRIA MAPPING - Digitalizamos tu mundo</title>
+        <script defer src="../scripts/administrador.js"></script>
+        <script defer src="../db.js"></script>
 
+        <title>Administrador | ATRIA MAPPING</title>
+    
     </head>
 
     <body>
-        
+
         <header class="b-header">
 
             <nav class="b-nav">
@@ -57,47 +58,104 @@
                         <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construcción.html"><strong>EMPRESA</strong></a></li>
                         <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construcción.html"><strong>PRODUCTOS</strong></a></li>
                         <li class="nav-outerList__item"><a class="nav-outerList__link" href="./construcción.html"><strong>SERVICIOS</strong></a></li>
-                        <li class="nav-outerList__item"><a class="nav-outerList__link" href="./presupuesto.html"><strong>VENTAS</strong></a></li>
+                        <li class="nav-outerList__item"><a class="nav-outerList__link" href="#"><strong>VENTAS</strong></a></li>
                     </ul>
 
                 </div>
 
             </nav>
 
-        </header>
+        </header>  
 
         <main class="b-main">
-        
-            <section class="section-construcción">
 
-                <div class="container-construcción">
+            <section id="form" class="container-form">
 
-                    <div class="row1-container-construcción">
-
-                        <div class="col1-row1-container-construcción">
-
-                            <img src="../multimedia/imagenes/imágenes%20página%20construcción/cartel.png" alt="imagen grua con satélite en mantenimiento">
-                            <h1>¡Página en construcción!</h1>
-                            <p>Disculpa las molestias. Estamos trabajando para mejorar tu experiencia en nuestro sitio web. Agradecemos tu paciencia y comprensión.</p>
-                            <p>Volveremos pronto con nuevas características&nbsp;!!!</p>
-
-                        </div>
-
-                        <div class="col2-row1-container-construcción">
-
-                            <img src="../multimedia/imagenes/imágenes%20página%20construcción/GruaSateliteChico.png" alt="imagen grua con satélite en mantenimiento">
-
-                        </div>
-
-                    </div>
-
+                <div class="row1-container-form">
+                    <h2 class="search-title">Gestión Imágenes del Sitio Web</h2>
+                    <p class="description" >Gestionar aquí las imágenes del carrusel y de la galería</p>
                 </div>
 
-                <div class="row2-container-construcción">
+                <div class="row2-container-form">
+                    <form action="#"  id="form-muestra">
+                        <div class="d-flex">
 
-                    <div class="col1-row2-container-construcción">
+                            <div class="form-control d-flex-column">
+                                <label for="inputMuestra">Muestra</label>
+                                <input type="url" class="input-search" name="muestra" id="inputMuestra">
+                            </div>
 
-                        <img src="../multimedia/imagenes/imágenes%20página%20construcción/cintas.png" alt="imagen cintas uner construction">
+                            <div class="form-control d-flex-column">
+                                <label for="inputNombre">Nombre</label>
+                                <input type="text" class="input-search" name="nombre" id="inputNombre">
+                            </div>
+
+                            <div class="form-control d-flex-column">
+                                <label for="inputFecha">Fecha</label>
+                                <input type="date" class="input-search" name="fecha" id="inputFecha">
+                            </div>
+
+                            <div class="form-control d-flex-column">
+                                <label for="inputUbicación">Ubicación</label>
+                                <input type="text" class="input-search" name="ubicación" id="inputUbicación">
+                            </div>
+
+                            <div class="form-control d-flex-column">
+                                <label for="inputFuente">Fuente</label>       
+                                <select name="fuente" id="selectFuente">
+                                    <option value="WORLDVIEW3" selected>WORLDVIEW3</option>
+                                    <option value="WORLDVIEW2">WORLDVIEW2</option>
+                                    <option value="GEOEYE-1">GEOEYE-1</option>
+                                    <option value="PLÉIADES 1">PLÉIADES 1</option>
+                                    <option value="PLANETSCOPE">PLANETSCOPE</option>
+                                    <option value="PLÉIADES NEO">PLÉIADES NEO</option>
+                                </select>
+                            </div>
+
+                            <div class="d-flex-column">
+                                <label for="">Destacado</label>
+                                <div class="form-checkbox">
+                                    <label for="inputDestacado">Mostrar en Carrusel</label>
+                                    <input type="checkbox" class="" name="destacado" id="inputDestacado">
+                                </div>
+                            </div>
+                            
+                            <input type="hidden" name="id" id="inputId"> <!-- Para enviar los datos de la tarjeta que se esté editando  -->
+                            
+                            <div class="d-flex-column">
+                                <button class="smallButton--light" type="button" id="btn-save-tarjeta"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+                        
+            </section>
+
+            <section class = "container-CRUD">         
+
+                <div class="row1-container-CRUD">
+
+                    <div class="col1-row1-container-CRUD">
+
+                        <h2>Listado Imágenes de Muestra</h2>
+
+                        <table id="list-table-muestras" class="table">
+                            <thead>
+                                <tr>
+                                    <th><p class="th_lg">Muestra</p><i class="fa-regular fa-image th_sm"></i></th>
+                                    <th><p class="th_lg">Nombre</p><i class="fa-regular fa-file th_sm"></i></th>
+                                    <th class="th_lg"><p class="th_lg">Fecha</p><i class="fa-regular fa-calendar-days th_sm"></i></th>
+                                    <th class="th_lg"><p class="th_lg">Ubicación</p><i class="fa-solid fa-location-dot th_sm"></i></th>
+                                    <th class="th_lg"><p class="th_lg">Fuente</p><i class="fa-solid fa-satellite th_sm"></i></th>
+                                    <th><p class="th_lg">Destacado</p><img width ="20px" height="auto" src="../multimedia/imagenes/Otros iconos/icons8-carrusel-50.png" alt="icono carousel" class="th_sm"/></th>
+                                    <th></th>
+                                    <!-- <i class="fa-solid fa-trash"></i><i class="fa-solid fa-right-to-bracket"></i><i class="fa-solid fa-check"></i><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-file-circle-plus"></i><i class="fa-solid fa-cart-shopping"></i><i class="fa-solid fa-file-circle-minus"></i><i class="fa-solid fa-cart-plus"></i><i class="fa-solid fa-plus"></i> -->
+                                </tr>
+                            </thead>
+                            <tbody id="tbody-table-muestras">
+                            </tbody>
+                        </table>
 
                     </div>
 
@@ -105,8 +163,8 @@
 
             </section>
 
-        </main>
-
+        </main>f
+    
         <footer class="b-footer">
 
             <div class="b-footer__sup">
@@ -151,7 +209,7 @@
                         </a>
                     </li>
                     <li class="footer-list__item">
-                        <a class="footer-list__item--link" href="https://www.censo.gob.ar/index.php/mapa_poblacion1/" target="_blank">
+                        <a class="footer-list__item--link" href="https://portalgeoestadistico.indec.gob.ar/" target="_blank">
                             Mapa interactivo del censo 2022 - INDEC
                         </a>
                     </li>
