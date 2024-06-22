@@ -203,7 +203,7 @@ h2{
 
 .table tr th{
     border-bottom: 2px solid var(--colorDetalles1);
-    font-size: var(--tamañoTexto-S);
+    font-size: var(--tamañoTexto-XS);
 }
 
 
@@ -214,7 +214,7 @@ h2{
 
 .table tr td{
     border-bottom: 1px solid var(--colorDetalles1);
-    font-size: var(--tamañoTexto-XS)
+    font-size: var(--tamañoTexto-XXS)
 }
 
 
@@ -303,10 +303,6 @@ h2{
     }
 
     .table tr th{
-        font-size: var(--tamañoTexto-XXS);
-    }
-    
-    .table tr td{
         font-size: var(--tamañoTexto-XXS);
     }
 

@@ -2,7 +2,7 @@
 
 
     const tbody = document.querySelector("#tbody-table-muestras");
-    const btnAgregar = document.querySelector("#btn-save-tarjeta");
+    const btnAgregar = document.querySelector("#btn-save-muestra");
     const inputNombre = document.querySelector("#inputNombre");
     const inputMuestra = document.querySelector("#inputMuestra");
     const inputFecha = document.querySelector("#inputFecha");
@@ -16,7 +16,7 @@
 // --------------------------------------------------- POO ---------------------------------------------------------------------
 
 
-class Tarjeta{
+class Muestra{
     constructor(id, src, nombre, fecha, ubicación, fuente, destacado, alt){
         this.id=id;
         this.src=src;
@@ -33,34 +33,34 @@ class Tarjeta{
 // --------------------------------------------------- Funciones ---------------------------------------------------------------------
 
 
-// Función para buscar en el localstorage el array de tarjetas y mostrarlas en el cuepo de la tabla.
-function mostrarTarjetas(){
+// Función para buscar en el localstorage el array de muestras y mostrarlas en el cuepo de la tabla.
+function mostrarMuestras(){
 
-    let tarjetas_sm = JSON.parse(localStorage.getItem("tarjetas_sm")) || [];
+    let muestras_sm = JSON.parse(localStorage.getItem("muestras_sm")) || [];
 
     tbody.innerHTML="";
 
     // Se crea una variable que contendá la cadena de texto que a continuación se pasa a insertAdjasentHTML
     let textTemplate = "";
-    tarjetas_sm.forEach( tarjeta => {
+    muestras_sm.forEach( muestra => {
 
-        // Se cambia el valor booleano de tarjeta.destacado por el ícono de check
-        if (tarjeta.destacado) {
-            tarjeta.destacado=`<i class="fa-solid fa-check"></i>`;      
+        // Se cambia el valor booleano de muestra.destacado por el ícono de check
+        if (muestra.destacado) {
+            muestra.destacado=`<i class="fa-solid fa-check"></i>`;      
         } else {
-            tarjeta.destacado=``; 
+            muestra.destacado=``; 
         }
 
         textTemplate += `<tr>
-                            <td><img src="${tarjeta.src}" alt="${tarjeta.nombre}" height="100px" width="auto"></td>
-                            <td>${tarjeta.nombre}</td>
-                            <td class="th_lg">${tarjeta.fecha}</td>
-                            <td class="th_lg">${tarjeta.ubicación}</td>
-                            <td class="th_lg">${tarjeta.fuente}</td>
-                            <td>${tarjeta.destacado}</td>
+                            <td><img src="${muestra.src}" alt="${muestra.nombre}" height="100px" width="auto"></td>
+                            <td>${muestra.nombre}</td>
+                            <td class="th_lg">${muestra.fecha}</td>
+                            <td class="th_lg">${muestra.ubicación}</td>
+                            <td class="th_lg">${muestra.fuente}</td>
+                            <td>${muestra.destacado}</td>
                             <td>
-                                <button class="smallButton--light_table" onclick="editarTarjeta(${tarjeta.id})"><i class="fa-solid fa-pen-to-square"></i></button>
-                                <button class="smallButton--light_table" onclick="eliminarTarjeta(${tarjeta.id})"><i class="fa-solid fa-trash"></i></button>
+                                <button class="smallButton--light_table" onclick="editarMuestra(${muestra.id})"><i class="fa-solid fa-pen-to-square"></i></button>
+                                <button class="smallButton--light_table" onclick="eliminarMuestra(${muestra.id})"><i class="fa-solid fa-trash"></i></button>
                             </td>
                         </tr>`;
 
@@ -70,41 +70,41 @@ function mostrarTarjetas(){
 }
 
 
-// Función para agregar una nueva tarjeta al array de tarjetas
-function guardarTarjeta(){
+// Función para agregar una nueva muestra al array de muestras
+function guardarMuestra(){
 
     // Validación de los input
     if (inputNombre.value.trim()!=="") {
 
-        // Se obtiene el array que contiene las tarjetas (en este caso del local storage)
-        let tarjetas_sm = JSON.parse(localStorage.getItem("tarjetas_sm")) || [];
+        // Se obtiene el array que contiene las muestras (en este caso del local storage)
+        let muestras_sm = JSON.parse(localStorage.getItem("muestras_sm")) || [];
 
         //Si el inputId es distinto de vacío, es porque se trata de una acción de edición
 
         if(inputId.value!==""){
 
-             //Buscamos la tarjeta a editar con el método find
-            const tarjetaParaEditar = tarjetas_sm.find(tarjeta => tarjeta.id==inputId.value);
+             //Buscamos la muestra a editar con el método find
+            const muestraParaEditar = muestras_sm.find(muestra => muestra.id==inputId.value);
 
             //Si existe actualizo el objeto
-            if (tarjetaParaEditar) {
+            if (muestraParaEditar) {
 
-                tarjetaParaEditar.nombre = inputNombre.value;
-                tarjetaParaEditar.src = inputMuestra.value;
-                tarjetaParaEditar.fecha = inputFecha.value;
-                tarjetaParaEditar.ubicación = inputUbicación.value;
-                tarjetaParaEditar.fuente = selectFuente.value;
-                tarjetaParaEditar.destacado = inputDestacado.value;
+                muestraParaEditar.nombre = inputNombre.value;
+                muestraParaEditar.src = inputMuestra.value;
+                muestraParaEditar.fecha = inputFecha.value;
+                muestraParaEditar.ubicación = inputUbicación.value;
+                muestraParaEditar.fuente = selectFuente.value;
+                muestraParaEditar.destacado = inputDestacado.value;
 
-                alert("la tarjeta fue editada");
+                alert("la muestra fue editada");
 
             }
 
         }else{
 
-            // Se crea un nuevo objeto de la clase Tarjeta con los valores ingresados por el usuario y se lo agrega al array de tarjetas
-            let nuevaTarjeta = new Tarjeta(
-            tarjetas_sm.length + 1,
+            // Se crea un nuevo objeto de la clase Muestra con los valores ingresados por el usuario y se lo agrega al array de muestras
+            let nuevaMuestra = new Muestra(
+            muestras_sm.length + 1,
             inputMuestra.value,
             inputNombre.value,
             inputFecha.value,
@@ -113,16 +113,16 @@ function guardarTarjeta(){
             inputDestacado.checked,
             inputNombre.value);
 
-            tarjetas_sm.push(nuevaTarjeta);
+            muestras_sm.push(nuevaMuestra);
 
-            alert("la tarjeta fue agregada");
+            alert("la muestra fue agregada");
 
         }
 
-        // Se envían las modificaciones del array de tarjetas (en este caso al local storage)
-        localStorage.setItem("tarjetas_sm",JSON.stringify(tarjetas_sm));
+        // Se envían las modificaciones del array de muestras (en este caso al local storage)
+        localStorage.setItem("muestras_sm",JSON.stringify(muestras_sm));
 
-        mostrarTarjetas();
+        mostrarMuestras();
 
         //Se limpian los inputs del formulario
         form.reset();
@@ -135,57 +135,57 @@ function guardarTarjeta(){
 
 
 /**
- * Función para eliminar una tarjeta al array de tarjetas del local storage de acuerdo al indice del mismo
- * @param {number} idTarjeta id de la tarjeta que se va a eliminar
+ * Función para eliminar una muestra al array de muestras del local storage de acuerdo al indice del mismo
+ * @param {number} idMuestra id de la muestra que se va a eliminar
  */
-function eliminarTarjeta(idTarjeta){
+function eliminarMuestra(idMuestra){
 
-    // Se obtiene el array que contiene las tarjetas (en este caso del local storage)
-    let tarjetas_sm = JSON.parse(localStorage.getItem("tarjetas_sm"));
+    // Se obtiene el array que contiene las muestras (en este caso del local storage)
+    let muestras_sm = JSON.parse(localStorage.getItem("muestras_sm"));
 
-    //Buscamos la tarjeta a eliminar con el método find
-    let tarjetaParaEliminar = tarjetas_sm.find(tarjeta => tarjeta.id===idTarjeta);
+    //Buscamos la muestra a eliminar con el método find
+    let muestraParaEliminar = muestras_sm.find(muestra => muestra.id===idMuestra);
 
-    // Si se encontró la tarjeta a eliminar, entonces procedemos a eliminarla
-    if (tarjetaParaEliminar) {
+    // Si se encontró la muestra a eliminar, entonces procedemos a eliminarla
+    if (muestraParaEliminar) {
 
-        //Se utiliza el metodo filter para actualizar el array de tarjetas (todas las tarjetas menos la tarjeta eliminada)
-        tarjetas_sm = tarjetas_sm.filter(tarjeta => tarjeta.id !== tarjetaParaEliminar.id);
+        //Se utiliza el metodo filter para actualizar el array de muestras (todas las muestras menos la muestra eliminada)
+        muestras_sm = muestras_sm.filter(muestra => muestra.id !== muestraParaEliminar.id);
 
-        // Se envían las modificaciones del array de tarjetas (en este caso al local storage)
-        localStorage.setItem("tarjetas_sm",JSON.stringify(tarjetas_sm));
+        // Se envían las modificaciones del array de muestras (en este caso al local storage)
+        localStorage.setItem("muestras_sm",JSON.stringify(muestras_sm));
 
-        mostrarTarjetas()
+        mostrarMuestras()
 
-        alert("la tarjeta fue eliminada");
+        alert("la muestra fue eliminada");
     }
 
 }
 
 
 /**
- * Function para cargar el formulario con los datos de la tarjeta a editar
- * @param {number} idTarjeta id de la tarjeta que se va a editar
+ * Function para cargar el formulario con los datos de la muestra a editar
+ * @param {number} idMuestra id de la muestra que se va a editar
  */
-function editarTarjeta(idTarjeta){
+function editarMuestra(idMuestra){
 
-    //Se obtiene el array que contiene las tarjetas (en este caso del local storage)
-    let tarjetas_sm = JSON.parse(localStorage.getItem("tarjetas_sm"));
+    //Se obtiene el array que contiene las muestras (en este caso del local storage)
+    let muestras_sm = JSON.parse(localStorage.getItem("muestras_sm"));
 
-    //Buscamos la tarjeta a editar con el método find
-    let tarjetaParaEditar = tarjetas_sm.find(tarjeta => tarjeta.id===idTarjeta);
+    //Buscamos la muestra a editar con el método find
+    let muestraParaEditar = muestras_sm.find(muestra => muestra.id===idMuestra);
 
-    // Si se encontró la tarjeta a ser editada, entonces procedemos proceder
-    if (tarjetaParaEditar) {
+    // Si se encontró la muestra a ser editada, entonces procedemos proceder
+    if (muestraParaEditar) {
 
-        //Se cargan los inputs del HTML con los valores de la tarjeta a editar
-        inputNombre.value = tarjetaParaEditar.nombre;
-        inputMuestra.value = tarjetaParaEditar.src;
-        inputFecha.value = tarjetaParaEditar.fecha;
-        inputUbicación.value = tarjetaParaEditar.ubicación;
-        selectFuente.value = tarjetaParaEditar.fuente;
-        inputDestacado.value = tarjetaParaEditar.destacado;
-        inputId.value = tarjetaParaEditar.id;
+        //Se cargan los inputs del HTML con los valores de la muestra a editar
+        inputNombre.value = muestraParaEditar.nombre;
+        inputMuestra.value = muestraParaEditar.src;
+        inputFecha.value = muestraParaEditar.fecha;
+        inputUbicación.value = muestraParaEditar.ubicación;
+        selectFuente.value = muestraParaEditar.fuente;
+        inputDestacado.value = muestraParaEditar.destacado;
+        inputId.value = muestraParaEditar.id;
 
     }
 
@@ -195,13 +195,13 @@ function editarTarjeta(idTarjeta){
 // -----------------------------------------------------eventos ---------------------------------------------------------------------
 
 
-    // Evento click del btnAgregar para agregar tarjetas a la tabla   
+    // Evento click del btnAgregar para agregar muestras a la tabla   
     btnAgregar.addEventListener("click",function(){
-        guardarTarjeta();
+        guardarMuestra();
     });
 
 
 // ----------------------------------------------------- sentencias ---------------------------------------------------------------------
 
 
-    mostrarTarjetas();
+    mostrarMuestras();
