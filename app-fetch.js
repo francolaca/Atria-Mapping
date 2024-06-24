@@ -128,6 +128,13 @@ async function insertCard(htmlNode){
     // Array que contiene solamente las muestras destacadas de tamaño pequeño
     const muestrasDestacadas_sm = muestras_sm.filter(muestra => muestra.destacado == 1);
 
+    // Adecuamos las url de las imágenes (borramos el punto inicial)
+    muestrasDestacadas_sm.forEach(muestra => {
+        muestra.url_img = muestra.url_img.slice(1);
+    });
+
+    console.log(muestrasDestacadas_sm);
+
     // Array de muestras destacadas de tamaño grande para pc.
     const muestrasDestacadas_lg = changeImgSize(muestrasDestacadas_sm,"lg");
 
