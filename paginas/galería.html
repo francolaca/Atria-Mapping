@@ -21,8 +21,9 @@
 
         <script defer src="../scripts/header.js"></script>
         <script defer src="../scripts/footer.js"></script>
-        <script defer src="../db.js"></script>
-        <script defer src="../scripts/galería.js"></script>
+        <!-- <script defer src="../db.js"></script> -->
+        <!-- <script defer src="../scripts/galería.js"></script> -->
+        <script defer src="../scripts/galería-fetch.js"></script>
 
         <title>Galería | ATRIA MAPPING</title>
         
@@ -88,12 +89,12 @@
 
                                 <div class="col1-row1-container-galería">
                                     <img src="" alt="" >
-                                    <h3>card.nombre</h3>
-                                    <p id="p1">card.fecha + " | " + card.ubicación</p>
-                                    <p id="p2">card.fuente</p>
+                                    <h3>muestra.nombre</h3>
+                                    <p id="p1">muestra.fecha + " | " + muestra.ubicación</p>
+                                    <p id="p2">muestra.fuente</p>
                                     <div>
-                                        <button type="button" id="btnSeleccionar-${card.id}" class="smallButton--dark"><strong>AGREGAR</strong></button>
-                                        <button type="button" id="btnDescargar-${card.id}" class="smallButton--dark"><strong>DESCARGAR</strong></button>
+                                        <button type="button" id="btnSeleccionar-${muestra.id}" class="smallButton--dark"><strong><i class="fa-solid fa-cart-plus"></i></strong></button>
+                                        <button type="button" id="btnDescargar-${muestra.id}" class="smallButton--dark"><strong><i class="fa-solid fa-download"></i></strong></button>
                                     </div>
                                 </div>
 

@@ -2,13 +2,7 @@
 // --------------------------------------------------- Variables ---------------------------------------------------------------------
 
 
-// Array de tarjetas (las tarjetas se almacenan como objetos dentro de un array, nuestra base de datos)
-const muestrasGalería = tarjetas_sm;
-
-// Adecuamos las url de las imágenes
-tarjetas_sm.forEach(tarjeta => {
-    tarjeta.src = '.' + tarjeta.src;
-});
+const BASEURL = "http://127.0.0.1:5000";
 
 // Contenedor de las tarjetas (las tarjetas se renderizaran dentro del elemento con id="contenedorTarjetas")
 const contenedorTarjetas = document.querySelector("#contenedorTarjetas");
@@ -23,9 +17,43 @@ const cantidadImágenes = [];
 // ------------------------------------------------- Funciones ---------------------------------------------------------------------
 
 
+/**
+ * Función para realizar una petición fetch con JSON
+ * @param {String} url - La URL a la que se realiza la petición
+ * @param {String} method - El método HTTP a usar (GET, POST, PUT, DELETE, etc)
+ * @param {Object} [data=null] - Los datos a enviar en el cuerpo de la petición
+ * @returns {Promise<Object>} - Una promesa que resuelve con la respuesta en formato JSON.
+ */
+async function fetchData(url, method, data = null){
+
+    const options = {
+        method: method,
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: data ? JSON.stringify(data) : null, // Si hay datos, los convierte a JSON y los incluye en el cuerpo
+    };
+
+    try {
+        const response = await fetch(url, options); // Realiza la petición fetch
+        if (!response.ok) {
+            throw new Error(`Error: ${response.statusText}`);
+        };
+        return await response.json(); // Devuelve la respuesta en formato JSON
+    } catch (error) {
+        console.error("Fetch error: " , error);
+        alert("An error occurred while fetching data. Please try again");
+    };
+    
+};
+
+
 // Función que inserta tarjetas en un archivo .html. La función recibe dos parámetros. Uno para el array de tarjetas y el otro para el elemento contenedor
 // Técnica utilizando una plantilla en html y un elemento fragment en js y que tambien requiere el uso del método cloneNode (SEGUIR INVESTIGANDO). 
-function insertCard(cardsArray, htmlNode){
+async function insertCard(htmlNode){
+
+    // Array de muestras (las muestras se almacenan como objetos dentro de un array)
+    let muestras_sm = await fetchData(BASEURL + '/api/muestras/', 'GET');
 
     const fragment = document.createDocumentFragment();
     const template = document.querySelector("#template-tarjeta").content;
@@ -37,27 +65,27 @@ function insertCard(cardsArray, htmlNode){
     const btnSeleccionarTemplate = template.querySelectorAll("button")[0];
     const btnDescargarTemplate = template.querySelectorAll("button")[1];
 
-    cardsArray.forEach(function(muestra){
+    muestras_sm.forEach(function(muestra){
 
         // Asignamos los valores correspondientes a cada elemento de la plantilla
-        imgTemplate.src = muestra.src;
-        imgTemplate.alt = muestra.alt;
-        h3Template.textContent = muestra.nombre;
-        p1Template.textContent = muestra.fecha + " | " + muestra.ubicación;
-        p2Template.textContent = muestra.fuente;
-        btnSeleccionarTemplate.id = "btnSeleccionar-" + muestra.id;
-        btnDescargarTemplate.id = "btnDescargar-" + muestra.id;
+        imgTemplate.src = muestra.url_img;
+        imgTemplate.alt = muestra.alt_img;
+        h3Template.textContent = muestra.nombre_img;
+        p1Template.textContent = muestra.fecha_img + " | " + muestra.ubicación;
+        p2Template.textContent = muestra.nombre_plat;
+        btnSeleccionarTemplate.id = "btnSeleccionar-" + muestra.id_muestra;
+        btnDescargarTemplate.id = "btnDescargar-" + muestra.id_muestra;
 
         // Clonamos la plantilla. CloneNode es útil se desea crear copias de nodos existentes en el DOM sin afectar al nodo original
         const clone = template.cloneNode(true);
         
         // NOTA: cloneNode no copia los manejadores de eventos ni la asociación con los mismos. Es decir, si el nodo original tiene eventos asociados, la copia no los tendrá. 
         // Para que los botones funcionen correctamente se deben asignar los eventos después de clonar la plantilla pero antes de agregarla al fragmento.
-        const botonSeleccionarClonado = clone.getElementById(`btnSeleccionar-${muestra.id}`);        
-        const botonDescargarClonado = clone.getElementById(`btnDescargar-${muestra.id}`);
+        const botonSeleccionarClonado = clone.getElementById(`btnSeleccionar-${muestra.id_muestra}`);        
+        const botonDescargarClonado = clone.getElementById(`btnDescargar-${muestra.id_muestra}`);
 
         // Llamamos a la función agregar al carrito (esta función le agrega un evento al botón)
-        addToCart(botonSeleccionarClonado, muestrasGalería, imágenesSeleccionadas, cantidadImágenes);
+        addToCart(botonSeleccionarClonado, muestras_sm, imágenesSeleccionadas, cantidadImágenes);
         
         // Agregamos el nodo clonado al fragmento creado anteriormente
         fragment.appendChild(clone);
@@ -77,7 +105,7 @@ function addToCart (boton, productos, carrito, cantidades){
 
         // Buscamos el producto seleccionado por el usuario en nuestra base de datos.
         const idProductoSeleccionado = boton.id.replace("btnSeleccionar-","");    
-        const productoSeleccionado = productos.find(product => product.id == idProductoSeleccionado);
+        const productoSeleccionado = productos.find(product => product.id_muestra == idProductoSeleccionado);
     
         if (productoSeleccionado) {        
             // Si el producto existe en nuestra base de datos, y aún no a sido agregado al carrito, entonces lo agregamos 
@@ -103,5 +131,5 @@ function addToCart (boton, productos, carrito, cantidades){
 // ------------------------------------------------- Sentencias ---------------------------------------------------------------------
 
 
-// Insertamos (pintamos) las tarjetas llamando a la función insertCard. Le pasamos como argumentos el array de tarjetas y el elemento html contenedor  
-insertCard(muestrasGalería, contenedorTarjetas);
+// Insertamos (pintamos) las tarjetas llamando a la función insertCard. Le pasamos como argumento el elemento html contenedor  
+insertCard(contenedorTarjetas);

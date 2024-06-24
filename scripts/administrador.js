@@ -26,8 +26,8 @@ class Muestra{
         this.fuente=fuente;
         this.destacado=destacado;
         this.alt=alt;
-    }
-}
+    };
+};
 
 
 // --------------------------------------------------- Funciones ---------------------------------------------------------------------
