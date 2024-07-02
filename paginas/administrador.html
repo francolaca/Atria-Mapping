@@ -22,6 +22,7 @@
         <script defer src="../scripts/footer.js"></script>
         <!-- <script defer src="../scripts/administrador.js"></script> -->
         <script defer src="../scripts/administrador-fetch.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         <title>Administrador | ATRIA MAPPING</title>
     
@@ -74,6 +75,7 @@
                 <div class="row1-container-form">
                     <h2 class="search-title">Gestión Imágenes del Sitio Web</h2>
                     <p class="description" >Gestionar aquí las imágenes del carrusel y de la galería</p>
+                    <button class="smallButton--light" type="button" id="btn-reload-all"><i class="fa-solid fa-arrows-rotate"></i></button>
                 </div>
 
                 <div class="row2-container-form">
@@ -103,12 +105,12 @@
                             <div class="form-control d-flex-column">
                                 <label for="inputFuente">Fuente</label>       
                                 <select name="fuente" id="selectFuente">
-                                    <option value="WORLDVIEW-3" selected>WORLDVIEW-3</option>
+                                    <!-- <option value="WORLDVIEW-3" selected>WORLDVIEW-3</option>
                                     <option value="WORLDVIEW-2">WORLDVIEW-2</option>
                                     <option value="GEOEYE-1">GEOEYE-1</option>
                                     <option value="PLÉIADES 1">PLÉIADES 1</option>
                                     <option value="PLANETSCOPE">PLANETSCOPE</option>
-                                    <option value="PLÉIADES NEO">PLÉIADES NEO</option>
+                                    <option value="PLÉIADES NEO">PLÉIADES NEO</option> -->
                                 </select>
                             </div>
 
@@ -301,7 +303,7 @@
     
             </div>    
 
-        </footer>
+        </footer> 
 
     </body>
 

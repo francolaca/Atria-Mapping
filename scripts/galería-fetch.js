@@ -55,6 +55,9 @@ async function insertCard(htmlNode){
     // Array de muestras (las muestras se almacenan como objetos dentro de un array)
     let muestras_sm = await fetchData(BASEURL + '/api/muestras/', 'GET');
 
+    // Seleccionar solamente las muestras activas
+    muestras_sm = muestras_sm = muestras_sm.filter(muestra => muestra.muestra_activa == 1);
+
     const fragment = document.createDocumentFragment();
     const template = document.querySelector("#template-tarjeta").content;
 

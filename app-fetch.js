@@ -133,8 +133,6 @@ async function insertCard(htmlNode){
         muestra.url_img = muestra.url_img.slice(1);
     });
 
-    console.log(muestrasDestacadas_sm);
-
     // Array de muestras destacadas de tamaño grande para pc.
     const muestrasDestacadas_lg = changeImgSize(muestrasDestacadas_sm,"lg");
 
