@@ -2,7 +2,11 @@
 // --------------------------------------------------- Variables ---------------------------------------------------------------------
 
 
-const BASEURL = "http://127.0.0.1:5000";
+// Apuntamos al servidor de desarrollo de Flask
+// const BASEURL = "http://127.0.0.1:5000"; 
+
+// Apuntamos al servidor de producción de python anywhere
+const BASEURL = "https://francolaca.pythonanywhere.com/";
 
 // Contenedor de las tarjetas (las tarjetas se renderizaran dentro del elemento con id="contenedorTarjetas")
 const contenedorTarjetas = document.querySelector("#contenedorTarjetas");

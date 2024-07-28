@@ -1,7 +1,12 @@
 
 // ---------------------------------------------------Variables a utilizar----------------------------------------------------------
 
-const BASEURL = "http://127.0.0.1:5000"; 
+
+// Apuntamos al servidor de desarrollo de Flask
+// const BASEURL = "http://127.0.0.1:5000"; 
+
+// Apuntamos al servidor de producción de python anywhere
+const BASEURL = "https://francolaca.pythonanywhere.com/";
 
 const tbody = document.querySelector("#tbody-table-muestras");
 const btnAgregar = document.querySelector("#btn-save-muestra");
@@ -16,6 +21,7 @@ const inputId = document.querySelector('#inputId');
 const form = document.querySelector('#form-muestra');
 
 let plataformas = [];   // Variable para almacenar los registros de la tabla plataformas
+let muestras = [];
 
 
 // --------------------------------------------------- POO ---------------------------------------------------------------------
@@ -103,7 +109,7 @@ async function mostrarMuestras(selección = "todas"){
 
     tbody.innerHTML="";
 
-    // Se crea una variable que contendá la cadena de texto que a continuación se pasa a insertAdjasentHTML
+    // Se crea una variable que contendrá la cadena de texto que a continuación se pasa a insertAdjasentHTML
     let textTemplate = "";
 
     // Seleccionar el subgrupo de muestras adecuado
@@ -144,6 +150,7 @@ async function mostrarMuestras(selección = "todas"){
 };
 
 
+// Función para poner como "activas" todas las muestras de la base de datos, traerlas y mostrarlas en el cuepo de la tabla
 async function recargarMuestras(){
 
     let muestras_sm = await fetchData(BASEURL + '/api/muestras/reload', 'GET');
@@ -179,6 +186,8 @@ async function recargarMuestras(){
 
     tbody.insertAdjacentHTML("beforeend",textTemplate);
 
+    Swal.fire("Se han cargado correctamente todas las muestras", "", "success");
+
 };
 
 
@@ -205,13 +214,6 @@ function eliminarMuestra(id_muestra){
 }
 
 
-
-
-
-
-
-
-
 /**
  * Function para cargar el formulario con los datos de la muestra a editar
  * @param {number} id_muestra - id de la muestra que se va a editar
@@ -231,6 +233,10 @@ async function editarMuestra(id_muestra){
     inputId.value = muestraParaEditar.id_muestra;
     inputDestacado.checked = muestraParaEditar.destacado == 1;
     
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Desplazamiento suave
+    })
 }
 
 
